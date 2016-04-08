@@ -5,261 +5,10 @@
 
 \documentclass[journal]{IEEEtran}
 
-\usepackage[hyphens]{url}
-
-% *** CITATION PACKAGES ***
-%
 \usepackage{cite}
-% cite.sty was written by Donald Arseneau
-% V1.6 and later of IEEEtran pre-defines the format of the cite.sty package
-% \cite{} output to follow that of the IEEE. Loading the cite package will
-% result in citation numbers being automatically sorted and properly
-% "compressed/ranged". e.g., [1], [9], [2], [7], [5], [6] without using
-% cite.sty will become [1], [2], [5]--[7], [9] using cite.sty. cite.sty's
-% \cite will automatically add leading space, if needed. Use cite.sty's
-% noadjust option (cite.sty V3.8 and later) if you want to turn this off
-% such as if a citation ever needs to be enclosed in parenthesis.
-% cite.sty is already installed on most LaTeX systems. Be sure and use
-% version 5.0 (2009-03-20) and later if using hyperref.sty.
-% The latest version can be obtained at:
-% http://www.ctan.org/pkg/cite
-% The documentation is contained in the cite.sty file itself.
-
-
-% *** GRAPHICS RELATED PACKAGES ***
-%
-\ifCLASSINFOpdf
-  \usepackage[pdftex]{graphicx}
-  % declare the path(s) where your graphic files are
-  % \graphicspath{{../pdf/}{../jpeg/}}
-  % and their extensions so you won't have to specify these with
-  % every instance of \includegraphics
-  % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
-\else
-  % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
-  % will default to the driver specified in the system graphics.cfg if no
-  % driver is specified.
-  % \usepackage[dvips]{graphicx}
-  % declare the path(s) where your graphic files are
-  % \graphicspath{{../eps/}}
-  % and their extensions so you won't have to specify these with
-  % every instance of \includegraphics
-  % \DeclareGraphicsExtensions{.eps}
-\fi
-% graphicx was written by David Carlisle and Sebastian Rahtz. It is
-% required if you want graphics, photos, etc. graphicx.sty is already
-% installed on most LaTeX systems. The latest version and documentation
-% can be obtained at: 
-% http://www.ctan.org/pkg/graphicx
-% Another good source of documentation is "Using Imported Graphics in
-% LaTeX2e" by Keith Reckdahl which can be found at:
-% http://www.ctan.org/pkg/epslatex
-%
-% latex, and pdflatex in dvi mode, support graphics in encapsulated
-% postscript (.eps) format. pdflatex in pdf mode supports graphics
-% in .pdf, .jpeg, .png and .mps (metapost) formats. Users should ensure
-% that all non-photo figures use a vector format (.eps, .pdf, .mps) and
-% not a bitmapped formats (.jpeg, .png). The IEEE frowns on bitmapped formats
-% which can result in "jaggedy"/blurry rendering of lines and letters as
-% well as large increases in file sizes.
-%
-% You can find documentation about the pdfTeX application at:
-% http://www.tug.org/applications/pdftex
-
-
-
-
-
-% *** MATH PACKAGES ***
-%
-%\usepackage{amsmath}
-% A popular package from the American Mathematical Society that provides
-% many useful and powerful commands for dealing with mathematics.
-%
-% Note that the amsmath package sets \interdisplaylinepenalty to 10000
-% thus preventing page breaks from occurring within multiline equations. Use:
-%\interdisplaylinepenalty=2500
-% after loading amsmath to restore such page breaks as IEEEtran.cls normally
-% does. amsmath.sty is already installed on most LaTeX systems. The latest
-% version and documentation can be obtained at:
-% http://www.ctan.org/pkg/amsmath
-
-
-
-
-
-% *** SPECIALIZED LIST PACKAGES ***
-%
-%\usepackage{algorithmic}
-% algorithmic.sty was written by Peter Williams and Rogerio Brito.
-% This package provides an algorithmic environment fo describing algorithms.
-% You can use the algorithmic environment in-text or within a figure
-% environment to provide for a floating algorithm. Do NOT use the algorithm
-% floating environment provided by algorithm.sty (by the same authors) or
-% algorithm2e.sty (by Christophe Fiorio) as the IEEE does not use dedicated
-% algorithm float types and packages that provide these will not provide
-% correct IEEE style captions. The latest version and documentation of
-% algorithmic.sty can be obtained at:
-% http://www.ctan.org/pkg/algorithms
-% Also of interest may be the (relatively newer and more customizable)
-% algorithmicx.sty package by Szasz Janos:
-% http://www.ctan.org/pkg/algorithmicx
-
-
-
-
-% *** ALIGNMENT PACKAGES ***
-%
-%\usepackage{array}
-% Frank Mittelbach's and David Carlisle's array.sty patches and improves
-% the standard LaTeX2e array and tabular environments to provide better
-% appearance and additional user controls. As the default LaTeX2e table
-% generation code is lacking to the point of almost being broken with
-% respect to the quality of the end results, all users are strongly
-% advised to use an enhanced (at the very least that provided by array.sty)
-% set of table tools. array.sty is already installed on most systems. The
-% latest version and documentation can be obtained at:
-% http://www.ctan.org/pkg/array
-
-
-% IEEEtran contains the IEEEeqnarray family of commands that can be used to
-% generate multiline equations as well as matrices, tables, etc., of high
-% quality.
-
-
-
-
-% *** SUBFIGURE PACKAGES ***
-%\ifCLASSOPTIONcompsoc
-%  \usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
-%\else
-%  \usepackage[caption=false,font=footnotesize]{subfig}
-%\fi
-% subfig.sty, written by Steven Douglas Cochran, is the modern replacement
-% for subfigure.sty, the latter of which is no longer maintained and is
-% incompatible with some LaTeX packages including fixltx2e. However,
-% subfig.sty requires and automatically loads Axel Sommerfeldt's caption.sty
-% which will override IEEEtran.cls' handling of captions and this will result
-% in non-IEEE style figure/table captions. To prevent this problem, be sure
-% and invoke subfig.sty's "caption=false" package option (available since
-% subfig.sty version 1.3, 2005/06/28) as this is will preserve IEEEtran.cls
-% handling of captions.
-% Note that the Computer Society format requires a larger sans serif font
-% than the serif footnote size font used in traditional IEEE formatting
-% and thus the need to invoke different subfig.sty package options depending
-% on whether compsoc mode has been enabled.
-%
-% The latest version and documentation of subfig.sty can be obtained at:
-% http://www.ctan.org/pkg/subfig
-
-
-
-
-% *** FLOAT PACKAGES ***
-%
-%\usepackage{fixltx2e}
-% fixltx2e, the successor to the earlier fix2col.sty, was written by
-% Frank Mittelbach and David Carlisle. This package corrects a few problems
-% in the LaTeX2e kernel, the most notable of which is that in current
-% LaTeX2e releases, the ordering of single and double column floats is not
-% guaranteed to be preserved. Thus, an unpatched LaTeX2e can allow a
-% single column figure to be placed prior to an earlier double column
-% figure.
-% Be aware that LaTeX2e kernels dated 2015 and later have fixltx2e.sty's
-% corrections already built into the system in which case a warning will
-% be issued if an attempt is made to load fixltx2e.sty as it is no longer
-% needed.
-% The latest version and documentation can be found at:
-% http://www.ctan.org/pkg/fixltx2e
-
-
-%\usepackage{stfloats}
-% stfloats.sty was written by Sigitas Tolusis. This package gives LaTeX2e
-% the ability to do double column floats at the bottom of the page as well
-% as the top. (e.g., "\begin{figure*}[!b]" is not normally possible in
-% LaTeX2e). It also provides a command:
-%\fnbelowfloat
-% to enable the placement of footnotes below bottom floats (the standard
-% LaTeX2e kernel puts them above bottom floats). This is an invasive package
-% which rewrites many portions of the LaTeX2e float routines. It may not work
-% with other packages that modify the LaTeX2e float routines. The latest
-% version and documentation can be obtained at:
-% http://www.ctan.org/pkg/stfloats
-% Do not use the stfloats baselinefloat ability as the IEEE does not allow
-% \baselineskip to stretch. Authors submitting work to the IEEE should note
-% that the IEEE rarely uses double column equations and that authors should try
-% to avoid such use. Do not be tempted to use the cuted.sty or midfloat.sty
-% packages (also by Sigitas Tolusis) as the IEEE does not format its papers in
-% such ways.
-% Do not attempt to use stfloats with fixltx2e as they are incompatible.
-% Instead, use Morten Hogholm'a dblfloatfix which combines the features
-% of both fixltx2e and stfloats:
-%
-% \usepackage{dblfloatfix}
-% The latest version can be found at:
-% http://www.ctan.org/pkg/dblfloatfix
-
-
-
-
-%\ifCLASSOPTIONcaptionsoff
-%  \usepackage[nomarkers]{endfloat}
-% \let\MYoriglatexcaption\caption
-% \renewcommand{\caption}[2][\relax]{\MYoriglatexcaption[#2]{#2}}
-%\fi
-% endfloat.sty was written by James Darrell McCauley, Jeff Goldberg and 
-% Axel Sommerfeldt. This package may be useful when used in conjunction with 
-% IEEEtran.cls'  captionsoff option. Some IEEE journals/societies require that
-% submissions have lists of figures/tables at the end of the paper and that
-% figures/tables without any captions are placed on a page by themselves at
-% the end of the document. If needed, the draftcls IEEEtran class option or
-% \CLASSINPUTbaselinestretch interface can be used to increase the line
-% spacing as well. Be sure and use the nomarkers option of endfloat to
-% prevent endfloat from "marking" where the figures would have been placed
-% in the text. The two hack lines of code above are a slight modification of
-% that suggested by in the endfloat docs (section 8.4.1) to ensure that
-% the full captions always appear in the list of figures/tables - even if
-% the user used the short optional argument of \caption[]{}.
-% IEEE papers do not typically make use of \caption[]'s optional argument,
-% so this should not be an issue. A similar trick can be used to disable
-% captions of packages such as subfig.sty that lack options to turn off
-% the subcaptions:
-% For subfig.sty:
-% \let\MYorigsubfloat\subfloat
-% \renewcommand{\subfloat}[2][\relax]{\MYorigsubfloat[]{#2}}
-% However, the above trick will not work if both optional arguments of
-% the \subfloat command are used. Furthermore, there needs to be a
-% description of each subfigure *somewhere* and endfloat does not add
-% subfigure captions to its list of figures. Thus, the best approach is to
-% avoid the use of subfigure captions (many IEEE journals avoid them anyway)
-% and instead reference/explain all the subfigures within the main caption.
-% The latest version of endfloat.sty and its documentation can obtained at:
-% http://www.ctan.org/pkg/endfloat
-%
-% The IEEEtran \ifCLASSOPTIONcaptionsoff conditional can also be used
-% later in the document, say, to conditionally put the References on a 
-% page by themselves.
-
-
-
-
-% *** PDF, URL AND HYPERLINK PACKAGES ***
-%
-%\usepackage{url}
-% url.sty was written by Donald Arseneau. It provides better support for
-% handling and breaking URLs. url.sty is already installed on most LaTeX
-% systems. The latest version and documentation can be obtained at:
-% http://www.ctan.org/pkg/url
-% Basically, \url{my_url_here}.
-
-
-
-
-% *** Do not adjust lengths that control margins, column widths, etc. ***
-% *** Do not use packages that alter fonts (such as pslatex).         ***
-% There should be no need to do such things with IEEEtran.cls V1.6 and later.
-% (Unless specifically asked to do so by the journal or conference you plan
-% to submit to, of course. )
+\usepackage[hyphens]{url}
+\usepackage[pdftex]{graphicx}
+\usepackage{paralist}
 
 
 % correct bad hyphenation here
@@ -328,8 +77,6 @@
 % you desire.
 
 
-
-
 % If you want to put a publisher's ID mark on the page you can do it like
 % this:
 %\IEEEpubid{0000--0000/00\$00.00~\copyright~2015 IEEE}
@@ -340,8 +87,6 @@
 
 % use for special paper notices
 %\IEEEspecialpapernotice{(Invited Paper)}
-
-
 
 
 % make the title area
@@ -439,8 +184,6 @@ than an equivalent internal combustion engine, and the generation of
 electricity to meet charging patterns brings with it considerable
 logistical difficulties.
 
-
-
 More in its infancy is the trend of transitions in car use models. In
 other modes of private transport, predominantly bike use, an
 increasing number of users are opting to participate in short term
@@ -449,7 +192,7 @@ the capital and logistical cost of owning a bike, individuals hire the
 bike for a nominal fee from a given node near their origin, complete
 their journey, and return the bike to a node near their
 destination. Once seen as radical, examples such as London's cycle
-hire (``Boris Bike'')
+hire (a.k.a ``Boris Bike'')
 scheme\footnote{\url{http://www.tfl.gov.uk/modes/cycling/barclays-cycle-hire}}
 demonstrated not only the feasibility of the business model, but also
 the efficacy of the indirect benefits, illustrated by significant
@@ -499,116 +242,518 @@ displayed in Figure~\ref{fig:uktransportshare}, contextualised by the
 historical car ownership trends (cars per person in the UK): 0.004
 (1909), 0.08 (1950) and 0.55 (2012).
 
-% An example of a floating figure using the graphicx package.
-% Note that \label must occur AFTER (or within) \caption.
-% For figures, \caption should occur after the \includegraphics.
-% Note that IEEEtran v1.7 and later has special internal code that
-% is designed to preserve the operation of \label within \caption
-% even when the captionsoff option is in effect. However, because
-% of issues like this, it may be the safest practice to put all your
-% \label just after \caption rather than within \caption{}.
-%
-% Reminder: the "draftcls" or "draftclsnofoot", not "draft", class
-% option should be used if it is desired that the figures are to be
-% displayed while in draft mode.
-%
-%\begin{figure}[!t]
-%\centering
-%\includegraphics[width=2.5in]{myfigure}
-% where an .eps filename suffix will be assumed under latex, 
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
-%\caption{Simulation results for the network.}
-%\label{fig_sim}
-%\end{figure}
+% and the corresponding car ownership trends in
+% Figure~\ref{fig:ukcarsperperson}.
 
-% Note that the IEEE typically puts floats only at the top, even when this
-% results in a large percentage of a column being occupied by floats.
+\begin{figure}[!htp]
+\centering
+\includegraphics[width=\columnwidth]{images/uktransportshare.png}
+\caption{Car ownership trends in the UK}
+\label{fig:uktransportshare}
+\end{figure}
+
+% \begin{figure}[!htp]
+% \centering
+% \includegraphics[width=\columnwidth]{images/ukcarsperperson.png}
+% \caption{Transport share in the UK}
+% \label{fig:ukcarsperperson}
+% \end{figure}
+
+In theory, it is clear that public transport is both technically (in
+terms of emissions per head) and systematically (second-order effects,
+such as congestion, social and economic consequences) superior to
+private transport. However, it is equally apparent that the unit cost
+of converting a percentage of transport users from private to public
+transport increases with conversion. For example, to convert the
+easiest first 10\% of users, a network of urban buses and trains can
+be run cost-effectively and efficiently. The last 10\% of the
+population, however, requires a vast and complex network that operates
+constantly and at high frequencies, and is for all intents and
+purposes, impossible to deliver. As such, it is clear that there is a
+fraction of transport that, for reasons of financial and practical
+limitations, will always remain private transport, and that that
+fraction is not necessarily `small'. Although the UK does not
+currently operate at or even near this `minimum' private transport
+threshold, acknowledgement that any such unavoidable level exists is
+not popular politically.
+
+As such, in private transport, there is an idea that any impacts, both
+technically and systematically, should be mitigated. This is a popular
+and high-growth area of research; within the last 20 years, personal
+automobile efficiency has improved drastically. Today, alternate
+powertrains such as electric motors, more efficient and less polluting
+that internal combustion engines, are not only technically viable, but
+a key component of many automotive giant’s strategies; the
+aforementioned BMW i Series range is a high profile example of
+significant strategic investment in the transition of retail
+automobiles to EVs. However, it is clear that drivetrain transitions
+alone cannot deal with the systematic drawbacks of private transport,
+such as congestion, special requirements of parking and social
+isolation of the have-cars and have-nots. Technological suggestions
+for these problems do exist, such as driverless, automated cars and
+personal rapid transit (PRT) schemes, but both are a long way from a
+ready-to-rollout status. Crucially, for every change that improves the
+negative impact of private transport, or more accurately, convincingly
+depicts itself as doing so, private transport is further legitimised,
+and efforts to transfer journeys to public transport are weakened.
+
+Political action is thus limited by this simple catch-22: public
+transport is the ideal, but impractical to reach saturation. Private
+transport is undesirable, but unavoidable, yet efforts to improve it
+also make it more prevalent. Mathematically, you might argue there
+thus exists an optimum -- a level of improvement of private transport
+that, when the reduction in public transport uptake is factored in,
+results in the lowest overall impact in the UK's travel
+emissions. Whether or not this thought experiment is a fair
+simplification, there is a more logical and pragmatic answer -- that
+transport strategy should be considered on a holistic level, and the
+interaction between private and public transport held as
+crucial. There are many more secondary effects that could also be
+considered from this first deduction; not all improvements to private
+transport reduce public transport uptake to the same degree; nor is
+the UK a homogenous mass of two types of transport user. Attempts to
+penalise private transporters who could transfer to public transport
+and do not, such as through taxation, frequently damages those who
+cannot transfer.
+
+Ignorance to these wider socio-cultural relationships, brought about
+by the private/public segmentation of both traditional transport
+strategies and the segmentation of organisations tasked with dealing
+with each, allows these undesirable, unintended consequences to
+continue and prevent technological and political progress.
+
+\subsection{Electric Vehicles}
+
+Electric vehicles (EVs) can offer an environmentally sustainable
+alternative to internal combustion engines (ICEs). EVs are powered by
+a battery which is charged through the electricity network. Alongside
+reducing carbon emissions, EVs can also improve noise and air quality,
+provide savings for consumers and reduce dependency on specific fossil
+fuels~\cite{postevs:2010}. It is widely accepted that an alternate
+energy source is necessary for the UK transport network in the near
+future, and electrification is currently considered the most likely
+choice.  The Department for Transport (DfT) predicts that by 2020
+there will be 1.5m EVs on the road in the UK~\cite{dft:2008}.
+
+There are a number of barriers to the adoption of EVs. Many of these
+are psychological, for example range anxiety; consumers worry that
+they may `run out of juice'~\cite{oflev:2011}. However, 95\% of all
+vehicle journeys in the UK are less than 25 miles
+(40km)~\cite{oflev:2011}, only a small proportion of existing EV's
+range. Other consumer barriers include: concerns over battery
+lifetimes, the risk associated with investing in a relatively new
+technology and the current, comparatively large capital investment
+required to purchase an EV.
+
+Personal vehicles and small commercial vehicles account for 13\% of
+all UK carbon emissions~\cite{lumsden:2012}; by transitioning to EVs
+in these sectors, the overall volume of emissions could be
+significantly reduced.  Due to the nature of UK car culture, fleet
+vehicles accounted for 63\% of all new vehicle sales in the UK in 2011
+and as such are a dominant influence on the type of cars for sale in
+the used market~\cite{fleets:2012}. There is a growing trend for EVs
+in fleet vehicles, so it is likely a tangible used EV market will
+start to emerge in the next five years.
+
+Electrified public transport is still a fairly new area of
+interest. Hybrid buses have been introduced in a number of cities to
+reduce emissions, with London having 368 hybrid diesel-electric buses
+in operation in 2014~\cite{tfl:2009}. In January 2014, the first UK
+inductive charging all-electric buses were introduced into service in
+Milton
+Keynes\footnote{\url{http://www.bbc.co.uk/news/technology-25621426}}. The
+UK Government is supporting investment in low carbon bus technology
+through the Green Bus
+Fund\footnote{\url{https://www.gov.uk/government/publications/details-of-the-green-bus-fund}},
+as well as many other general, sustainability-targeted funding
+packages.
+
+\subsection{Smart Technologies}
+
+Smart technology is a new and rapidly growing concept; as such, a
+consensus of its exact definition has yet to be reached. However,
+interviewed academics~\cite{elecgen:2013}, industrial
+experts~\cite{buscher:2014} and a number of
+papers~\cite{komninos:2002,arup-et-al:2011,harrison+abbottdonnelly:2011,batty-et-al:2012}
+identify the fundamental, unifying theme as the use of data. The rise
+of interest in data-based possibilities for the built environment has
+been fuelled by three key developments:\\
+
+\begin{enumerate}
+\item {\textbf{The rapid increase in the production of data.}}
+  Computer scientists have stated that many social trends, such as the
+  rise of Internet connectivity (specifically high-speed mobile
+  Internet), and social networking, has caused an exponential
+  increase in the production of data. Today, almost 30 petabytes of
+  data exists on Facebook alone\footnote{\url{http://www.theguardian.com/news/datablog/2014/feb/04/facebook-in-numbers-statistics}}. The abundance of such a
+  resource has spurred consideration as to its potential use.
+\item {\textbf{The rapid increase in the ability to collect specific
+      data.}} Improvements in sensor and communication technology have
+  meant the installation of data collection devices is now both financially and
+  spatially practical. The development of mesh networks, the notion of deploying equally
+  spaced sensors across a large area to give a high resolution of data
+  or the ability to track the movement of entities. Furthermore, the
+  Internet of Things, the notion that with the deployment of
+  connected sensors on existing everyday objects, interactions that
+  are currently machine-human-machine could simply be machine-machine,
+  allowing many such processes to be faster, cheaper and  more
+  convenient. 
+\item {\textbf{Improvements in data storage and processing.}} Following
+  Moore’s Law/Kryder's Law, storage is far cheaper than ever before, allowing
+  this vast data to be stored. Processing power is also much greater,
+  allowing complex trends from data on scales so vast as a city to be
+  processed and actioned fast enough to be considered `live'.
+\end{enumerate}
+
+Many such sources refer to data as a raw material (perhaps even an
+emerging `utility', joining electricity, gas, water and telephone
+networks), creating the notion that data can and should be used as an
+input to a business model that is then translated to value. In recent
+years the practicalities of collecting and processing a vast quantity
+of high value data of a system, as discussed, has developed
+significantly~\cite{arup-et-al:2011}. Such a system could be a house,
+business or city, with data being the movement of containers in a
+factory, the journeys of cars across an urban network, or the use of
+electricity residentially. The sheer volume of data available for such
+a large range of systems has led to the term `big data’, now commonly
+used to refer to a datastream large enough to make smart technologies
+feasible~\cite{hollands:2008,ibmsmartcities:2009,ciscoconcities:2010}.
+
+Smart technologies are usually defined as microsystems within these
+larger systems that carry out an action based on the collected
+data. Smart technologies are typically based on an existing action
+that, it is theorised, could be completed more effectively -- as well
+as sustainably~\cite{cosgrave-et-al:2014} -- with the assistance of
+data~\cite{arup-et-al:2011}. More effectively can be interpreted as:
+
+\begin{itemize}
+\item {\textbf{Faster:}} such as using traffic distribution to update
+  signs in real time, rather than the slow, reactive methods
+  by which traffic is informally advised against taking certain
+  routes.
+\item {\textbf{Fairer:}} such as smart pricing for grid electricity,
+  whereby data on the national grid is used to charge those who
+  use electricity when demand is highest (when the cost of generation
+  is highest), a cost that is reflective of the cost to supply the
+  electricity to them. 
+\item {\textbf{At lower cost:}} whereby flow sensors in water pipes
+  can be used to deduce the exact location of leaks when they emerge,
+  rather than expensive and time-consuming visual inspections.
+\item {\textbf{Without human interaction:}} whereby more interactions
+  can be machine-machine rather than using a human intermediary, such
+  as when an inspection robot is automatically sent to the site of a
+  machine malfunction in a factory, rather than a human noticing the
+  fault and piloting the robot manually. This can improve instances of
+  both human error, hesitation and subjective judgment (for better or
+  for worse). 
+\end{itemize}
+
+Smart cities are urban areas in which smart technologies are taken a
+step further, and different city sub-systems such as waste disposal
+and water provision are integrated. In practice, this results in smart
+technologies using data streams from neighbouring
+systems~\cite{shapiro:2006}. For example, in a theoretical world where
+there is near saturation of EVs, preemptive car journey data could be
+used to adjust the national grid's generation so as to ensure the
+correct amount of power is generated for the EVs recharging at the
+time they are expected home. Such intelligence allows for more
+efficient generation, avoiding the short-notice generation that is
+currently employed~\cite{tsoukalas:2008}.
+
+\section{The Role of Smart Technology}
+
+\subsection{Approach}
+
+We will now consider the role of smart technology within the future’s
+transport strategy, specifically integrated private/public and
+electric transport solutions for a range of suggested concepts in
+existing literature covering smart technologies of a number of
+different industries, we will consider the nature and operation of
+each in the wider smart transport context.
+
+% Throughout this exploration, an appropriate valuation method will be
+% chosen depending on the nature of the technology in question. For each
+% example we will speculate the first year value of the technology,
+% commenting on the total lifetime value later on.
+
+For the purposes of this study we will consider the benefits of these
+smart technologies specifically from a private sector business case
+viewpoint; that is to say, primarily the financial and economic
+benefit they could bring (although they also have significant social,
+political and environmental benefits).
+
+\subsection{Cars}
+
+Standard car hire industry practice is to operate a maintenance regime
+that involves inspection above the recommended frequency, designed to
+reduce the time between inspections when the car may suffer from a
+freak failure. Freak failures are defined as those whereby there was
+no indication at the last inspection that the car would fail before
+the next testing.
+
+Using health and usage monitoring sensors attached to key components
+in the car, the car hire operators can get an understanding of level
+of car mechanical state close to that offered by an inspection, but
+constantly and in real time. This could drastically reduce the rate of
+freak failures and, if the sensor coverage was sufficient enough,
+potentially allow reductions in human servicing.  This concept is
+already well understood in industrial contexts and frequently
+realised. The value from this system comes from improved reliability
+and efficiency of the car hire service.
 
 
-% An example of a double column floating figure using two subfigures.
-% (The subfig.sty package must be loaded for this to work.)
-% The subfigure \label commands are set within each subfloat command,
-% and the \label for the overall figure must come after \caption.
-% \hfil is used as a separator to get equal spacing.
-% Watch out that the combined width of all the subfigures on a 
-% line do not exceed the text width or a line break will occur.
-%
-%\begin{figure*}[!t]
-%\centering
-%\subfloat[Case I]{\includegraphics[width=2.5in]{box}%
-%\label{fig_first_case}}
-%\hfil
-%\subfloat[Case II]{\includegraphics[width=2.5in]{box}%
-%\label{fig_second_case}}
-%\caption{Simulation results for the network.}
-%\label{fig_sim}
-%\end{figure*}
-%
-% Note that often IEEE papers with subfigures do not employ subfigure
-% captions (using the optional argument to \subfloat[]), but instead will
-% reference/describe all of them (a), (b), etc., within the main caption.
-% Be aware that for subfig.sty to generate the (a), (b), etc., subfigure
-% labels, the optional argument to \subfloat must be present. If a
-% subcaption is not desired, just leave its contents blank,
-% e.g., \subfloat[].
+\subsection{Live Air Quality Management}
+
+Bristol (a major city in the west of England) monitors air quality by
+semi-permanent installations at specific areas around the city.  In a
+typical UK urban environment, particularly one with no major industry,
+air quality is primarily determined by road transport emissions.  As
+such, if it was possible to understand the overall distribution of
+vehicles in the city at any one point in time, it would be possible to
+estimate, with relative accuracy, the air quality throughout the
+entire city. At present, in some areas of the city, car flow is
+monitored by car-recognising cameras. These however are sparse and
+expensive to install.
+
+The car hire EVs are likely to use the same roads to the same
+intensity of other cars on the road at that time. In other words,
+their road routing behaviour is likely to be very similar, if not
+identical, to the rest of the cars on the road at that time. As such,
+a critical resolution of hire cars is necessary to deduce an estimate
+of the wider car resolution. We will examine critical resolutions in
+detail at the end of this section.  The value from this system comes
+from the created market of vending car locational data to Bristol City
+Council.
+
+% \begin{figure}[!htp]
+% \centering
+% \includegraphics[width=\columnwidth]{images/dontchokebristol.png}
+% \includegraphics[width=\columnwidth]{images/airqualityvt.png}
+% \caption{Air quality value tree}
+% \label{fig:airqualityvt}
+% \end{figure}
+
+\subsection{Live Accident Reporting}
+
+Similar to in-car monitoring for maintenance, vehicles can also be
+fitted with impact sensors, altering the car hire management that a
+car has suffered a serious crash, allowing them to contact the
+authorities.  Due to the significant improvement in road safety
+regulations, mobile phones have already improved road transport since
+the mid-2000s, and the relative rarity of isolated crashes, it is
+unlikely the value case here can be made from a practical improvement
+in fatality rates from car hire use.
+
+Instead, it is probable that the main benefit of such a system would
+be perceptual – improved piece of mind for the customer that a system
+will be in place to constantly evaluate their safety.  However, the
+increase in service from such a technology yields a relatively
+insignificant revenue stream.
+
+\subsection{User Journey Data}
+
+One of the fastest growing applications of data is within retail and
+leisure industries.  Many organisations using big data have shown that
+advertisement conversion rates (the percentage of individuals who act
+on an advertisement they have seen) can be greatly increased by
+accurate targeting of the advert to the correct
+recipient. Traditionally, this would be done by geographical area or
+age group. More recently however, with the ability to better express
+to the world your other preferences and personal situation through
+social media networks, it is possible to advertise to people of a
+specific relationship status, group affiliation or fans of similar
+services. Facebook and Spotify are prime examples of how specific
+demographic, geographic and chronological conditions are set to not
+only able to return high conversion rates, and thus, expensive
+advertising to customers, but also, as a result, able to vend smaller
+advertising exposures as a tangible product. This means a greater
+number of clients, and thus a more robust business model.
+
+In the car hire, two potential avenues of value creation are possible.
+Firstly, information on the journeys of car hire individuals alongside
+the time they drive and their personal characteristics, could be
+vended in a data package to companies in retail and leisure
+industries. These companies would have otherwise had to undertake
+expensive customer research, thus the value is clear. However, this is
+very likely to suffer from extremely low consent rates, as it would
+perhaps be the most invasive form of personal data harvesting
+currently in existence. Alternatively, consent rates may well be much
+higher if the data was instead used to form targeted advertising at
+point of booking. This way, organisations could offer discounts to
+individuals it feels it may be able to convert to using their business
+on the trip, incentivising them to consent to the scheme. Furthermore,
+this could be done dynamically through the common advanced display
+systems that are available in modern automobiles. The revenue stream
+here will be two fold: the advertising organisations will pay for the
+in-car advertising rights, and individuals would be more inclined to
+travel through the hire car if special offers would be available.  The
+primary value from this system comes from the vending of targeted,
+data-based advertising of in-car and pre-booking advertisement to
+local businesses.
 
 
-% An example of a floating table. Note that, for IEEE style tables, the
-% \caption command should come BEFORE the table and, given that table
-% captions serve much like titles, are usually capitalized except for words
-% such as a, an, and, as, at, but, by, for, in, nor, of, on, or, the, to
-% and up, which are usually not capitalized unless they are the first or
-% last word of the caption. Table text will default to \footnotesize as
-% the IEEE normally uses this smaller font for tables.
-% The \label must come after \caption as always.
-%
-%\begin{table}[!t]
-%% increase table row spacing, adjust to taste
-%\renewcommand{\arraystretch}{1.3}
-% if using array.sty, it might be a good idea to tweak the value of
-% \extrarowheight as needed to properly center the text within the cells
-%\caption{An Example of a Table}
-%\label{table_example}
-%\centering
-%% Some packages, such as MDW tools, offer better commands for making tables
-%% than the plain LaTeX2e tabular which is used here.
-%\begin{tabular}{|c||c|}
-%\hline
-%One & Two\\
-%\hline
-%Three & Four\\
-%\hline
-%\end{tabular}
-%\end{table}
+\subsection{Smart Pricing Congestion Control}
+
+An alternate method to control congestion is to bring economic forces
+to bare on when an individual chooses to travel. In practice, the car
+hire smart pricing would include an additional influence based on the
+expected congestion of the roads at point of travel, attempting to
+deter travel that would exacerbate the congestion.  Ultimately, this
+requires the highest critical resolution of hire cars of all the smart
+technologies addressed here, by some margin, perhaps at least
+25\%. Furthermore, many ethical dilemmas exist. If the resolution is
+lower than 50\%, it might be extremely unpopular that the most
+sustainable cars are essentially `taxed' into staying off the roads,
+while the unsustainable private transport is free to do as it
+wishes. Although such a pricing technique would not be unlike current
+train pricing structures, the freedom to use a car when one desires is
+heavily ingrained in Western society, and it's likely any such pricing
+on that logic would need to be mild.
 
 
-% Note that the IEEE does not put floats in the very first column
-% - or typically anywhere on the first page for that matter. Also,
-% in-text middle ("here") positioning is typically not used, but it
-% is allowed and encouraged for Computer Society conferences (but
-% not Computer Society journals). Most IEEE journals/conferences use
-% top floats exclusively. 
-% Note that, LaTeX2e, unlike IEEE journals/conferences, places
-% footnotes above bottom floats. This can be corrected via the
-% \fnbelowfloat command of the stfloats package.
+\subsection{Charging Habits}
+
+Similar to the understanding of how individuals operate electric cars,
+the UK's National Grid\footnote{\url{http://www.nationalgrid.com/uk/}}
+would be interested in how individuals charge their EVs, as this will
+heavily influence how the grid develops in the next 50 years.
+Although typically our EV's have predetermined charging patterns, EVs
+that are taken on multi-day rentals will most likely require charging
+to address the specific needs of the hirer. This provides a valid
+insight into the charging habits of EV users. The value from this
+system comes from the created market of vending charging habits to the
+UK's National Grid.
 
 
+\subsection{Car Positional Data}
 
-% if have a single appendix:
-%\appendix[Proof of the Zonklar Equations]
-% or
-%\appendix  % for no appendix heading
-% do not use \section anymore after \appendix, only \section*
-% is possibly needed
+One of the issues with an electric car hire scheme, as discussed
+previously, is the increased layover time incurred by charging. This
+has been shown to be manageable in its standard incarnation, but
+certain instances could exacerbate this weakness, or simply be a
+problem for car hire management schemes in general. For example the
+following situations within a booking could threaten the ability to
+service later bookings:
 
-% use appendices with more than one appendix
-% then use \section to start each appendix
-% you must declare a \section before using any
-% \subsection or using \label (\appendices by itself
-% starts a section numbered zero.)
-%
+\begin{enumerate}
+\item {\textbf{Inclement driving conditions:}} EVs are susceptible to
+  have sizeable variation of energy use per mile depending on driving
+  conditions. Cold weather can have negative effects on electric
+  torque. Additionally, heaters in EVs are unable to use the waste
+  heat that a combustion car generates, so additional power from the
+  battery is required; as much as 15\% in certain
+  circumstances~\cite{postevs:2010}. Live
+  battery data can allow the car hire management system to know the
+  exact power use of a journey.
+\item {\textbf{Congestion:}} Traffic can significantly decrease the
+  efficiency of the EV; although the effect is lessened when compared
+  to a combustion car as EV engine can turn off and on
+  seamlessly. More significantly, congestion greatly increases the
+  journey time. Car speed data and GPS location data can inform the
+  booking management system when a car is stuck in traffic.
+\item {\textbf{Satellite navigation:}} If an individual decides to take a longer
+  route home, or even a route of the same duration of time but a
+  greater use of charge (such as a longer motorway route compared to a
+  slower trunk route). Live satellite navigation data can inform the booking
+  management system the minute the drive has this intention. 
+\end{enumerate}
 
+Pre-warning of any of these unforeseen circumstances can allow
+immediate shifting of the booking system to reflect increased hire
+duration or increased charging duration. This will prevent people
+booking in a time when the car will now be driving/charging. The value
+from this system comes from improved reliability of the car hire
+service.
+
+\subsection{Barriers and Enablers}
+
+Each of these data streams and their associated benefits require
+capital and operational expenditure to put in place the infrastructure
+and staff that would facilitate the systems. Even without estimating
+this, it can be seen that a number of technologies are immediately
+unable to be financially viable, at least in isolation. Needless to
+say, this theoretical value is not instantly realisable. Considerable
+barriers exist to not only the creation of the value, but also the
+smart technologies themselves. At present legislation in the UK around
+renewables and EVs is under general scrutiny and review. Feed-in
+Tariffs (FITs) and other payouts for balancing services are
+complicated and have questionable longevity and there is little
+governmental impetus in the UK for smart pricing on a balancing
+level. Considerable psychological inertia also exists in some
+businesses as to the idea of data as a source of value.  The issue of
+critical resolution is also present --
+Figure~\ref{fig:bristolcardensity} demonstrates varying accuracy from
+predicting traffic levels at different sensor penetration.
+
+
+\begin{figure}[!htp]
+\centering
+\includegraphics[width=\columnwidth]{images/bristolcardensity.png}
+\caption{MATLAB modelling of the accuracy of extrapolating to find
+  congestion from EV cars in Bristol, UK}
+\label{fig:bristolcardensity}
+\end{figure}
+
+
+\section{Conclusions} 
+
+\begin{figure}[!htp]
+\centering
+\includegraphics[width=\columnwidth]{images/sankey.png}
+\caption{A Sankey diagram of the data value and confidence, along with
+  single site vs. multisite implementations}
+\label{fig:sankey}
+\end{figure}
+
+It is clear there is great variation in the nature and quantity of
+value in smart technologies with short term EV hire. These are
+presented in Figure~\ref{fig:sankey}. As a general rule, there are
+three categories: 
+
+\begin{enumerate}
+\item Firstly, those that have the greatest benefit but are also the
+  most speculative, having the highest critical masses and requiring
+  the greatest stakeholder buy-in. However, their benefit is
+  extreme. These also have the highest quantity of non-financial
+  benefit, typically environmental, which is often equivalent to, or
+  in some cases higher, than the economic and financial benefits. These
+  are typified by the smart pricing congestion control and the dynamic
+  traffic routing. Although there is little probability that this
+  group will be implemented in the near future, the significant potential
+  cannot be ignored, and would serve well as a long term agenda for
+  local council, be it with implementation through a smart transport hub or
+  elsewhere.
+\item Secondly, a middle group, with moderate benefit whose
+  speculation is somewhat less, but typically relies on a small, niche
+  market for vending, and as such hinges significantly on this for any
+  value at all. Driving styles is a typical examples of this. While
+  there is some variation in the group -- spin off elements such as the
+  journey data, advertising approach fairs much better -- it is
+  difficult to label these as a quality. How UK law changes with respect
+  to data use, as well as how contract culture changes with respect to
+  data transactions will have a great influence. Many local
+  governments or devolved city regions, including Bristol, are
+  aspiring to wider open data initiatives, a
+  system where similar data sets are freely available (and reusable),
+  and the data is realised through the new businesses that open as a result. This
+  stands, at least in some lights, in contrast to this category's
+  technologies. 
+\item Thirdly, and bucking the trend, is a group with moderate
+  benefit, but whose speculation is low and requires only internal
+  participation. This third group, typified by the smart pricing and
+  car component monitoring, stand out as having the greatest
+  appeal. 
+\end{enumerate}
+
+Ultimately, there is considerable potential for smart technologies to
+transform not only the profitability of short term EV hire schemes,
+but the wider societal benefit of the concept. Which of the above
+segments are most appropriate to focus on will depend on the exact
+context and buy-in from external stakeholders. It is equally apparent,
+however, that the world has some considerable catching up to do --
+socio-culturally, legislatively and psychologically -- if any of these
+concepts are to be easily implemented, let alone the concept of the
+short-term EV and its benefits thriving across the globe.
 
 % \appendices
 % \section{Proof of the First Zonklar Equation}

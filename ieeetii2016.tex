@@ -23,7 +23,7 @@
 % not capitalized unless they are the first or last word of the title.
 % Linebreaks \\ can be used within to get better formatting as desired.
 % Do not put math or special symbols in the title.
-\title{Smart Data-Harnessing for Financial Value in Short-Term Hire Electric Car Schemes}
+\title{Digitally-enabled, as-a-Service, Electric Vehicles: Exploring the `TriOpt' of Private Transport}
 %
 %
 % author names and IEEE memberships
@@ -35,8 +35,7 @@
 % was not built to handle multiple paragraphs
 %
 
-% as per SOSE2015 paper...
-\author{Peter~Cooper, Tom~Crick and~Theo~Tryfonas}% <-this % stops a space
+\author{Peter~Cooper, Theo~Tryfonas and~Tom~Crick}% <-this % stops a space
 %\thanks{}% <-this % stops a space
 % \thanks{M. Shell was with the Department
 % of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta,
@@ -67,7 +66,9 @@
 % The paper headers
 %\markboth{Journal of \LaTeX\ Class Files,~Vol.~14, No.~8, August~2015}%
 \markboth{IEEE Transactions on Industrial Informatics, February~2017}%
-{Shell \MakeLowercase{\textit{Cooper et al.}}: Smart Data-Harnessing for Financial Value in Short-Term Hire Electric Car Schemes}
+{Shell \MakeLowercase{\textit{Cooper et al.}}: Digitally-enabled,
+  as-a-Service, Electric Vehicles: Exploring the `TriOpt' of Private
+  Transport}
 % The only time the second header will appear is for the odd numbered pages
 % after the title page when using the twoside option.
 % 
@@ -83,11 +84,8 @@
 % Remember, if you use this you must call \IEEEpubidadjcol in the second
 % column for its text to clear the IEEEpubid mark.
 
-
-
 % use for special paper notices
 %\IEEEspecialpapernotice{(Invited Paper)}
-
 
 % make the title area
 \maketitle
@@ -95,32 +93,64 @@
 % As a general rule, do not put math, special symbols or citations
 % in the abstract or keywords.
 \begin{abstract}
-In the developed world, two distinct trends are emerging to shake-up
-the current dominance of privately-owned, combustion motor car
-transport. The first is the emergence of the electric powertrain for
-vehicles as an affordable and mass-marketed means of transport. This
-carries with it the potential to address many of the immediate
+Three distinct trends are emerging to shake-up the current dominance
+of privately-owned, unconnected, combustion motor car transport in the
+UK. The first is the emergence of the electric powertrain for vehicles
+as an affordable and mass-marketed means of transport. This carries
+with it the potential to address many of the `pump-to-tire'
 shortcomings of the current paradigm, especially CO2 emissions, air
 and noise pollution. The second is the rise of new hire models of car
-ownership -- the concept of paying for the use of a car as and when
-you need it. This carries with it the potential to address many of the
-existing issues: outlay-induced car use, residential parking and
-social division.  On a similar timescale, we are witnessing the rise
-of smart technologies and smart cities, concepts that use data about
-the state of a system or elements of it to create value.
+ownership -- the concept of paying for the use of a car per single leg
+of a journey. This carries with it the potential to address many of
+existing systematic issues: sunk-cost induced car use, residential
+parking and social division. For the third, we are witnessing the rise
+of `smart city thinking', the concept that increased data and
+connectivity within an urban system can be harnessed to create value,
+including in transport.
 
-There have been relatively few examples of schemes that have combined
-the electric and hire-model concepts, despite the huge potential for
-synergy. Indeed, the majority is against them on both counts -- cars
-are predominantly privately-owned and driven by internal combustion
-engines. Nevertheless, there is significant potential for this to
-change over the coming years.
+At present there is little academic research exploring the potential
+for three-way synergy, despite an emerging evidence base that
+combinations of any two are mutually-beneficial. Indeed, real-world
+examples of tri-fusions are rare: cars are predominantly
+privately-owned, driven by internal combustion engines and very rarely
+`connected' in any digital sense. But we are beginning to see
+commercial initiatives thriving the overlap, such as the rapid growth
+of AutoLib in Paris. This paper thus defines these as the `TriOpt' of
+private transport -- three disruptors that should not be considered in
+isolation but as interacting levers -- an inflection of the `Energy
+Trilemma'.
+
+This paper subscribes to a systems-thinking philosophy, and implements
+a mixed methodology of workshops, interviews and systems dynamics
+modelling drawn from the UK city of Bristol’s `Smart EV Transport Hub'
+project. The objectives are to identify concepts that positively
+combine two or more of these three `Opts' and understand the barriers
+and enablers to these concepts. Subsequently, the use cases are
+evaluated qualitatively for their comparative value, and segmentation
+is undertaken to characterise and generalise groups of concepts to
+inform recommended stakeholder actions. 
+
+In conclusion it is demonstrated that these synergistic overlaps are
+in fact numerous, combine to create significant value in combination
+and so this `TriOpt' notion should be explored further. However, we
+concede the synergistic overlaps may be more significant in overlaps
+that include Smart Cities and Digital Innovation, and
+Mobility-as-a-Service models, than Electric Vehicles; rather than a
+landscape of equal importance as originally hypothesised. Use cases
+our data highlights as being of the greatest value are those that the
+current literature base has explored the least, and can be
+characterised as requiring significant public and private sector
+collaboration. As such it is strongly recommended that public-private
+sector collaboration in private transport, within a context of digital
+innovation, electric vehicles and mobility as a service model, is
+subject to further investigation.
 \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
 \begin{IEEEkeywords}
-Electric Vehicles, Vehicle Hire Models, Smart Technologies, Smart 
-Monitoring, Smart Cities, Big Data, Environmental Impact
+Electric Vehicles, Vehicle Hire Models, Smart Technologies, Smart
+Monitoring, Smart Cities, Big Data, Environmental Impact, Business
+Models, Mobility-as-a-Service 
 \end{IEEEkeywords}
 
 
@@ -158,169 +188,68 @@ Monitoring, Smart Cities, Big Data, Environmental Impact
 % You must have at least 2 lines in the paragraph with the drop letter
 % (should never be an issue)
 
-\IEEEPARstart{T}{he} last decade has demonstrated the current Western
-private transport paradigm has a finite lifespan; a transport culture
-that consists of overwhelmingly privately-owned internal combustion
-engine automobiles is unlikely to survive the next 50 years.
+\subsection{Problem Space}
 
-Two distinct cultural trends are bringing about its demise. Most
-notably is the emergence of electrical motors as the primary alternate
-fuel source in powertrains for automobiles. Almost all of the world's
-major automotive companies have released purpose-designed electric
-cars; some have had made strategic investment in the concept as to
-release an entire electric car range, underpinned by efficient driving
-technologies, for example BMW's i Series and EfficientDynamics
-system\footnote{\url{http://www.bmw.co.uk/en_GB/topics/discover-bmw/efficientdynamics/technologies.html}}.
-The direct environmental benefits of electric cars, lower particulate
-emissions, lower noise emissions and the potential for lower CO2
-emissions, are highly significant. Legislation in many countries is
-acting in two ways: penalising internal combustion engine users, and
-incentivising the purchase of EVs. Electric cars bring with them
-several caveats, however: the capital cost of EVs, predominantly due
-to current battery technology, is yet to be comparable to an
-equivalent internal combustion engine car; the embodied carbon of EVs,
-again due to the battery component, is on average considerably higher
-than an equivalent internal combustion engine, and the generation of
-electricity to meet charging patterns brings with it considerable
-logistical difficulties.
+\IEEEPARstart{A}{growing} literature base is gathering consensus on
+the view that the current Western private transport paradigm has a
+finite lifespan; a transport culture that consists of overwhelmingly
+privately-owned internal combustion engine automobiles is unlikely to
+survive the next 50 years in its current form, in the face of
+economic, social, and environmental pressures (Lerner, 2011)
+(Parkhurst, 2011) (Shergold, 2016) (Van Audenhove, 2014).  Several
+distinct trends have emerged a as potential disruptors in existing
+research. Three in particular are identified and focused upon within
+this paper.  Firstly, the emergence of electrical motors as the
+primary alternate powertrain for private automobiles [REF1]. [REF2].
+Secondly -- and more in its infancy -- the trend of transitions to new
+car use models, which is regularly referred to within the collective
+term of `Mobility as a Service' (Transport Systems Catapault , 2016).
+A third -- the broadest and most in its infancy -- the emergence of
+the smart city theorem. This capitalizes on the use of systems that
+harness the opportunities increased data and connectivity present to
+provide value (Townsend, 2013) (IBM, 2014) where disruption to private
+transport, measured on any one of these individual trends is, at
+present, slow. Electric cars only make up a negligible share of the UK
+car market (with limited charging infrastructure outside of major
+urban areas) [2]; short-term hire transport models have yet to be
+proved at a significant scale in the UK, beyond simpler transport
+situations, such as bicycles[REF3]; and smart cities are, in many
+cases, little more than a long term strategic aspiration, with some
+instances of demonstrators, most of which are too early in their
+lifetime to be able to provide any substantial conclusions about the
+value of data.
 
-More in its infancy is the trend of transitions in car use models. In
-other modes of private transport, predominantly bike use, an
-increasing number of users are opting to participate in short term
-hire models of use, particularly in urban contexts. Rather than baring
-the capital and logistical cost of owning a bike, individuals hire the
-bike for a nominal fee from a given node near their origin, complete
-their journey, and return the bike to a node near their
-destination. Once seen as radical, examples such as London's cycle
-hire (a.k.a ``Boris Bike'')
-scheme\footnote{\url{http://www.tfl.gov.uk/modes/cycling/barclays-cycle-hire}}
-demonstrated not only the feasibility of the business model, but also
-the efficacy of the indirect benefits, illustrated by significant
-increase in cycling in the city.
-
-A third, more generalised trend in societal organisation is the
-emergence of the smart city theorem. This capitalises on the use of
-`smart technologies', systems that harness opportunities data presents
-to provide value; in the smart city theorem this cuts across city
-system boundaries. In other words, the data from one particular
-aspect, such as waste disposal, not only informs the operation of
-waste disposal, but also, for example, influences how the road system
-operates during waste collection hours.
-
-However, transition is, at present, slow. Electric cars only make up a
-negligible share of the UK car market (with limited infrastructure
-outside of major urban areas), short-term hire transport models have
-yet to be proved beyond simpler transport situations, such as
-bicycles, and smart cities are, in many cases, little more than a long
-term strategic aspiration, with some instances of demonstrators, most
-of which are too early in their lifetime to be able to provide any
-real conclusions.
-
-The actions of policy makers in the next 10 years will dictate
-how much these trends are harnessed, encouraged or ignored, and
-ultimately how the UK's transport culture changes as a result.
-
-
-\section{UK Policy Context}
-
-Politically, the UK's transport strategy lacks resolve and strategic
-planning. A heavily departmentalised, part-privatised transport system
-lacks consistent objectives, agendas or priorities. Multimodal travel
-design is attempted coarsely, with new transport systems being
-overlaid on the old, with little foresight or retrospective
-adjustment.
-
-Over the last 60 years, transport journey makeup has transitioned
-rapidly from public transport-dominated to a private
-transport-dominated network, stabilising at the end of the 2010
-decade. Vocal, anti-automotive political agendas, global recession and
-rising oil prices have all emerged since as powerful, anti-private
-transport influences. However, they have done little to reduce private
-transport, with transport behaviours appear largely unchanged, tending
-instead to a marginally lower equilibrium level today. This is
-displayed in Figure~\ref{fig:uktransportshare}, contextualised by the
-historical car ownership trends (cars per person in the UK): 0.004
-(1909), 0.08 (1950) and 0.55 (2012).
-
-% and the corresponding car ownership trends in
-% Figure~\ref{fig:ukcarsperperson}.
+Some of the most successful disruptive private transport initiatives
+of recent times can however often be observed combining two or three
+of these opportunities. AutoLib, for example is one such case
+study[REF4]. The Paris-based EV car hire scheme offers one-directional
+trips around the city and since 2011 has already grown to over 500,000
+members and 4,000 cars. Tesla Motors have also heavily emphasized new
+business models enabled by data and the role of new ownership models
+in their latest corporate strategy release (Musk, 2016). Existing
+literature has extensively examined each trend in its isolation, and
+to a limited degree there is exploration of combinations of two
+(Graham Parkhurst, (in draft)), but there is almost no consideration
+of triple-overlaps (see Figure~\ref{fig:triopt}), nor of the notion of
+synergy between the three trends as a principal. The idea of three
+significant issues needing to be considered in conjunction with one
+another is not a radical concept however, as seen in the inverse, but
+principally similar, `energy trilemma' [REF4a].  This paper will focus
+on investigating the manifestations of the overlaps of these three
+opportunities within the context of the city of Bristol in the UK.
 
 \begin{figure}[!htp]
 \centering
-\includegraphics[width=\columnwidth]{images/uktransportshare.png}
-\caption{Car ownership trends in the UK}
-\label{fig:uktransportshare}
+\includegraphics[width=\columnwidth]{images/triopt.png}
+\caption{The proposed `Tri-Opt' of positive opportunities to disrupt
+  the private sector transport paradigm in developed countries. Areas
+  of double overlap correspond to a perception of the strengths and
+  weaknesses in these combinations, as presented in the literature
+  reviewed; the area of triple overlap is the stated hypothesis for
+  this research.}
+\label{fig:triopt}
 \end{figure}
 
-% \begin{figure}[!htp]
-% \centering
-% \includegraphics[width=\columnwidth]{images/ukcarsperperson.png}
-% \caption{Transport share in the UK}
-% \label{fig:ukcarsperperson}
-% \end{figure}
-
-In theory, it is clear that public transport is both technically (in
-terms of emissions per head) and systematically (second-order effects,
-such as congestion, social and economic consequences) superior to
-private transport. However, it is equally apparent that the unit cost
-of converting a percentage of transport users from private to public
-transport increases with conversion. For example, to convert the
-easiest first 10\% of users, a network of urban buses and trains can
-be run cost-effectively and efficiently. The last 10\% of the
-population, however, requires a vast and complex network that operates
-constantly and at high frequencies, and is for all intents and
-purposes, impossible to deliver. As such, it is clear that there is a
-fraction of transport that, for reasons of financial and practical
-limitations, will always remain private transport, and that that
-fraction is not necessarily `small'. Although the UK does not
-currently operate at or even near this `minimum' private transport
-threshold, acknowledgement that any such unavoidable level exists is
-not popular politically.
-
-As such, in private transport, there is an idea that any impacts, both
-technically and systematically, should be mitigated. This is a popular
-and high-growth area of research; within the last 20 years, personal
-automobile efficiency has improved drastically. Today, alternate
-powertrains such as electric motors, more efficient and less polluting
-that internal combustion engines, are not only technically viable, but
-a key component of many automotive giant’s strategies; the
-aforementioned BMW i Series range is a high profile example of
-significant strategic investment in the transition of retail
-automobiles to EVs. However, it is clear that drivetrain transitions
-alone cannot deal with the systematic drawbacks of private transport,
-such as congestion, special requirements of parking and social
-isolation of the have-cars and have-nots. Technological suggestions
-for these problems do exist, such as driverless, automated cars and
-personal rapid transit (PRT) schemes, but both are a long way from a
-ready-to-rollout status. Crucially, for every change that improves the
-negative impact of private transport, or more accurately, convincingly
-depicts itself as doing so, private transport is further legitimised,
-and efforts to transfer journeys to public transport are weakened.
-
-Political action is thus limited by this simple catch-22: public
-transport is the ideal, but impractical to reach saturation. Private
-transport is undesirable, but unavoidable, yet efforts to improve it
-also make it more prevalent. Mathematically, you might argue there
-thus exists an optimum -- a level of improvement of private transport
-that, when the reduction in public transport uptake is factored in,
-results in the lowest overall impact in the UK's travel
-emissions. Whether or not this thought experiment is a fair
-simplification, there is a more logical and pragmatic answer -- that
-transport strategy should be considered on a holistic level, and the
-interaction between private and public transport held as
-crucial. There are many more secondary effects that could also be
-considered from this first deduction; not all improvements to private
-transport reduce public transport uptake to the same degree; nor is
-the UK a homogenous mass of two types of transport user. Attempts to
-penalise private transporters who could transfer to public transport
-and do not, such as through taxation, frequently damages those who
-cannot transfer.
-
-Ignorance to these wider socio-cultural relationships, brought about
-by the private/public segmentation of both traditional transport
-strategies and the segmentation of organisations tasked with dealing
-with each, allows these undesirable, unintended consequences to
-continue and prevent technological and political progress.
 
 \subsection{Electric Vehicles}
 
@@ -329,234 +258,492 @@ alternative to internal combustion engines (ICEs). EVs are powered by
 a battery which is charged through the electricity network. Alongside
 reducing carbon emissions, EVs can also improve noise and air quality,
 provide savings for consumers and reduce dependency on specific fossil
-fuels~\cite{postevs:2010}. It is widely accepted that an alternate
-energy source is necessary for the UK transport network in the near
-future, and electrification is currently considered the most likely
-choice.  The Department for Transport (DfT) predicts that by 2020
-there will be 1.5m EVs on the road in the UK~\cite{dft:2008}.
+fuels [1]. It is widely accepted that an alternate energy source is
+necessary for the UK transport network in the near future, and
+electrification is currently considered the most likely choice. The
+Department for Transport predicts that by 2020 there will be 1.5m EVs
+on the road in the UK [2].
+
+Most of the world's major automotive companies have released
+purpose-designed electric cars (as a opposed to `engine-swap-out'
+models); some have gone so far as to make significant strategic
+investment in the concept by releasing an entire electric car range,
+for example BMW's i Series range. The direct `pump-to-tire' environmental
+benefits of electric cars, lower particulate emissions, lower noise
+emissions and lower operational CO2 emissions, are highly
+significant. Legislation in many countries is acting in two ways:
+penalizing internal combustion engine users, and incentivizing the
+purchase of EVs. Electric cars bring with them several caveats,
+however: the capital cost of EVs, predominantly due to current battery
+technology, is yet to be comparable to an equivalent internal
+combustion engine car; the embodied carbon of EVs, again due to the
+battery component, is on average considerably higher than an
+equivalent internal combustion engine, and the generation of
+electricity to meet charging patterns is theorized to bring with it
+considerable logistical difficulties on national grids [REF5].
 
 There are a number of barriers to the adoption of EVs. Many of these
 are psychological, for example range anxiety; consumers worry that
-they may `run out of juice'~\cite{oflev:2011}. However, 95\% of all
-vehicle journeys in the UK are less than 25 miles
-(40km)~\cite{oflev:2011}, only a small proportion of existing EV's
-range. Other consumer barriers include: concerns over battery
-lifetimes, the risk associated with investing in a relatively new
-technology and the current, comparatively large capital investment
-required to purchase an EV.
+they may `run out of juice' [3]. However, 95\% of all vehicle journeys
+in the UK are less than 25 miles (40km) [3], only a small proportion
+of existing EV's range. Other consumer barriers include: concerns over
+battery lifetimes, the risk associated with investing in a relatively
+new technology and the current, comparatively large capital investment
+required to purchase an EV.  Personal vehicles and small commercial
+vehicles account for 13\% of all UK carbon emissions [4]; by
+transitioning to EVs in these sectors, the overall volume of emissions
+could be significantly reduced. Due to the nature of UK car culture,
+fleet vehicles accounted for 63\% of all new vehicle sales in the UK
+in 2011 and as such are a dominant influence on the type of cars for
+sale in the used market [5]. There is a growing trend for EVs in fleet
+vehicles, so it is likely a tangible used EV market will start to
+emerge in the next five years.
 
-Personal vehicles and small commercial vehicles account for 13\% of
-all UK carbon emissions~\cite{lumsden:2012}; by transitioning to EVs
-in these sectors, the overall volume of emissions could be
-significantly reduced.  Due to the nature of UK car culture, fleet
-vehicles accounted for 63\% of all new vehicle sales in the UK in 2011
-and as such are a dominant influence on the type of cars for sale in
-the used market~\cite{fleets:2012}. There is a growing trend for EVs
-in fleet vehicles, so it is likely a tangible used EV market will
-start to emerge in the next five years.
 
-Electrified public transport is still a fairly new area of
-interest. Hybrid buses have been introduced in a number of cities to
-reduce emissions, with London having 368 hybrid diesel-electric buses
-in operation in 2014~\cite{tfl:2009}. In January 2014, the first UK
-inductive charging all-electric buses were introduced into service in
-Milton
-Keynes\footnote{\url{http://www.bbc.co.uk/news/technology-25621426}}. The
-UK Government is supporting investment in low carbon bus technology
-through the Green Bus
-Fund\footnote{\url{https://www.gov.uk/government/publications/details-of-the-green-bus-fund}},
-as well as many other general, sustainability-targeted funding
-packages.
-
-\subsection{Smart Technologies}
+\subsection{Digital Innovation and Smart Technologies}
 
 Smart technology is a new and rapidly growing concept; as such, a
 consensus of its exact definition has yet to be reached. However,
-interviewed academics~\cite{elecgen:2013}, industrial
-experts~\cite{buscher:2014} and a number of
-papers~\cite{komninos:2002,arup-et-al:2011,harrison+abbottdonnelly:2011,batty-et-al:2012}
-identify the fundamental, unifying theme as the use of data. The rise
-of interest in data-based possibilities for the built environment has
-been fuelled by three key developments:\\
+interviewed academics [7], industrial experts [8] and a number of
+papers [9]–[12] identify the fundamental, unifying theme as the use of
+data and connectivity to produce value. The rise of interest in
+data-based possibilities for the built environment is regularly cited
+as being fuelled by three key developments:
 
 \begin{enumerate}
 \item {\textbf{The rapid increase in the production of data.}}
-  Computer scientists have stated that many social trends, such as the
-  rise of Internet connectivity (specifically high-speed mobile
-  Internet), and social networking, has caused an exponential
-  increase in the production of data. Today, almost 30 petabytes of
-  data exists on Facebook alone\footnote{\url{http://www.theguardian.com/news/datablog/2014/feb/04/facebook-in-numbers-statistics}}. The abundance of such a
-  resource has spurred consideration as to its potential use.
+Computer scientists have stated that many social trends, such as the
+rise of internet connectivity (specifically high-speed mobile
+Internet), and social networking, has caused an exponential increase
+in the production of data. Today, almost 30 petabytes of data exists
+on Facebook
+alone\footnote{\url{http://newsroom.fb.com/company-info/}}. The
+abundance of such a resource has spurred consideration as to its
+potential use.
 \item {\textbf{The rapid increase in the ability to collect specific
-      data.}} Improvements in sensor and communication technology have
-  meant the installation of data collection devices is now both financially and
-  spatially practical. The development of mesh networks, the notion of deploying equally
-  spaced sensors across a large area to give a high resolution of data
-  or the ability to track the movement of entities. Furthermore, the
-  Internet of Things, the notion that with the deployment of
-  connected sensors on existing everyday objects, interactions that
-  are currently machine-human-machine could simply be machine-machine,
-  allowing many such processes to be faster, cheaper and  more
-  convenient. 
-\item {\textbf{Improvements in data storage and processing.}} Following
-  Moore’s Law/Kryder's Law, storage is far cheaper than ever before, allowing
-  this vast data to be stored. Processing power is also much greater,
-  allowing complex trends from data on scales so vast as a city to be
-  processed and actioned fast enough to be considered `live'.
+data.}} Improvements in sensor and communication technology have meant
+the installation of data collection devices is now both financially
+and spatially practical (Townsend, 2013). The development of mesh
+networks, the notion of deploying distributed sensors across a large
+area, can provide a high resolution or accuracy of data or the ability
+to track the movement of entities. Furthermore, the Internet of
+Things, the notion that with the deployment of connected sensors on
+existing everyday objects, interactions that are currently
+machine-human- machine could simply be machine-machine, allowing many
+such processes to be faster, cheaper and more convenient.
+\item {\textbf{Improvements in data storage and processing.}}
+Following Moore's Law/Kryder's Law, storage is far cheaper than ever
+before, allowing this vast data to be stored. Processing power is also
+much greater, allowing complex trends from data on scales so vast as a
+city to be processed and actioned fast enough to be considered `live'.
 \end{enumerate}
 
 Many such sources refer to data as a raw material (perhaps even an
-emerging `utility', joining electricity, gas, water and telephone
-networks), creating the notion that data can and should be used as an
-input to a business model that is then translated to value. In recent
-years the practicalities of collecting and processing a vast quantity
-of high value data of a system, as discussed, has developed
-significantly~\cite{arup-et-al:2011}. Such a system could be a house,
-business or city, with data being the movement of containers in a
-factory, the journeys of cars across an urban network, or the use of
-electricity residentially. The sheer volume of data available for such
-a large range of systems has led to the term `big data’, now commonly
-used to refer to a datastream large enough to make smart technologies
-feasible~\cite{hollands:2008,ibmsmartcities:2009,ciscoconcities:2010}.
-
-Smart technologies are usually defined as microsystems within these
-larger systems that carry out an action based on the collected
-data. Smart technologies are typically based on an existing action
-that, it is theorised, could be completed more effectively -- as well
-as sustainably~\cite{cosgrave-et-al:2014} -- with the assistance of
-data~\cite{arup-et-al:2011}. More effectively can be interpreted as:
+emerging `utility' (Socrata, 2015), joining electricity, gas, water
+and telephone networks), creating the notion that data can and should
+be used as an input to a business model that is then translated to
+value. In recent years the practicalities of collecting and processing
+a vast quantity of high value data of a system, as discussed, has
+developed significantly [10]. Such a system could be a house, business
+or city, with data being the movement of containers in a factory, the
+journeys of cars across an urban network, or the use of electricity
+residentially. The sheer volume of data available for such a large
+range of systems has led to the term `big data' now commonly used to
+refer to a datastream large enough to make smart value-producing
+systems feasible [13]–[15]. This may involve taking data across
+traditional `silos' [17] [18]. `Creating value' can be interpreted in
+many ways, including the translation of a process to be:
 
 \begin{itemize}
-\item {\textbf{Faster:}} such as using traffic distribution to update
-  signs in real time, rather than the slow, reactive methods
-  by which traffic is informally advised against taking certain
-  routes.
-\item {\textbf{Fairer:}} such as smart pricing for grid electricity,
-  whereby data on the national grid is used to charge those who
-  use electricity when demand is highest (when the cost of generation
-  is highest), a cost that is reflective of the cost to supply the
-  electricity to them. 
-\item {\textbf{At lower cost:}} whereby flow sensors in water pipes
-  can be used to deduce the exact location of leaks when they emerge,
-  rather than expensive and time-consuming visual inspections.
-\item {\textbf{Without human interaction:}} whereby more interactions
-  can be machine-machine rather than using a human intermediary, such
-  as when an inspection robot is automatically sent to the site of a
-  machine malfunction in a factory, rather than a human noticing the
-  fault and piloting the robot manually. This can improve instances of
-  both human error, hesitation and subjective judgment (for better or
-  for worse). 
+\item {\textbf{Faster:}} for example, using traffic data to update
+  signs in real time, rather than the slow, reactive methods by which
+  traffic is informally advised against taking certain routes.
+\item {\textbf{Fairer:}} for example, demand-based pricing for grid
+  electricity, whereby data from the national grid is used to charge
+  those who use electricity when demand is highest (when the cost of
+  generation is highest), a cost that is reflective of the cost to
+  supply the electricity to them, and vice versa in periods of low
+  demand.
+\item {\textbf{At lower cost:}} for example, flow sensors in water
+  pipes can be used to deduce the exact location of leaks when they
+  emerge, rather than expensive and time-consuming visual
+  inspections. [16]
+\item {\textbf{Without human interaction:}} for example, when an
+  inspection robot is automatically sent to the site of a machine
+  malfunction in a factory, rather than a human noticing the fault and
+  piloting the robot manually. This can improve instances of both
+  human error, hesitation and subjective judgment (for better or for
+  worse).
 \end{itemize}
 
-Smart cities are urban areas in which smart technologies are taken a
-step further, and different city sub-systems such as waste disposal
-and water provision are integrated. In practice, this results in smart
-technologies using data streams from neighbouring
-systems~\cite{shapiro:2006}. For example, in a theoretical world where
-there is near saturation of EVs, preemptive car journey data could be
-used to adjust the national grid's generation so as to ensure the
-correct amount of power is generated for the EVs recharging at the
-time they are expected home. Such intelligence allows for more
-efficient generation, avoiding the short-notice generation that is
-currently employed~\cite{tsoukalas:2008}.
+While there is acknowledgement that it is not without ethical and
+societal concerns (Bimber, 1990), there is an extensive literature
+base documenting the potential impact of digital innovation, through
+these improvements, in the transport sector (Enoch, 2015).
 
-\section{The Role of Smart Technology}
 
-\subsection{Approach}
+\subsection{New Ownership Models}
 
-We will now consider the role of smart technology within the future’s
-transport strategy, specifically integrated private/public and
-electric transport solutions for a range of suggested concepts in
-existing literature covering smart technologies of a number of
-different industries, we will consider the nature and operation of
-each in the wider smart transport context.
+`Mobility as a Service' has grown to be a concept that is specifically
+appreciated in modern transport dialogues (Transport Systems
+Catapault, 2016). It is best defined as a transition from a paradigm
+of relying on a product that is purchased to provide mobility
+functionality, to a service where the outcome of moving from one
+location to another is provided, disassociated from any requirement
+for asset ownership, and transitionally arranged on a
+journey-by-journey basis.
 
-% Throughout this exploration, an appropriate valuation method will be
-% chosen depending on the nature of the technology in question. For each
-% example we will speculate the first year value of the technology,
-% commenting on the total lifetime value later on.
+In other modes of private transport in the UK, particularly bike use,
+an increasing number of users are opting to participate in short term
+hire models of use, particularly in urban contexts (Meddin,
+16). Rather than bearing the capital and logistical cost of owning a
+bike, individuals hire the bike for a nominal fee from a given node
+near their origin, complete their journey, and return the bike to a
+node near their destination. In essence, they are purchasing mobility
+per-leg of their journey, or `as-a-service'. Once seen as radical,
+examples such as London’s cycle hire (``Boris Bike'')
+scheme\footnote{\url{https://tfl.gov.uk/modes/cycling/santander-cycles}}
+demonstrated not only the feasibility of the business model, but also
+the efficacy of the indirect benefits, illustrated by significant
+increase in cycling in the city bringing health benefits, but also the
+notion of these as a substitute for car journeys.
 
-For the purposes of this study we will consider the benefits of these
-smart technologies specifically from a private sector business case
-viewpoint; that is to say, primarily the financial and economic
-benefit they could bring (although they also have significant social,
-political and environmental benefits).
+A range of drivers have been suggested for the emergence of this paradigm:
 
-\subsection{Cars}
+\begin{itemize}
+\item {\textbf{Changing societal values:}} whereby evidence has
+suggested a decrease in the value placed on car ownership culturally
+(Rosenthal, 2013); conflict with an increased desire to live in
+vibrant urban areas within walking distance of workplace and other
+amenities and the spatial restrictions of car ownership in such
+scenarios (Michael Jenks, 2000).
+\item {\textbf{Changing economic situations:}} increasing costs of car
+ownership, particularly in insurance (particularly for young
+individuals) and fuel cost. (MultiCar, 2015) (Blackmore, 2015)
+\item {\textbf{Changing effectiveness of privately-owned car
+transportation:}} an increasing frustration with congested transport
+systems and an increasing desire to travel to A-to-B reliably,
+regardless of the specific comfort of one's `own' motor vehicle.
+\item {\textbf{Proof of concept:}} Driven by commercial ventures
+showing the viability of alternate private transport
+paradigms. Traditional car hire companies in particular are beginning
+to explore short-term, distributed `car club', return journey
+(`A-to-A' journeys) offerings, whereas emerging start-ups are offering
+entire by-leg services, such as the aforementioned Autolib. (Wefering,
+2016)
+\end{itemize}
 
-Standard car hire industry practice is to operate a maintenance regime
-that involves inspection above the recommended frequency, designed to
-reduce the time between inspections when the car may suffer from a
-freak failure. Freak failures are defined as those whereby there was
-no indication at the last inspection that the car would fail before
-the next testing.
+\subsection{The UK Context}
+
+In the UK, over the last 60 years, the profile of citizen journeys has
+transitioned rapidly from public transport dominated to private
+transport-dominated, stabilizing around the last millennia
+[FOOTNOTE1]. Vocal, anti-automotive political agendas, global
+recession and rising oil prices have all emerged since as powerful,
+anti-private transport influences. However, they have done little to
+reduce private transport, with the per-mile travel profile appearing
+largely unchanged, tending instead to a marginally lower equilibrium
+level from 2000 to today. This is displayed in Figure 1a,
+contextualized by the historical car ownership trends in Figure
+1b. However, there is emerging evidence that over the last 10 years,
+cars per person are declining, driven by lower ownership rates,
+particularly driven by younger drivers [REF6]. 
+
+
+\begin{figure}[!htp]
+\centering
+\includegraphics[width=\columnwidth]{images/uktransportshare.png}
+\caption{Car ownership trends in the UK}
+\label{fig:uktransportshare}
+\end{figure}
+
+\begin{figure}[!htp]
+\centering
+\includegraphics[width=\columnwidth]{images/ukcarsperperson.png}
+\caption{Transport share in the UK}
+\label{fig:ukcarsperperson}
+\end{figure}
+
+In theory, it is clear that at present public transport is both
+technically (in terms of emissions per head) and systematically
+(second-order effects, such as congestion, social and economic
+consequences) superior to private transport and this has been
+understood for some time [REF7]. However, it is equally apparent that
+the unit cost of converting a percentage of transport users from
+private to public transport increases with conversion. In other words,
+in a hypothetical world where everyone uses private transport, to
+convert the easiest first 10\% of users, a network of urban buses and
+trains can be run cost-effectively and efficiently. The last 10\% of
+the population, however, requires a vast and complex network that
+operates constantly and at high frequencies, and is for all intents
+and purposes, impossible to deliver. As such, it is clear that there
+is a fraction of transport that, for reasons of financial and
+practical limitations, will always remain private transport, and that
+that fraction is not necessarily `small'. Although the UK does not
+currently operate at or even near this ‘minimum’ private transport
+threshold, acknowledgement that any such unavoidable level exists is
+not necessarily popular in transport policy.
+
+As such, there is clear motivation that the impacts of private
+transport, both pump-to-tire and systematically, should be
+mitigated. This is a popular and high-growth area of research both
+commercially and academically; within the last 20 years, the average
+personal automobile efficiency has improved drastically.  Today,
+alternate  powertrains  such as electric motors that are more
+efficient and less polluting that internal combustion engines, are not
+only technically viable, but a key component of many automotive giants
+strategies; the aforementioned BMW i Series range is a high profile
+example of significant strategic investment in the transition of
+retail automobiles to EVs. However, it is clear that drivetrain
+transitions alone cannot deal with the systematic drawbacks of private
+transport, such as congestion, spatial requirements of parking and
+social isolation of the have-cars and have-nots, which have been
+addressed to an order-of-magnitude lesser extent. Technical
+suggestions for these problems do exist, such as driverless, automated
+cars and personal rapid transit (PRT) schemes, but both are a long way
+from a ready-to-rollout status [REF8]. Crucially, for every change
+that reduces the negative impact of private transport (of either
+kind), or more accurately, convincingly depicts itself as doing so,
+private transport is further legitimized, and efforts to transfer
+journeys to public transport are weakened. Thus improvements to the
+performance of private transport need to be sufficiently substantial
+to mitigate any systematic `rebound' effect of reduced public
+transport use.
+ 
+Private transport solutions are almost exclusively the remit of the
+private sector; if we focus on the mode of car, these can be broadly
+categorised as automotive retailers, car hire firms and taxi
+companies. The public sector’s potential influence is relatively broad
+and classifiable into two main groups. Firstly, regulation, subsidies
+and taxation, which while exercised to bring about sustainability
+improvements in car design and car use, are generally applied at an
+industry level and are balanced against other political desires such
+as keeping motor product prices low and the automotive commercial
+environment favorable to investment [REF9]. Secondly, through the
+provision of infrastructure, which while said to be becoming
+increasingly mindful of its systematic impacts, is still predominantly
+designed to meet the current and near-future needs of its users rather
+than dictate them (Institution of Civil Engineers, 2016). 
+
+Political action is thus limited by this simple catch-22: public
+transport is the ideal, but impractical to reach saturation. Private
+transport is undesirable, but unavoidable, yet efforts to improve it
+also make it more prevalent. Private transport services must remain
+commercially profitable if they remain in the hands of the private
+sector, and at present, the government appears not inclined to lead
+radical changes in its nature from the limited influences it has at
+its disposal. It seems change must come primarily from the private
+sector (Westlake, 2016).
+
+Technically, it may be argued there thus exists an optimum – a level
+of improvement of private transport that, when the reduction in public
+transport uptake is factored in, results in the lowest overall impact
+in the UK’s travel emissions. There are many more secondary effects
+that could also be considered from this first deduction; not all
+improvements to private transport reduce public transport uptake to
+the same degree; nor is the UK a homogenous mass of two types of
+transport user. Attempts to penalise private transporters who could
+transfer to public transport and do not, such as through taxation,
+frequently damages those who cannot transfer [REF10] [REF11].
+
+Thus we can see how the three opportunities introduced previously come
+together to address three of the main difficulties in the current
+transport paradigm in the UK:
+
+\begin{enumerate}
+\item {\textbf{Electric vehicles}} -- enabling significant improvement
+in the direct, pump-to-tire impacts of private transport, one of the
+most substantial steps on the long term achievements in this space;
+\item {\textbf{Mobility-as-a-Service models}} -- enabling significant
+improvement in the systematic impacts of private transport, a radical
+first step in achievement in this space;
+\item {\textbf{Digital innovation}} -- enabling significant
+improvement in operational cost, customer engagement, system
+management and new revenue streams, appeasing the private sector's
+requirement for profitable ventures.
+\end{enumerate}
+
+The actions of transport stakeholders in the next 10 years will
+dictate how much these trends are harnessed, encouraged or ignored in
+private sector transport, and ultimately how the UK’s transport
+culture changes as a result.
+
+
+\section{Methodology}\label{methodology}
+
+\subsection{Objectives}
+
+This paper sets out to achieve the following objectives:
+
+\begin{enumerate}
+\item To explore a range of use cases for how the opportunities in the
+  aforementioned `tri-opt' overlap in the UK's private transport, in
+  combinations of two or three, to produce value.  
+\item To understand, to a qualitative and relative degree of accuracy,
+  the varying value perceived by our stakeholders to be presented in
+  the identified use cases. 
+\item To understand the broad characteristics of the identified use
+  cases, with a focus on barriers and enablers to their valuation and
+  implementation.
+\item To segment the use cases, considering a combination of their
+  characteristics and value potential, with a view to forming
+  recommended policymaker actions.
+\end{enumerate}
+
+\begin{figure}[!htp]
+\centering
+\includegraphics[width=\columnwidth]{images/bristolhub.png}
+\caption{An overview of the functionality of Bristol's Smart Electric
+  Transport Hub, structured by input transport modes (left) and output
+  transport services (Cooper, Elder, Noble, Tingle, \& Wilde,
+  2015)}
+\label{fig:bristolhub}
+\end{figure}
+
+\subsection{Philosophy}
+
+This paper will take a systems thinking perspective to divergently
+consider the instances of how these trends create double and triple
+overlaps.
+
+With respect to the definition and measurement of value, due the broad
+scope of this paper, value will be considered qualitatively, with an
+emphasis on a use case's relative value compared to other identified
+use cases. Value will be considered to all stakeholders within the
+system boundary – in this case the city of Bristol, UK.
+ 
+To add rigor to this process, during engagement with stakeholders, the
+following framework, combining three approaches for considering value,
+were used:
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=\columnwidth]{images/valuationmethods.png}
+\caption{Valuation methods}
+\label{fig:bristolhub}
+\end{figure}
+
+
+\subsection{Methods}
+
+This paper implies a mixed methods approach, primarily – but not
+exclusively -- focused around a joint Bristol City Council and Bristol
+University research study into the potential of a `smart electric
+vehicle transport hub' -- a development that combined the three
+proposed trends on a physical site offering both public (bus and `park
+and ride') and private (as-a-service electric car hire) services
+(Cooper, Elder, Noble, Tingle, \& Wilde, 2015).
+
+The methods used are as follows:
+
+\begin{itemize}
+\item 5 x 2 hour workshops with the presence of senior Bristol City
+Council staff, senior University of Bristol academics, and consulting
+engineers from built environment consultancy Arup;
+\item 10 semi structured 1 hour interviews with a range of transport
+stakeholders in the city of Bristol, including bus operators, policy
+legislators, legal and financial professionals, all providing insight
+anonymously;
+\item A survey of 48 citizens of Bristol subscribed to Source West –
+an independent non-profit organization representing the interests of
+citizens using electric vehicles;
+\item A range systems dynamics modelling to understand quantitative
+value in a few specific use cases, explained in more detail when
+introduced.
+\end{itemize}
+
+
+\section{Results}
+
+\subsection{Overview}
+
+The results are presented in the following format:
+
+\begin{itemize}
+\item {\textbf{Individual Use Cases:}} A profile of each individual
+use cases identified as a result of the methodology, articulated as
+communally defined by stakeholders participating. Each use case is
+labeled with the relevant `Opts' they involve;
+\item {\textbf{Use Case Value Comparison:}} A value map of the use
+cases, as described in Section~\ref{methodology};
+\item {\textbf{Individual Barrier and Enablers:}} A profile of each of
+the identified barriers and enablers, identified as a result of the
+methodology, articulated as communally defined by stakeholders
+participating. On review of the results, the cross-applicability of
+these makes it logically to present these as a communal set. However
+particularly strong applicability of one barrier/enabler to a
+particular use case will be emphasized in that barrier/enabler's
+description.
+\end{itemize}
+
+
+\subsection{Individual Uses Cases}
+
+\subsubsection{Car Component State -- Smart/MaaS}
+
+In the traditional car hire industry, it is practice is to operate a
+maintenance regime that involves inspection above the recommended
+frequency, designed to reduce the time between inspections when the
+car may suffer from a freak failure. Freak failures are defined as
+those whereby there was no indication at the last inspection that the
+car would fail before the next testing.
 
 Using health and usage monitoring sensors attached to key components
-in the car, the car hire operators can get an understanding of level
-of car mechanical state close to that offered by an inspection, but
-constantly and in real time. This could drastically reduce the rate of
-freak failures and, if the sensor coverage was sufficient enough,
-potentially allow reductions in human servicing.  This concept is
-already well understood in industrial contexts and frequently
-realised. The value from this system comes from improved reliability
-and efficiency of the car hire service.
+in the car, an operator of cars-as-a-service offering could gathering
+insight on a car's mechanical state close to the quality of that
+offered by a human inspection, in real time. This could drastically
+reduce the rate of freak failures in such a service that may have
+extremely fast turnarounds between regular and short customer uses. If
+the sensor coverage was sufficient enough, potentially allow cut backs
+in human servicing.
 
+\subsubsection{Live Air Quality Management -- Smart/MaaS}
 
-\subsection{Live Air Quality Management}
+Bristol City Council currently monitors air quality by semi-permanent
+installations at specific areas around the city. In a typical UK urban
+environment, particularly one with no major industry, air quality is
+primarily determined by road transport emissions. As such, if it was
+possible to understand the overall distribution of vehicles in the
+city at any one point in time, it is a reasonable hypothesis to
+believe it is possible to estimate, with relative accuracy, the air
+quality throughout the entire city. At present, in some areas of the
+city, car flow is monitored by car-recognizing cameras. These however
+are sparse and expensive to install.
 
-Bristol (a major city in the west of England) monitors air quality by
-semi-permanent installations at specific areas around the city.  In a
-typical UK urban environment, particularly one with no major industry,
-air quality is primarily determined by road transport emissions.  As
-such, if it was possible to understand the overall distribution of
-vehicles in the city at any one point in time, it would be possible to
-estimate, with relative accuracy, the air quality throughout the
-entire city. At present, in some areas of the city, car flow is
-monitored by car-recognising cameras. These however are sparse and
-expensive to install.
-
-The car hire EVs are likely to use the same roads to the same
+Cars-as-a-service are likely to use the same roads to the same
 intensity of other cars on the road at that time. In other words,
-their road routing behaviour is likely to be very similar, if not
+their road routing behavior is likely to be very similar, if not
 identical, to the rest of the cars on the road at that time. As such,
 a critical resolution of hire cars is necessary to deduce an estimate
 of the wider car resolution. We will examine critical resolutions in
-detail at the end of this section.  The value from this system comes
-from the created market of vending car locational data to Bristol City
-Council.
+detail in Section~\ref{barriersenablers}.
 
-% \begin{figure}[!htp]
-% \centering
-% \includegraphics[width=\columnwidth]{images/dontchokebristol.png}
-% \includegraphics[width=\columnwidth]{images/airqualityvt.png}
-% \caption{Air quality value tree}
-% \label{fig:airqualityvt}
-% \end{figure}
+A particular opportunity with a MaaS model is to directly affix air
+quality sensors on to cars, gathering primary air quality data
+directly.
 
-\subsection{Live Accident Reporting}
 
-Similar to in-car monitoring for maintenance, vehicles can also be
-fitted with impact sensors, altering the car hire management that a
-car has suffered a serious crash, allowing them to contact the
-authorities.  Due to the significant improvement in road safety
-regulations, mobile phones have already improved road transport since
-the mid-2000s, and the relative rarity of isolated crashes, it is
-unlikely the value case here can be made from a practical improvement
-in fatality rates from car hire use.
+\subsubsection{Live Accident Reporting -- Smart/MaaS}
 
-Instead, it is probable that the main benefit of such a system would
-be perceptual – improved piece of mind for the customer that a system
-will be in place to constantly evaluate their safety.  However, the
-increase in service from such a technology yields a relatively
-insignificant revenue stream.
+Cars-as-service can also be fitted with impact sensors, altering the
+MaaS management system that a car has suffered a serious crash,
+allowing them to contact the authorities. Due to the significant
+improvement in road safety regulations, mobile phones have already
+improved road transport since the mid-2000s, and the relative rarity
+of isolated crashes, it is unlikely the value case here can be made
+from a practical improvement in fatality rates from car hire
+use. Instead, it is probable that the main benefit of such a system
+would be perceptual improved piece of mind for the customer that a
+system will be in place to constantly evaluate their safety, as well
+as pre-warning a traffic control system of potential disruption.
 
-\subsection{User Journey Data}
 
-One of the fastest growing applications of data is within retail and
-leisure industries.  Many organisations using big data have shown that
-advertisement conversion rates (the percentage of individuals who act
-on an advertisement they have seen) can be greatly increased by
-accurate targeting of the advert to the correct
+\subsubsection{User Journey Data – Smart/MaaS}
+
+Many retail and advertisement companies using big data have
+demonstrated that advertisement conversion rates (the percentage of
+individuals who act on an advertisement they have seen) can be greatly
+increased by accurate targeting of the advert to the correct
 recipient. Traditionally, this would be done by geographical area or
 age group. More recently however, with the ability to better express
 to the world your other preferences and personal situation through
@@ -564,98 +751,76 @@ social media networks, it is possible to advertise to people of a
 specific relationship status, group affiliation or fans of similar
 services. Facebook and Spotify are prime examples of how specific
 demographic, geographic and chronological conditions are set to not
-only able to return high conversion rates, and thus, expensive
+only able to return high conversion rates, and thus, higher-priced
 advertising to customers, but also, as a result, able to vend smaller
 advertising exposures as a tangible product. This means a greater
 number of clients, and thus a more robust business model.
 
-In the car hire, two potential avenues of value creation are possible.
-Firstly, information on the journeys of car hire individuals alongside
-the time they drive and their personal characteristics, could be
-vended in a data package to companies in retail and leisure
-industries. These companies would have otherwise had to undertake
-expensive customer research, thus the value is clear. However, this is
-very likely to suffer from extremely low consent rates, as it would
-perhaps be the most invasive form of personal data harvesting
-currently in existence. Alternatively, consent rates may well be much
-higher if the data was instead used to form targeted advertising at
-point of booking. This way, organisations could offer discounts to
-individuals it feels it may be able to convert to using their business
-on the trip, incentivising them to consent to the scheme. Furthermore,
-this could be done dynamically through the common advanced display
-systems that are available in modern automobiles. The revenue stream
-here will be two fold: the advertising organisations will pay for the
-in-car advertising rights, and individuals would be more inclined to
-travel through the hire car if special offers would be available.  The
-primary value from this system comes from the vending of targeted,
-data-based advertising of in-car and pre-booking advertisement to
-local businesses.
+In a cars-as-a-service model, two potential avenues of value creation
+are possible. Firstly, information on the journeys of car hire
+individuals alongside the time they drive and their personal
+characteristics, could be vended in a data package to companies in
+retail and leisure industries. These companies would have otherwise
+had to undertake expensive customer research, thus the value is
+clear. However, this is very likely to suffer from extremely low
+consent rates, as it would perhaps be the most invasive form of
+personal data harvesting currently in existence. Alternatively,
+consent rates may well be much higher if the data was instead used to
+form targeted advertising at point of booking. This way, organizations
+could offer discounts to individuals it feels it may be able to
+convert to using their business on the trip, incentivising them to
+consent to the scheme. Furthermore, this could be done dynamically
+through the common advanced display systems that are available in
+modern automobiles. The revenue stream here will be twofold: the
+advertising organizations will pay for the in-car advertising rights,
+and individuals would be more inclined to travel through the MaaS
+model if special offers would be available as a user.
 
 
-\subsection{Smart Pricing Congestion Control}
+\subsubsection{Demand-based Pricing -- Smart/MaaS/EV}
 
 An alternate method to control congestion is to bring economic forces
-to bare on when an individual chooses to travel. In practice, the car
-hire smart pricing would include an additional influence based on the
-expected congestion of the roads at point of travel, attempting to
-deter travel that would exacerbate the congestion.  Ultimately, this
-requires the highest critical resolution of hire cars of all the smart
-technologies addressed here, by some margin, perhaps at least
-25\%. Furthermore, many ethical dilemmas exist. If the resolution is
-lower than 50\%, it might be extremely unpopular that the most
-sustainable cars are essentially `taxed' into staying off the roads,
-while the unsustainable private transport is free to do as it
-wishes. Although such a pricing technique would not be unlike current
-train pricing structures, the freedom to use a car when one desires is
-heavily ingrained in Western society, and it's likely any such pricing
-on that logic would need to be mild.
+to bare on when an individual chooses to travel. In practice, a MaaS
+could include an additional influence based on the expected congestion
+of the roads at point of travel, attempting to deter travel that would
+exacerbate the congestion. Ultimately, this requires the highest
+critical resolution of hire cars of all the use cases addressed
+here. Furthermore, many ethical dilemmas exist. It might be extremely
+unpopular that the most sustainable cars are essentially `taxed' into
+staying off the roads, while the unsustainable private transport is
+free to do as it wishes.
 
-
-\subsection{Charging Habits}
-
-Similar to the understanding of how individuals operate electric cars,
-the UK's National Grid\footnote{\url{http://www.nationalgrid.com/uk/}}
-would be interested in how individuals charge their EVs, as this will
-heavily influence how the grid develops in the next 50 years.
-Although typically our EV's have predetermined charging patterns, EVs
-that are taken on multi-day rentals will most likely require charging
-to address the specific needs of the hirer. This provides a valid
-insight into the charging habits of EV users. The value from this
-system comes from the created market of vending charging habits to the
-UK's National Grid.
-
-
-\subsection{Car Positional Data}
-
-One of the issues with an electric car hire scheme, as discussed
-previously, is the increased layover time incurred by charging. This
-has been shown to be manageable in its standard incarnation, but
-certain instances could exacerbate this weakness, or simply be a
-problem for car hire management schemes in general. For example the
-following situations within a booking could threaten the ability to
-service later bookings:
+However another interpretation is around the ability to better control
+demand for the service, a key consideration for electric vehicles due
+to the fact that, even in the increasing affordability of fast
+chargers, EVs require considerably longer than ICE cars to transition
+from zero to full range capacity.
+ 
+Thirdly, this can also be used to manage car supply and demand between
+different nodes of car collection. For example, the following
+situations within a booking could threaten the ability to service
+later bookings:
 
 \begin{enumerate}
-\item {\textbf{Inclement driving conditions:}} EVs are susceptible to
-  have sizeable variation of energy use per mile depending on driving
+\item Inclement driving conditions: EVs are susceptible to have
+  sizeable variation of energy use per mile depending on driving
   conditions. Cold weather can have negative effects on electric
   torque. Additionally, heaters in EVs are unable to use the waste
   heat that a combustion car generates, so additional power from the
-  battery is required; as much as 15\% in certain
-  circumstances~\cite{postevs:2010}. Live
-  battery data can allow the car hire management system to know the
-  exact power use of a journey.
-\item {\textbf{Congestion:}} Traffic can significantly decrease the
-  efficiency of the EV; although the effect is lessened when compared
-  to a combustion car as EV engine can turn off and on
-  seamlessly. More significantly, congestion greatly increases the
-  journey time. Car speed data and GPS location data can inform the
-  booking management system when a car is stuck in traffic.
-\item {\textbf{Satellite navigation:}} If an individual decides to take a longer
+  battery is required; as much as 15\% in certain circumstances
+  [19]. Live battery data can allow the car hire management system to
+  know the exact power use of a journey.
+\item Congestion: Traffic can significantly decrease the efficiency of
+  the EV, although the effect is less than compared to a combustion
+  car as EV engine can turn off and on seamlessly. More significantly,
+  congestion greatly increases the journey time. Car speed data and
+  GPS location data can inform the booking management system when a
+  car is stuck in traffic.
+\item Satellite navigation: If an individual decides to take a longer
   route home, or even a route of the same duration of time but a
   greater use of charge (such as a longer motorway route compared to a
-  slower trunk route). Live satellite navigation data can inform the booking
-  management system the minute the drive has this intention. 
+  slower trunk route). Live satellite navigation data can inform the
+  booking management system the minute the drive has this intention.
 \end{enumerate}
 
 Pre-warning of any of these unforeseen circumstances can allow
@@ -665,95 +830,482 @@ booking in a time when the car will now be driving/charging. The value
 from this system comes from improved reliability of the car hire
 service.
 
-\subsection{Barriers and Enablers}
+A simulation exploring the potential impact of demand-based pricing on
+revenue and variance of booking density, for a designed node of an
+smart EV MaaS node, can be seen in
+Figures~\ref{fig:smartpricingformula} and \ref{fig:smartpricegraphs}.
 
-Each of these data streams and their associated benefits require
-capital and operational expenditure to put in place the infrastructure
-and staff that would facilitate the systems. Even without estimating
-this, it can be seen that a number of technologies are immediately
-unable to be financially viable, at least in isolation. Needless to
-say, this theoretical value is not instantly realisable. Considerable
-barriers exist to not only the creation of the value, but also the
-smart technologies themselves. At present legislation in the UK around
-renewables and EVs is under general scrutiny and review. Feed-in
-Tariffs (FITs) and other payouts for balancing services are
-complicated and have questionable longevity and there is little
-governmental impetus in the UK for smart pricing on a balancing
-level. Considerable psychological inertia also exists in some
-businesses as to the idea of data as a source of value.  The issue of
-critical resolution is also present --
-Figure~\ref{fig:bristolcardensity} demonstrates varying accuracy from
-predicting traffic levels at different sensor penetration.
-
-
-\begin{figure}[!htp]
+\begin{figure}[!h]
 \centering
-\includegraphics[width=\columnwidth]{images/bristolcardensity.png}
+\includegraphics[width=\columnwidth]{images/smartpricingformula.png}
+\caption{Smart pricing formula}
+\label{fig:smartpricingformula}
+\end{figure}
+
+\begin{figure*}[!htb]
+\centering
+\includegraphics[width=\textwidth]{images/smartpricegraphs.png}
+\caption{From left to right: Price ranges with different formula
+  values; Varying total revenue under different schemes; Variance in
+  booking density, a measure of the difficult of servicing bookings,
+  with different ‘smart powers’ and average prices. Draws on data
+  regarding price sensitivity, customer flexibility and estimated
+  footfall collected during the Bristol Smart EV Hub project. (Cooper,
+  Elder, Noble, Tingle, \& Wilde, 2015)}
+\label{fig:smartpricegraphs}
+\end{figure*}
+
+As can be observed, it is possible to create a scenario where both
+total revenue is increased and bookings are more evenly
+distributed. This mechanism could be made stronger -- or seen to be
+more of a `carrot' than a `stick' strategy by the use of reduced
+parking costs in non- or limited-nodal MaaS systems.
+
+\subsubsection{Driving Styles and Usage Habits -- Smart/EV/MaaS} 
+
+As a high growth market, the EV market is currently undergoing heavy
+R\&D investment. As a distinctly different driving experience,
+automotive designers are particularly interested in how users interact
+with the vehicle. Such data is not currently commonplace and as such;
+to create this car manufacturers spend capital on customer surveys,
+on-road testing and other investments.
+
+A similar situation can be observed in the in the car insurance
+industry. At present relatively few car insurers offer cover for EVs
+due to a poor understanding of their risk (Cohen, 2015). Those that do
+offer prices above the ICE equivalent average 16-26\% more (Cohen,
+2015). It is unclear if EV owners drive in an identical manner to
+combustion car owners, or if they are at a higher risk of collision
+due to lower noise and potential higher accelerations than combustion
+cars. Furthermore, many fundamental components of the EV have yet to
+come close to their expected end of life, so it is risky for insurers
+who do not know if the vehicles will reach their rated life.
+
+Similar to the understanding of how individuals operate electric cars,
+the UK’s National Grid\footnote{\url{http://www.nationalgrid.com/uk/}}
+would be interested in how individuals charge their EVs, as this will
+heavily influence how the grid develops in the next 50 years. Although
+typically our EV’s have predetermined charging patterns, EVs that are
+taken on multi-day rentals will most likely require charging to
+address the specific needs of the hirer. This provides a valid insight
+into the charging habits of EV users. The value from this system comes
+from the created market of vending charging habits to the UK’s
+National Grid. It is reasonable to assume there is value in these data
+sets to the operator of an EV MaaS system, through external sale, if a
+data strategy was in place to collect and store the insight.
+
+\subsubsection{Dynamic Traffic Routing -- Smart/MaaS} 
+
+Understanding the average speed of a road’s cars allows the city's
+transport management to predict the related areas of congestion. The
+necessary resolution of this is much lower i.e. the speed of a given
+stretch of road is largely similar for all vehicles driving along it. 
+
+Knowing such information in real time, the city transport management
+can employ data-based traffic management techniques. One of the most
+common of these is the notion of dynamic traffic rerouting. Road users
+are directed to the fastest route to a given location by being mindful
+of congestion. The car hire scheme takes this concept one step
+further, as it will be possible to understand where individuals are
+planning on driving in advance. With this information, mitigation
+actions that would previously be considered to have too long a lead
+time even in the `live' mode can be implemented. For example, higher
+use of contraflow lanes that can be dynamically adjusted to allow for
+the particular nature of the rush hour traffic, increased public
+transport frequencies  to help move demand off the roads, or variable
+speed limits to maximize flow rates and relieve bottlenecks.
+
+Much of the infrastructure necessary to facilitate this has already
+been tested at scale: dynamic lane direction has proven successful in
+Birmingham and the M25 has extensive supporting evidence about its
+dynamic speed limit interventions. This infrastructure could be
+improved in effectiveness from data that was faster and more accurate
+than existing, predominantly analogue sensing techniques.  A criticism
+of this concept might be that such data sets are currently collected
+by digital firms such as Google. Such data however is not readily
+available to cities, and when it does, it typically comes with a
+substantial pricetag. A MaaS service would have access to this data
+and could provide it to the city’s transport team.
+
+
+\subsubsection{Grid Balancing -- EV/Smart/MaaS} 
+
+Grid balancing is a generalized term for the concept of taking action
+to mitigate for surpluses or shortages in a region or nation’s
+electricity generation. In some definitions, balancing involves
+transferring power into the grid, but many techniques of simply
+avoiding drawing power (aka. `shedding') are considered balancing by
+the UK government (Change \& ofgem, 2014). The challenge of balancing
+the network is becoming much larger with more distributed generation
+and larger power demands. Many stakeholders in the UK’s energy
+industry are increasingly providing financial incentives for these
+services and view it as an important challenge of the future.
+
+This is increasingly relevant to EVs as they represent a growing load
+on the grid; some studies have suggested even moderate uptake of EVs
+might increase national power demand by up to 23\% in some areas by
+2021 (Barnard, 2016). However, of greater concern is how EVs will
+increase the variation (essentially the peakiness) in grid demand, a
+quality that is harder to service than total demand.
+
+However, at the same time their potential to be used as charge storing
+devices enables a situation whereby rather than being a burden on the
+grid which needs to be minimized, they can be a positive asset to
+provide charge to meet demand at peak times. Typically batteries have
+a very quick response rate to grid requirements, something other
+balancing solutions can lack.
+
+This would be exacerbated in a MaaS offering, whereby the value of the
+charge to the grid at that time is factored into the cost of someone
+instead using that charge to drive the car. The cars could then be
+used as grid balancing charge storage in periods of lower demand.
+
+
+\section{Barriers and Enablers}\label{barriersenablers}
+
+\subsection{Overview}
+
+Throughout the workshop and interview process it became apparent that
+there were substantial barriers to both the realisation of these use
+cases, and barriers to being more certain about the specific value
+they could bring. On balance, there were also certain common enablers,
+which added clarity to these two aspects.  This section profiles those
+that were communally considered to be the most important across all
+use cases.
+
+\subsection{Devolution}
+
+In the UK devolution is a defining trend of local governance. Cities
+are increasingly being given more power and more responsibility to
+fund and deliver many of their own services. Combined with a landscape
+of fiscal austerity, this combines to provide the motivation, and
+capability, to experiment with new solutions that can deliver better
+outcomes on a smaller budget, or that drive growth, sustainably,
+growing the overall city purse. Driving potential new transport
+initiatives, such as the use cases explored herein, could be such an
+action.
+
+\subsection{Legislation}
+
+At present legislation around EVs is rapidly evolving. Only recently
+in the UK it became legal to charge for electricity partiers who
+weren’t registered electricity supplier. Up until this point, although
+designed to enforce strict license requirements, restrict `cowboy'
+generators and limit electricity theft, the law greatly prohibited the
+ability to charge for electrical charging for EVs. 
+
+Furthermore, subsidies are a high risk reliance. Payouts for balancing
+services are complicated and have questionable longevity.  There is
+little immediate governmental impetus for demand-based energy pricing
+to support the Grid Balancing use case. However, many energy companies
+have begun distributing smart meters, which many have suggested is the
+best precursor to new demand-based tariffs.
+
+\subsection{Perception}
+
+Despite considerable feature in literature, conference and
+international economics as a whole, the value of smart technologies as
+a concept has yet to be universally realised by the business world as
+a whole. Many surveys have suggested that concepts such as Big Data
+analytics remain the domain of large corporations, and are sometimes
+viewed with risk and pessimism by many smaller, regional
+firms. Although motivation for smart city approaches is high in local
+government, a lack of private-sector buy-in becomes a prohibitive
+barrier.  The legacy of many unexpanded `demonstrator' Smart City
+projects compounds this issue (Arqiva, 2015).
+
+\subsection{Citizen Culture Shock}
+
+The freedom to use a car when one desires is heavily ingrained in
+Western society, and it's likely some of the use cases examined
+herein, particularly those that involve changing the price of using a
+car when a large number of individuals want to use one, would receive
+significant citizen backlash and so become politically unpopular. The
+most effective implementation of these is likely to be focused around
+shaping these perceptions, such as ostensibly offering financial
+advantages for `good' behavior, rather than exclusively penalizing
+`negative' use. 
+
+\subsection{Critical Resolutions}
+
+The issue of critical resolution presents an issue particularly for
+the more macro concepts.  Modelling undertaken the Smart Electric
+Transport Hub project illustrates this barrier. Using the estimated
+number of cars in a rough 2x2 mile square of urban Bristol at peak
+time, Figure 16 demonstrates a simulation of the accuracy of the
+Dynamic Traffic Routing use case, given a varying distribution of
+connected, EV cars within the car parc. The accuracy is defined as the
+ability to state whether a 10 yard x 10 yard area of the city has an
+above average level of car presence.
+
+As per Figure~\ref{fig:criticalresolution}, the results are
+particularly interesting; at present private EV rates (around
+0.001\%), the ability to perceive areas of congestion is abysmal,
+correctly identifying congestion vs no congestion with around 5\%
+accuracy. However, by 0.14\%, the system has surpassed the odds of
+simple guessing, and by 0.7\%, the system has reached an impressive
+90\% accuracy. 0.7\% corresponds to around 70 cars; the quantity you
+might envisage within such a sized zone in a multisite implementation
+of a single MaaS node in Bristol. It is also worth noting that the
+assumptions here are particularly pessimistic -- if spots of higher
+density (rather than simply above average) wished to be found, the
+accuracy will theoretically improve.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=\columnwidth]{images/criticalresolution.png}
 \caption{MATLAB modelling of the accuracy of extrapolating to find
-  congestion from EV cars in Bristol, UK}
-\label{fig:bristolcardensity}
+  congestion from connected EV cars in Bristol, UK (Cooper, Elder,
+  Noble, Tingle, \& Wilde, 2015)}
+\label{fig:criticalresolution}
+\end{figure}
+
+\subsection{Collective Ownership of Functioning Cars Achieved Through
+  MaaS}
+
+It was identified that some of the concepts identified are considered
+significantly feasible as a result of the nature of the MaaS asset
+ownership. In theory, a car park of `smart' cars that were privately
+owned and ICE powertrain could be sufficient to facilitate,
+theoretically, some of the concepts, such as Dynamic Car
+Routing. However, MaaS is associated as a core aspect of these use
+cases because the centralised ownership of the cars means that
+connected cars can be immediately purchased, and the data is
+considered the operators to use as desired, pending user consent,
+which in turn would be a requirement for use of the MaaS service in
+any way. The concept based on privately-owned car ownership however,
+would take longer to implement as individual's cars are gradually
+replaced with more intelligent cars (assuming they make mainstream
+markets). This organic growth may encounter issues of interoperability
+between cars and systems. Regardless, citizens would need to be
+persuaded to provide their data, and it would not be a requirement for
+the use of the car for them to do so.
+
+
+\subsection{Need for Public-Private Collaboration}
+
+By far the most substantial barrier identified during workshops and
+interviews was the requirement for public and private sector
+stakeholders to collaborate to implement many of the use cases,
+particularly those perceived to have the greatest value. This barrier
+is perceived to have two key caveats:
+
+\begin{itemize}
+\item The distribution of value created for difference stakeholders is
+  not aligned with the risk and investment each stakeholder is making
+  – many of the concepts herein would create value for the city they
+  are operated in, such as through congestion reductions, air quality
+  improvement, economic growth, that would not translate, even over a
+  long timeline to financial returns for the private sector operator
+  of a smart EV MaaS service. However, the value to the city could be
+  traced to tangible reductions in spending in various other
+  initiatives. As such, business models need to be explored whereby
+  clarity on these distributed benefits is established, and
+  appropriate financial arrangements made to motivate the private
+  sector to push ahead with the investment.
+\item Different capabilities and cultures between the two stakeholder
+  groups – in the context of collaborating on a transport project, a
+  perception was raised that private sector companies are
+  traditionally focused on profit rather than wider societal benefit,
+  but able to efficiently deliver services, think entrepreneurially,
+  and understand and meet customer requirements. At the same time
+  there was a concession that public sector organizations are
+  traditionally more cautious and slower to embrace digital change,
+  but have a more holistic assessment of transport solution and
+  societal benefits. Several case studies were offered by participants
+  to articulate this, particularly the failure of the Kutsplus Demand
+  Responsive Bus system in Finland (Westlake, 2016). Recognition of
+  these differences and creating strategies that embrace the qualities
+  of both will be essential if implementations are to be successful. 
+\end{itemize}
+
+
+
+\section{Use Case Value Comparison}\label{usecasecomp}
+
+\subsection{Workshops/Interviews}
+
+It is clear there is great variation in the perception of value in the
+identified use cases, and the certainty to which we understand this
+value and the path to realise it. These are presented in
+Figure~\ref{fig:valuegraph}. From observation of the results, three
+categories can be generalised:
+
+\begin{itemize}
+\item Segment 3, those that have by far the greatest benefit but are
+  also the most uncertain. Typically these require highest critical
+  masses and require the considerable, cross-sector stakeholder
+  buy-in. However, their potential value could be described as
+  extreme. Discussion highlighted how these, typically have the most
+  diverse forms of value, spanning environmental, social and economic
+  value, beyond simply financial benefits. While due to the
+  substantial barriers, there is little probability that this group
+  will be implemented in the short term, the significant potential
+  cannot be ignored.
+\item Segment 2, with moderate benefit whose uncertainty is somewhat
+  less and who enjoy good overall value/certainty ratio. These are
+  typically mechanisms that involve the collection, management and
+  external vending of data. How UK law changes with respect to data
+  use, as well as how contract culture changes with respect to data
+  transactions will have a great influence. Many local governments or
+  devolved city regions, including Bristol, are aspiring to wider open
+  data initiatives, a system where similar data sets are freely
+  available (and reusable), and the data is realized through the new
+  businesses that open as a result. There is an ongoing debate about
+  how data monetization strategies, such as these, are compatible with
+  open data philosophies.
+\item Segment 1, with relatively low value but relatively high
+  certainty. This group are best characterised as `operational'
+  changes, and as such require relatively little collaboration across
+  stakeholder groups. 
+\end{itemize}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\columnwidth]{images/valuegraph.png}
+\caption{Results from workshop exercises on assigning qualitative
+value scores to use cases (note: log scale)}
+\label{fig:valuegraph}
+\end{figure}
+
+Graphical approximations of these characteristics across the three
+segments can be seen in Figure~\ref{fig:segmentcharacteristics}.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=\columnwidth]{images/segmentcharacteristics.png}
+\caption{Generalised relationships across identified segments}
+\label{fig:segmentcharacteristics}
 \end{figure}
 
 
-\section{Conclusions} 
+\subsection{Systems Dynamics}
 
-\begin{figure}[!htp]
+As a means of validation, these workshop findings have been compared
+to a systems dynamics model created to explore financial estimations
+of some of the identified concepts, per-node for the Hub
+project. While of a similar context, this model was created outside of
+this research initiative. A Sankey diagram out of this model can be
+seen in Figure~\ref{fig:sankey}.
+
+It can be observed that, allowing for small differences in the
+categorisation of use cases (some were dissected for easier
+modelling), definition of value and certainty, relative proportions
+match our workshop findings.
+ 
+\begin{figure}[!htb]
 \centering
 \includegraphics[width=\columnwidth]{images/sankey.png}
-\caption{A Sankey diagram of the data value and confidence, along with
-  single site vs. multisite implementations}
+\caption{Sankey diagram output of a systems dynamics model, exploring
+  the financial benefit of some of the identified use cases for a node
+  of the Hub. (Cooper, Elder, Noble, Tingle, \& Wilde, 2015)}
 \label{fig:sankey}
 \end{figure}
 
-It is clear there is great variation in the nature and quantity of
-value in smart technologies with short term EV hire. These are
-presented in Figure~\ref{fig:sankey}. As a general rule, there are
-three categories: 
 
-\begin{enumerate}
-\item Firstly, those that have the greatest benefit but are also the
-  most speculative, having the highest critical masses and requiring
-  the greatest stakeholder buy-in. However, their benefit is
-  extreme. These also have the highest quantity of non-financial
-  benefit, typically environmental, which is often equivalent to, or
-  in some cases higher, than the economic and financial benefits. These
-  are typified by the smart pricing congestion control and the dynamic
-  traffic routing. Although there is little probability that this
-  group will be implemented in the near future, the significant potential
-  cannot be ignored, and would serve well as a long term agenda for
-  local council, be it with implementation through a smart transport hub or
-  elsewhere.
-\item Secondly, a middle group, with moderate benefit whose
-  speculation is somewhat less, but typically relies on a small, niche
-  market for vending, and as such hinges significantly on this for any
-  value at all. Driving styles is a typical examples of this. While
-  there is some variation in the group -- spin off elements such as the
-  journey data, advertising approach fairs much better -- it is
-  difficult to label these as a quality. How UK law changes with respect
-  to data use, as well as how contract culture changes with respect to
-  data transactions will have a great influence. Many local
-  governments or devolved city regions, including Bristol, are
-  aspiring to wider open data initiatives, a
-  system where similar data sets are freely available (and reusable),
-  and the data is realised through the new businesses that open as a result. This
-  stands, at least in some lights, in contrast to this category's
-  technologies. 
-\item Thirdly, and bucking the trend, is a group with moderate
-  benefit, but whose speculation is low and requires only internal
-  participation. This third group, typified by the smart pricing and
-  car component monitoring, stand out as having the greatest
-  appeal. 
-\end{enumerate}
 
-Ultimately, there is considerable potential for smart technologies to
-transform not only the profitability of short term EV hire schemes,
-but the wider societal benefit of the concept. Which of the above
-segments are most appropriate to focus on will depend on the exact
-context and buy-in from external stakeholders. It is equally apparent,
-however, that the world has some considerable catching up to do --
-socio-culturally, legislatively and psychologically -- if any of these
-concepts are to be easily implemented, let alone the concept of the
-short-term EV and its benefits thriving across the globe.
+\section{Conclusion}\label{conclusion}
+
+There is clearly synergistic value within the overlaps of the proposed
+`TriOpt', confirming the original hypothesis. However it appears the
+specifics of this are somewhat different to initial speculation. The
+findings suggest concepts that combine MaaS offerings and digital
+innovation are the main focus of value creation which was favored over
+MaaS, EV and digital tri-overlaps. While we can still conclude that
+the notion of the triple overlaps exist as an area to be considered,
+the original equal status hypothesised is incorrect, and that EVs are
+perhaps considered as a significant development that is set within the
+context of two transformative opportunities of MaaS and digital
+innovation. Reviewing the concepts that have emerged through our
+methodology, value appears to span a wide range, but is overall
+significant. Certainty is also variable but generally averages at a
+lower point.
+
+With respect to recommendations that can be inferred from the findings
+within this paper:
+
+\begin{itemize}
+\item Segment 1 should be considered good operational practice for
+  smart, MaaS EV services. However they are not transformative, and
+  generally provide limited value, so should not be considered high
+  priority focuses. 
+\item Segment 2 should be considered as positive additional revenue
+  streams for smart, MaaS EV services. In particular, they may be
+  beneficial for improving business cases to the degree that such
+  services can attract investment and be launched, so releasing the
+  individual benefits of each ``Opt''. While offering good value for
+  relative certainty, they are not transformative in and of themselves
+  and should not be considered end goals.
+\item Segment 3 can be considered long term strategic focuses that
+  have transformative value, and have underlying mechanisms that span
+  beyond transport. Currently highly uncertain, understanding these,
+  conceptually, should be a long term, pan-city, high priority
+  aspiration.
+\end{itemize}
+
+It is important to note that this paper does not set out to define the
+value cases of the individual ``Opts'' themselves -- such as reduced
+sunk-cost-induced car use in a MaaS model -- and is designed to be a
+study of interaction of the three opportunities rather than appraisal
+of each concept by itself -- of which there is extensive literature
+already in existence as explored in the Introduction. These
+recommendations however should be appreciated within the context of
+the individual benefits of MaaS, smart cities and digital innovation
+and electric vehicles.
+
+Our results suggest that there are significantly more barriers than
+enablers at play in these double and triple overlapping concepts. Of
+most significance in the eyes of the participants, and of most
+relevance to the highest-value segment of use cases, is the need for
+public and private sector collaboration. It seems reasonable to
+presume this is a barrier for `as-a-service' and digital innovation
+concepts across a range of city services. As such, it is also a strong
+recommendation of this paper that this barrier is examined in greater
+detail, as explored in Section~\ref{future}.
+
+
+\section{Future Work}\label{future}
+
+For application beyond transport, it is recommended that the
+underlying generic mechanisms at play that create value are
+explored. The particular emphasis on MaaS and digital innovation
+suggests `digitally-enabled innovative business models' may be the
+best starting point for considering these. Taking away the transport
+context, several can be observed in our research:
+
+\begin{itemize}
+\item Sharing of data to mutual benefit, eg. driving habits
+\item Supporting new service delivery models that bring public
+benefit, eg. dynamic car routing
+\item Assistance of delivering public policy e.g. demand-based pricing
+(to reduce congestion)
+\end{itemize}
+
+No research, as explored in this paper’s literature review, could be
+found that defines a framework of these mechanisms and there is a
+significant evidence base that private sector participation in city
+digital initiatives is a regular criticism of the public sector
+(Galbraith, 2016) (Martin, 2016) (Institute of Civil Engineers, 2015)
+(Hilton, 2016) (Wilson, 2016) (Spector, 2016) (Hoare, 2016), thus it
+can be hypothesized there is value in understanding this issue better.
+
+Heavily related to this, digitally-enabled public and private
+collaboration needs to be understood better, as it currently stands as
+the major barrier. The distribution of value/risk/investment
+identified as part of this, and articulated in a simplified causal
+loop diagram in Figure~\ref{fig:causalloop}, need to be investigated.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=\columnwidth]{images/causalloop.png}
+\caption{A causal loop diagram articulating the investment/value
+  dilemma of some tri-opt transport solutions; the dotted line and
+  faded blue correspond to the absence of this second reinforcing
+  loop, undermining the system when value is predominantly systematic
+  benefits to the city.}
+\label{fig:causalloop}
+\end{figure}
+
 
 % \appendices
 % \section{Proof of the First Zonklar Equation}
@@ -766,11 +1318,12 @@ short-term EV and its benefits thriving across the globe.
 
 
 % use section* for acknowledgment
-\section*{Acknowledgment}
 
-This work has been supported in part by Arup Group Ltd. through the
-Industrial Doctorate Centre in Systems at the University of Bristol,
-UK.
+% \section*{Acknowledgment}
+
+% This work has been supported in part by Arup Group Ltd. through the
+% Industrial Doctorate Centre in Systems at the University of Bristol,
+% UK.
 
 
 % Can use something like this to put references on a page

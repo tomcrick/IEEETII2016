@@ -9,7 +9,7 @@
 \usepackage[hyphens]{url}
 \usepackage[pdftex]{graphicx}
 \usepackage{paralist}
-
+\usepackage[pdftex,colorlinks=true]{hyperref}
 
 % correct bad hyphenation here
 %\hyphenation{op-tical net-works semi-conduc-tor}
@@ -23,7 +23,7 @@
 % not capitalized unless they are the first or last word of the title.
 % Linebreaks \\ can be used within to get better formatting as desired.
 % Do not put math or special symbols in the title.
-\title{Digitally-enabled, as-a-Service, Electric Vehicles: Exploring the `TriOpt' of Private Transport}
+\title{Digitally-Enabled, As-a-Service, Electric Vehicles: Exploring the `TriOpt' of Private Transport}
 %
 %
 % author names and IEEE memberships
@@ -93,65 +93,46 @@
 % As a general rule, do not put math, special symbols or citations
 % in the abstract or keywords.
 \begin{abstract}
-Three distinct trends are emerging to shake-up the current dominance
-of privately-owned, unconnected, combustion motor car transport in the
-UK. The first is the emergence of the electric powertrain for vehicles
-as an affordable and mass-marketed means of transport. This carries
-with it the potential to address many of the `pump-to-tire'
-shortcomings of the current paradigm, especially CO2 emissions, air
-and noise pollution. The second is the rise of new hire models of car
-ownership -- the concept of paying for the use of a car per single leg
-of a journey. This carries with it the potential to address many of
-existing systematic issues: sunk-cost induced car use, residential
-parking and social division. For the third, we are witnessing the rise
-of `smart city thinking', the concept that increased data and
-connectivity within an urban system can be harnessed to create value,
-including in transport.
+Three distinct trends are emerging to shake-up the dominance of
+privately-owned, combustion car transport in the UK. First is the
+emergence of the electric powertrain as an affordable means of
+transport. This carries the potential to address many of the
+‘pump-to-tire’ shortcomings, especially CO2 emissions, air and noise
+pollution. The second is the rise of new hire models of car ownership
+-- the concept of paying for the use of a car per single leg of a
+journey, also addressing residential parking and social
+division. Thirdly, the rise of `smart city thinking', the concept that
+increased connectivity and data can be harnessed to create value,
+including in transport. We define the combination of the three as the
+`TriOpt' of private transport – three disruptors that should not be
+considered in isolation but as interacting levers -- an inflection of
+the `Energy Trilemma'.
 
-At present there is little academic research exploring the potential
-for three-way synergy, despite an emerging evidence base that
-combinations of any two are mutually-beneficial. Indeed, real-world
-examples of tri-fusions are rare: cars are predominantly
-privately-owned, driven by internal combustion engines and very rarely
-`connected' in any digital sense. But we are beginning to see
-commercial initiatives thriving the overlap, such as the rapid growth
-of AutoLib in Paris. This paper thus defines these as the `TriOpt' of
-private transport -- three disruptors that should not be considered in
-isolation but as interacting levers -- an inflection of the `Energy
-Trilemma'.
-
-This paper subscribes to a systems-thinking philosophy, and implements
-a mixed methodology of workshops, interviews and systems dynamics
-modelling drawn from the UK city of Bristol’s `Smart EV Transport Hub'
-project. The objectives are to identify concepts that positively
-combine two or more of these three `Opts' and understand the barriers
-and enablers to these concepts. Subsequently, the use cases are
-evaluated qualitatively for their comparative value, and segmentation
-is undertaken to characterise and generalise groups of concepts to
-inform recommended stakeholder actions. 
-
-In conclusion it is demonstrated that these synergistic overlaps are
-in fact numerous, combine to create significant value in combination
-and so this `TriOpt' notion should be explored further. However, we
-concede the synergistic overlaps may be more significant in overlaps
-that include Smart Cities and Digital Innovation, and
-Mobility-as-a-Service models, than Electric Vehicles; rather than a
-landscape of equal importance as originally hypothesised. Use cases
-our data highlights as being of the greatest value are those that the
-current literature base has explored the least, and can be
-characterised as requiring significant public and private sector
-collaboration. As such it is strongly recommended that public-private
-sector collaboration in private transport, within a context of digital
-innovation, electric vehicles and mobility as a service model, is
-subject to further investigation.
+In this paper, we apply systems-thinking and utilise a mixed
+methodology of workshops, interviews and systems modelling drawn upon
+the UK city of Bristol's `Smart EV Transport Hub' project. The
+objectives are to identify concepts that positively combine two or
+more of these three `Opts' and understand the barriers and enablers to
+these. Subsequently, the use cases are evaluated qualitatively for
+their comparative value, and segmentation is undertaken to
+characterise and generalise groups of concepts to inform recommended
+stakeholder actions. We demonstrate that synergistic overlaps are many
+and they create significant value, thus this `TriOpt' notion should be
+investigated further. Our data highlights that of the greatest value
+are those use cases that the current literature base has explored the
+least, and can be characterised as requiring significant public and
+private sector collaboration. It is strongly recommended that
+public-private sector collaboration in private transport, within a
+context of digital innovation, electric vehicles and mobility as a
+service model, is subject to further investigation.
 \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
-\begin{IEEEkeywords}
-Electric Vehicles, Vehicle Hire Models, Smart Technologies, Smart
-Monitoring, Smart Cities, Big Data, Environmental Impact, Business
-Models, Mobility-as-a-Service 
-\end{IEEEkeywords}
+% \begin{IEEEkeywords}
+% Electric Vehicles, Vehicle Hire Models, Smart Technologies, Smart
+% Monitoring, Smart Cities, Big Data, Environmental Impact, Business
+% Models, Mobility-as-a-Service 
+% \end{IEEEkeywords}
 
 
 % For peer review papers, you can put extra information on the cover
@@ -162,7 +143,7 @@ Models, Mobility-as-a-Service
 %
 % For peerreview papers, this IEEEtran command inserts a page break and
 % creates the second title. It will be ignored for other modes.
-%\IEEEpeerreviewmaketitle
+\IEEEpeerreviewmaketitle
 
 
 
@@ -195,29 +176,29 @@ the view that the current Western private transport paradigm has a
 finite lifespan; a transport culture that consists of overwhelmingly
 privately-owned internal combustion engine automobiles is unlikely to
 survive the next 50 years in its current form, in the face of
-economic, social, and environmental pressures (Lerner, 2011)
-(Parkhurst, 2011) (Shergold, 2016) (Van Audenhove, 2014).  Several
-distinct trends have emerged a as potential disruptors in existing
-research. Three in particular are identified and focused upon within
-this paper.  Firstly, the emergence of electrical motors as the
-primary alternate powertrain for private automobiles [REF1]. [REF2].
-Secondly -- and more in its infancy -- the trend of transitions to new
-car use models, which is regularly referred to within the collective
-term of `Mobility as a Service' (Transport Systems Catapault , 2016).
-A third -- the broadest and most in its infancy -- the emergence of
-the smart city theorem. This capitalizes on the use of systems that
-harness the opportunities increased data and connectivity present to
-provide value (Townsend, 2013) (IBM, 2014) where disruption to private
-transport, measured on any one of these individual trends is, at
-present, slow. Electric cars only make up a negligible share of the UK
-car market (with limited charging infrastructure outside of major
-urban areas) [2]; short-term hire transport models have yet to be
-proved at a significant scale in the UK, beyond simpler transport
-situations, such as bicycles[REF3]; and smart cities are, in many
-cases, little more than a long term strategic aspiration, with some
-instances of demonstrators, most of which are too early in their
-lifetime to be able to provide any substantial conclusions about the
-value of data.
+economic, social, and environmental
+pressures~\cite{lerner:2011,parkhurst:2011,van-audenhove-et-al:2014,black-et-al:2016}.
+Several distinct trends have emerged a as potential disruptors in
+existing research. Three in particular are identified and focused upon
+within this paper.  Firstly, the emergence of electrical motors as the
+primary alternate powertrain for private
+automobiles~\cite{paffumi-et-al:2015,gnann-et-al:2015}.  Secondly --
+and more in its infancy -- the trend of transitions to new car use
+models, which is regularly referred to within the collective term of
+`Mobility as a Service'~\cite{tscatapult:2016}. A third -- the
+broadest and most in its infancy -- the emergence of the smart city
+theorem. This capitalizes on the use of systems that harness the
+opportunities increased data and connectivity present to provide value
+(Townsend, 2013) (IBM, 2014) where disruption to private transport,
+measured on any one of these individual trends is, at present,
+slow. Electric cars only make up a negligible share of the UK car
+market (with limited charging infrastructure outside of major urban
+areas) [2]; short-term hire transport models have yet to be proved at
+a significant scale in the UK, beyond simpler transport situations,
+such as bicycles[REF3]; and smart cities are, in many cases, little
+more than a long term strategic aspiration, with some instances of
+demonstrators, most of which are too early in their lifetime to be
+able to provide any substantial conclusions about the value of data.
 
 Some of the most successful disruptive private transport initiatives
 of recent times can however often be observed combining two or three
@@ -234,11 +215,13 @@ of triple-overlaps (see Figure~\ref{fig:triopt}), nor of the notion of
 synergy between the three trends as a principal. The idea of three
 significant issues needing to be considered in conjunction with one
 another is not a radical concept however, as seen in the inverse, but
-principally similar, `energy trilemma' [REF4a].  This paper will focus
-on investigating the manifestations of the overlaps of these three
-opportunities within the context of the city of Bristol in the UK.
+principally similar, `energy trilemma' [REF4a].  This paper --
+building upon previous work in this
+space~\cite{cooper-et-al-sose:2015} -- will focus on investigating the
+manifestations of the overlaps of these three opportunities within the
+context of the city of Bristol in the UK.
 
-\begin{figure}[!htp]
+\begin{figure}[!htb]
 \centering
 \includegraphics[width=\columnwidth]{images/triopt.png}
 \caption{The proposed `Tri-Opt' of positive opportunities to disrupt
@@ -590,7 +573,7 @@ This paper sets out to achieve the following objectives:
   recommended policymaker actions.
 \end{enumerate}
 
-\begin{figure}[!htp]
+\begin{figure}[!htb]
 \centering
 \includegraphics[width=\columnwidth]{images/bristolhub.png}
 \caption{An overview of the functionality of Bristol's Smart Electric
@@ -620,7 +603,7 @@ were used:
 \centering
 \includegraphics[width=\columnwidth]{images/valuationmethods.png}
 \caption{Valuation methods}
-\label{fig:bristolhub}
+\label{fig:valuationmethods}
 \end{figure}
 
 
@@ -803,7 +786,7 @@ situations within a booking could threaten the ability to service
 later bookings:
 
 \begin{enumerate}
-\item Inclement driving conditions: EVs are susceptible to have
+\item {\emph{Inclement driving conditions:}} EVs are susceptible to have
   sizeable variation of energy use per mile depending on driving
   conditions. Cold weather can have negative effects on electric
   torque. Additionally, heaters in EVs are unable to use the waste
@@ -811,13 +794,13 @@ later bookings:
   battery is required; as much as 15\% in certain circumstances
   [19]. Live battery data can allow the car hire management system to
   know the exact power use of a journey.
-\item Congestion: Traffic can significantly decrease the efficiency of
+\item {\emph{Congestion:}} Traffic can significantly decrease the efficiency of
   the EV, although the effect is less than compared to a combustion
   car as EV engine can turn off and on seamlessly. More significantly,
   congestion greatly increases the journey time. Car speed data and
   GPS location data can inform the booking management system when a
   car is stuck in traffic.
-\item Satellite navigation: If an individual decides to take a longer
+\item {\emph{Satellite navigation:}} If an individual decides to take a longer
   route home, or even a route of the same duration of time but a
   greater use of charge (such as a longer motorway route compared to a
   slower trunk route). Live satellite navigation data can inform the
@@ -1161,7 +1144,7 @@ categories can be generalised:
   stakeholder groups. 
 \end{itemize}
 
-\begin{figure}[!ht]
+\begin{figure}[!htb]
 \centering
 \includegraphics[width=\columnwidth]{images/valuegraph.png}
 \caption{Results from workshop exercises on assigning qualitative
@@ -1180,28 +1163,28 @@ segments can be seen in Figure~\ref{fig:segmentcharacteristics}.
 \end{figure}
 
 
-\subsection{Systems Dynamics}
+% \subsection{Systems Dynamics}
 
-As a means of validation, these workshop findings have been compared
-to a systems dynamics model created to explore financial estimations
-of some of the identified concepts, per-node for the Hub
-project. While of a similar context, this model was created outside of
-this research initiative. A Sankey diagram out of this model can be
-seen in Figure~\ref{fig:sankey}.
+% As a means of validation, these workshop findings have been compared
+% to a systems dynamics model created to explore financial estimations
+% of some of the identified concepts, per-node for the Hub
+% project. While of a similar context, this model was created outside of
+% this research initiative. A Sankey diagram out of this model can be
+% seen in Figure~\ref{fig:sankey}.
 
-It can be observed that, allowing for small differences in the
-categorisation of use cases (some were dissected for easier
-modelling), definition of value and certainty, relative proportions
-match our workshop findings.
+% It can be observed that, allowing for small differences in the
+% categorisation of use cases (some were dissected for easier
+% modelling), definition of value and certainty, relative proportions
+% match our workshop findings.
  
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=\columnwidth]{images/sankey.png}
-\caption{Sankey diagram output of a systems dynamics model, exploring
-  the financial benefit of some of the identified use cases for a node
-  of the Hub. (Cooper, Elder, Noble, Tingle, \& Wilde, 2015)}
-\label{fig:sankey}
-\end{figure}
+% \begin{figure}[!htb]
+% \centering
+% \includegraphics[width=\columnwidth]{images/sankey.png}
+% \caption{Sankey diagram output of a systems dynamics model, exploring
+%   the financial benefit of some of the identified use cases for a node
+%   of the Hub. (Cooper, Elder, Noble, Tingle, \& Wilde, 2015)}
+% \label{fig:sankey}
+% \end{figure}
 
 
 

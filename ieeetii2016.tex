@@ -23,7 +23,8 @@
 % not capitalized unless they are the first or last word of the title.
 % Linebreaks \\ can be used within to get better formatting as desired.
 % Do not put math or special symbols in the title.
-\title{Digitally-Enabled, As-a-Service, Electric Vehicles: Exploring the `Tri-Opt' of Private Transport}
+\title{Digitally-Enabled Electric Vehicles As-a-Service: Exploring the
+  `Tri-Opt' of Novel Private Transport Business Models}
 %
 %
 % author names and IEEE memberships
@@ -35,7 +36,7 @@
 % was not built to handle multiple paragraphs
 %
 
-\author{Peter~Cooper, Theo~Tryfonas and~Tom~Crick}% <-this % stops a space
+%\author{Peter~Cooper, Theo~Tryfonas and~Tom~Crick}% <-this % stops a space
 %\thanks{}% <-this % stops a space
 % \thanks{M. Shell was with the Department
 % of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta,
@@ -66,9 +67,9 @@
 % The paper headers
 %\markboth{Journal of \LaTeX\ Class Files,~Vol.~14, No.~8, August~2015}%
 \markboth{IEEE Transactions on Industrial Informatics, February~2017}%
-{Shell \MakeLowercase{\textit{Cooper et al.}}: Digitally-enabled,
-  as-a-Service, Electric Vehicles: Exploring the `Tri-Opt' of Private
-  Transport}
+{Shell \MakeLowercase{\textit{Cooper et al.}}: Digitally-Enabled
+  Electric Vehicles As-a-Service: Exploring the `Tri-Opt' of Novel
+  Private Transport Business Models}
 % The only time the second header will appear is for the odd numbered pages
 % after the title page when using the twoside option.
 % 
@@ -92,39 +93,59 @@
 
 % As a general rule, do not put math, special symbols or citations
 % in the abstract or keywords.
+
+% abstract for ScholarOne:
+
+% Three distinct trends are emerging to shake-up the dominance of
+% privately-owned, combustion car transport in the UK: first is the
+% emergence of the electric powertrain as an affordable means of
+% transport; second is the rise of new hire models of car ownership;
+% third, the rise of `smart city thinking', the concept that increased
+% connectivity, data and smart grids can be harnessed to create value,
+% especially in transport. We define the combination of the three as the
+% `Tri-Opt' of private transport -- three disruptors that should not be
+% considered in isolation but as interacting levers -- an inflection of
+% the `Energy Trilemma'.
+
+% In this paper, we apply systems thinking and utilise a mixed
+% methodology of workshops, interviews and systems modelling drawing
+% upon the UK city of Bristol's {\emph{Smart EV Transport Hub}} project
+% to identify concepts that positively combine two or more of these
+% three `Opts'.
+
 \begin{abstract}
 Three distinct trends are emerging to shake-up the dominance of
 privately-owned, combustion car transport in the UK. First is the
 emergence of the electric powertrain as an affordable means of
-transport. This carries the potential to address many of the
+transport; this carries the potential to address many of the
 ‘pump-to-tire’ shortcomings, especially CO2 emissions, air and noise
-pollution. The second is the rise of new hire models of car ownership
--- the concept of paying for the use of a car per single leg of a
+pollution. The second is the rise of new hire models of car ownership:
+the concept of paying for the use of a car per single leg of a
 journey, also addressing systematic impact such as residential parking
 and social division. Thirdly, the rise of `smart city thinking', the
-concept that increased connectivity and data can be harnessed to
-create value, including in transport. We define the combination of the
-three as the `Tri-Opt' of private transport – three disruptors that
-should not be considered in isolation but as interacting levers -- an
-inflection of the `Energy Trilemma'.
+concept that increased connectivity, data and smart grids can be
+harnessed to create value, especially in transport. We define the
+combination of the three as the `Tri-Opt' of private transport --
+three disruptors that should not be considered in isolation but as
+interacting levers -- an inflection of the `Energy Trilemma'.
 
-In this paper, we apply systems-thinking and utilise a mixed
-methodology of workshops, interviews and systems modelling drawn upon
-the UK city of Bristol's `Smart EV Transport Hub' project. The
-objectives are to identify concepts that positively combine two or
-more of these three `Opts' and understand the barriers and enablers to
-these. Subsequently, the use cases are evaluated qualitatively for
-their comparative value, and segmentation is undertaken to
+In this paper, we apply systems thinking and utilise a mixed
+methodology of workshops, interviews and systems modelling drawing
+upon the UK city of Bristol's {\emph{Smart EV Transport Hub}} project
+to identify concepts that positively combine two or more of these
+three `Opts'. Subsequently, the use cases are evaluated qualitatively
+for their comparative value, and segmentation is undertaken to
 characterise and generalise groups of concepts to inform recommended
 stakeholder actions. We demonstrate that synergistic overlaps are many
-and they create significant value, thus this `Tri-Opt' notion should be
+and they create significant value; thus the `Tri-Opt' notion should be
 investigated further. Our data highlights that of the greatest value
 are those use cases that the current literature base has explored the
 least, and can be characterised as requiring significant public and
 private sector collaboration. It is highly recommended that
 public-private sector collaboration in private transport -- within a
-context of digital innovation -- electric vehicles and mobility as a
-service model, is subject to further research and investigation.
+context of digital innovation -- electric vehicles, smart grids and
+mobility as a service model, is subject to further research and
+investigation.
 \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
@@ -147,7 +168,7 @@ service model, is subject to further research and investigation.
 
 
 
-\section{Introduction}
+\section{Introduction}\label{intro}
 % The very first letter is a 2 line initial drop letter followed
 % by the rest of the first word in caps.
 % 
@@ -171,8 +192,8 @@ service model, is subject to further research and investigation.
 
 \subsection{Problem Space}
 
-\IEEEPARstart{A}{growing} corpus of work is gathering consensus on
-the view that the existing Western private transport paradigm has a
+\IEEEPARstart{A}{growing} corpus of research is gathering consensus on
+the view that the prevailing Western private transport paradigm has a
 finite lifespan; a transport culture that consists of overwhelmingly
 privately-owned internal combustion engine automobiles is unlikely to
 survive the next 50 years in its current form, in the face of
@@ -189,17 +210,18 @@ models, which is regularly referred to within the collective term of
 broadest and most in its infancy -- the emergence of the smart city
 theorem. This capitalises on the use of systems that harness the
 opportunities increased data and connectivity present to provide
-value~\cite{townsend:2013,ibm:2014} where disruption to private
-transport, measured on any one of these individual trends is, at
-present, slow. Electric cars only make up a negligible share of the UK
-car market, with limited charging infrastructure outside of major
-urban areas~\cite{dft:2008}; short-term hire transport models have
-yet to be proved at a significant scale in the UK, beyond simpler
-transport situations, such as bicycles~\cite{kamargianni-et-al:2016};
-and smart cities are, in many cases, little more than a long term
-strategic aspiration, with some instances of demonstrators, most of
-which are too early in their lifetime to be able to provide any
-substantial conclusions about the value of data.
+value~\cite{townsend:2013,cosgrave-et-al:2013,ibm:2014} where
+disruption to private transport, measured on any one of these
+individual trends is, at present, slow. Electric cars only make up a
+negligible share of the UK car market, with limited charging
+infrastructure outside of major urban areas~\cite{dft:2008};
+short-term hire transport models have yet to be proved at a
+significant scale in the UK, beyond simpler transport situations, such
+as bicycles~\cite{kamargianni-et-al:2016}; and smart cities are, in
+many cases, little more than a long term strategic aspiration, with
+some instances of demonstrators, most of which are too early in their
+lifetime to be able to provide any substantial conclusions about the
+value of data.
 
 Some of the most successful disruptive private transport initiatives
 of recent times can however often be observed combining two or three
@@ -216,10 +238,10 @@ the notion of synergy between the three trends as a principle. The
 idea of three significant issues needing to be considered in
 conjunction with one another is not a radical concept however, as seen
 in the inverse, but principally similar, `energy
-trilemma'~\cite{wec:2015}. This paper -- building upon previous
-work~\cite{cooper-et-al-sose:2015} -- will focus on investigating the
-manifestations of the overlaps of these three opportunities within the
-context of the city of Bristol in the UK.
+trilemma'~\cite{wec:2015}. This paper -- building substantially upon
+previous work~\cite{cooper-et-al-sose:2015} -- will focus on
+investigating the manifestations of the overlaps of these three
+opportunities within the context of the city of Bristol in the UK.
 
 \begin{figure}[!htb]
 \centering
@@ -385,7 +407,7 @@ is best defined as a transition from a paradigm of relying on a
 product that is purchased to provide mobility functionality, to a
 service where the outcome of moving from one location to another is
 provided, disassociated from any requirement for asset ownership, and
-transitionally arranged on a journey-by-journey basis.
+typically arranged on a journey-by-journey basis.
 
 In other modes of private transport in the UK, particularly bike use,
 an increasing number of users are opting to participate in short term
@@ -581,29 +603,20 @@ This paper sets out to achieve the following objectives:
   recommended policymaker actions.
 \end{enumerate}
 
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=\columnwidth]{images/bristolhub.png}
-\caption{An overview of the functionality of Bristol's Smart Electric
-  Transport Hub, structured by input transport modes (left) and output
-  transport services}
-\label{fig:bristolhub}
-\end{figure}
-
 \subsection{Philosophy}
 
 This paper will take a systems thinking perspective to divergently
-consider the instances of how these trends create double and triple
+consider the instances of when these trends create double and triple
 overlaps. With respect to the definition and measurement of value, due
 the broad scope of this paper, value will be considered qualitatively,
 with an emphasis on a use case's relative value compared to other
 identified use cases. Value will be considered to all stakeholders
 within the system boundary -- in this case the city of Bristol, UK. To
 add rigor to this process, during engagement with stakeholders, the
-following framework, combining three approaches for considering value,
-were used:
+framework shown in Figure~\ref{fig:valuationmethods} was used,
+combining three approaches for considering value.
 
-\begin{figure}[!h]
+\begin{figure}[!htb]
 \centering
 \includegraphics[width=\columnwidth]{images/valuationmethods.png}
 \caption{Valuation methods}
@@ -618,8 +631,8 @@ exclusively -- focused around a joint Bristol City Council and Bristol
 University research study into the potential of a `smart electric
 vehicle transport hub' -- a development that combined the three
 proposed trends on a physical site offering both public (bus and `park
-and ride') and private (as-a-service electric car hire) services. The
-methods used are as follows:
+and ride') and private (as-a-service electric car hire) transport
+services. The methods used are as follows:
 
 \begin{itemize}
 \item Five two-hour workshops with the presence of senior Bristol City
@@ -632,9 +645,9 @@ providing insight anonymously;
 \item A survey of 48 citizens of Bristol subscribed to Source West, an
 independent non-profit organisation representing the interests of
 citizens using electric vehicles;
-\item A range systems dynamics modelling to understand quantitative
-value in a few specific use cases, explained in more detail when
-introduced.
+% \item A range systems dynamics modelling to understand quantitative
+% value in a few specific use cases, explained in more detail when
+% introduced.
 \end{itemize}
 
 
@@ -661,10 +674,9 @@ introduced.
 % description.
 % \end{itemize}
 
-
 \subsection{Individual Uses Cases}
 
-\subsubsection{Car Component State -- Smart/MaaS}
+\subsubsection{Car Component State (Smart/MaaS)}
 
 In the traditional car hire industry, it is practice is to operate a
 maintenance regime that involves inspection above the recommended
@@ -681,7 +693,7 @@ turnarounds between regular and short customer uses. If the sensor
 coverage was sufficient enough, potentially allow cut backs in human
 servicing.
 
-\subsubsection{Live Air Quality Management -- Smart/MaaS}
+\subsubsection{Live Air Quality Management (Smart/MaaS)}
 
 Bristol City Council currently monitors air quality by semi-permanent
 installations at specific areas around the city. In a typical UK urban
@@ -704,7 +716,7 @@ on to cars, gathering primary air quality data directly.
 %We will examine critical resolutions in detail in Section~\ref{barriersenablers}.
 
 
-\subsubsection{Live Accident Reporting -- Smart/MaaS}
+\subsubsection{Live Accident Reporting (Smart/MaaS)}
 
 Cars-as-service can also be fitted with impact sensors, altering the
 MaaS management system that a car has suffered a serious crash,
@@ -718,8 +730,17 @@ would be perceptual improved piece of mind for the customer that a
 system will be in place to constantly evaluate their safety, as well
 as pre-warning a traffic control system of potential disruption.
 
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=\columnwidth]{images/bristolhub.png}
+\caption{An overview of the functionality of Bristol's Smart Electric
+  Transport Hub, structured by input transport modes (left) and output
+  transport services}
+\label{fig:bristolhub}
+\end{figure}
 
-\subsubsection{User Journey Data – Smart/MaaS}
+
+\subsubsection{User Journey Data (Smart/MaaS)}
 
 Many retail and advertisement companies using big data have
 demonstrated that advertisement conversion rates (the percentage of
@@ -758,7 +779,7 @@ and individuals would be more inclined to travel through the MaaS
 model if special offers would be available as a user.
 
 
-\subsubsection{Demand-based Pricing -- Smart/MaaS/EV}
+\subsubsection{Demand-based Pricing (Smart/MaaS/EV)}
 
 An alternate method to control congestion is to bring economic forces
 to bare on when an individual chooses to travel. In practice, a MaaS
@@ -823,7 +844,7 @@ Figure~\ref{fig:smartpricegraphs}.
 \centering
 \includegraphics[width=\textwidth]{images/smartpricegraphs.png}
 \caption{Data regarding price sensitivity, customer flexibility and
-estimated footfall collected during the Bristol Smart EV Hub project.}
+estimated footfall collected during the {\emph{Bristol Smart EV Hub}} project.}
 \label{fig:smartpricegraphs}
 \end{figure*}
 
@@ -841,7 +862,7 @@ distributed. This mechanism could be made stronger -- or seen to be
 more of a `carrot' than a `stick' strategy by the use of reduced
 parking costs in non- or limited-nodal MaaS systems.
 
-\subsubsection{Driving Styles and Usage Habits -- Smart/EV/MaaS} 
+\subsubsection{Driving Styles and Usage Habits (Smart/EV/MaaS)} 
 
 As a high growth market, the EV market is currently undergoing heavy
 R\&D investment. As a distinctly different driving experience,
@@ -877,7 +898,7 @@ in these data sets to the operator of an EV MaaS system, through
 external sale, if a data strategy was in place to collect and store
 the insight.
 
-\subsubsection{Dynamic Traffic Routing -- Smart/MaaS} 
+\subsubsection{Dynamic Traffic Routing (Smart/MaaS)} 
 
 Understanding the average speed of a road's cars allows the city's
 transport management to predict the related areas of congestion. The
@@ -911,7 +932,7 @@ substantial cost. A MaaS service would have access to this data
 and could provide it to the city's transport team.
 
 
-\subsubsection{Grid Balancing -- EV/Smart/MaaS} 
+\subsubsection{Grid Balancing (EV/Smart/MaaS)} 
 
 Grid balancing is a generalised term for the concept of taking action
 to mitigate for surpluses or shortages in a region or nation’s
@@ -1195,7 +1216,7 @@ MaaS, EV and digital tri-overlaps. While we can still conclude that
 the notion of the triple overlaps exist as an area to be considered,
 the original equal status hypothesised is incorrect, and that EVs are
 perhaps considered as a significant development that is set within the
-context of two transformative opportunities of MaaS and digital
+context of two more transformative opportunities of MaaS and digital
 innovation. Reviewing the concepts that have emerged through our
 methodology, value appears to span a wide range, but is overall
 significant. Certainty is also variable but generally averages at a
@@ -1228,7 +1249,7 @@ value cases of the individual ``Opts'' themselves -- such as reduced
 sunk-cost-induced car use in a MaaS model -- and is designed to be a
 study of interaction of the three opportunities rather than appraisal
 of each concept by itself -- of which there is extensive literature
-already in existence as explored in the Introduction. These
+already in existence as explored in Section~\ref{intro}. These
 recommendations however should be appreciated within the context of
 the individual benefits of MaaS, smart cities and digital innovation
 and electric vehicles.
@@ -1262,13 +1283,14 @@ to reduce congestion).
 Little or no research could be found that defines a framework of these
 mechanisms and there is a significant evidence base that private
 sector participation in city digital initiatives is a regular
-criticism of the public sector~\cite{martin:2016}, thus it
-can be hypothesised there is value in understanding this issue
+criticism by the public sector~\cite{martin:2016}, thus it can be
+hypothesised there is value in understanding this issue
 better. Related to this, digitally-enabled public and private
 collaboration needs to be understood better, as it currently stands as
 the major barrier. The distribution of value/risk/investment
 identified as part of this, and articulated in a simplified causal
-loop diagram in Figure~\ref{fig:causalloop}, need to be investigated.
+loop diagram in Figure~\ref{fig:causalloop}, need to be further
+investigated.
 
 \begin{figure}[!htb]
 \centering
@@ -1297,10 +1319,12 @@ loop diagram in Figure~\ref{fig:causalloop}, need to be investigated.
 % use section* for acknowledgment
 \section*{Acknowledgment}
 
-This work has been supported in part by Arup Group Ltd. through the
-Industrial Doctorate Centre in Systems at the University of Bristol. 
-We would also like to acknowledge the support of Bristol City
-Council and Source West for their involvement in the project.
+This work was supported by the Systems Centre and the EPSRC-funded
+Industrial Doctorate Centre in Systems (Grant EP/G037353/1) at the
+University of Bristol and Arup Group Ltd. We would also like to
+acknowledge the support of Bristol City Council and Source West for
+their involvement in the project.
+
 
 
 % Can use something like this to put references on a page

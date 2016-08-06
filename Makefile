@@ -1,4 +1,4 @@
-targets = ieeetii2016.pdf
+targets = ieeetii2016-final.pdf
 
 all: $(targets)
 

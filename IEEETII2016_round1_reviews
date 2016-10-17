@@ -1,0 +1,42 @@
+**************************************************************
+
+Encl.:
+Reviewer: 1
+
+Comments to the Author
+The paper presents a concept that involves a systematic approach to prepare a system of transport which leads towards smart city. The main focus of the paper is to achieve an optimized transport system by integrating three different sectors, i.e. transport service sector, private vehicles and public transport. The main approach is to achieve the desired performance through advanced data acquisition system and control. As far as the reviewer has understood, the feasibility study of proposed concept has been presented through a study performed on Bristol city stats.
+However, the methodology has not been described in full details. Also, the results, which establish the synergistic behaviour of the system, have not been explained completely in reference to the system. With a little more explanation about research methodology and results, paper can be accepted.
+
+
+Reviewer: 2
+
+Comments to the Author
+The paper under review proposes a systems thinking approach and utilizes a mixed methodology of workshops, interviews and systems modelling drawing upon the UK city of Bristol’s Smart EV Transport Hub project to identify concepts that positively combine two or more of these three ‘Opts’. This is an interesting and timely issue, namely concerning the smart city, electric vehicles, and mobility as a service paradigms that are in course. The paper organization and language are not acceptable, although the introduction section is too verbose. I have the following concerns and comments.
+
+1.	The formatting of the paper should be carefully checked based on the IEEE Transaction formatting requirements. For example, the keywords of the paper should be written below the abstract section.
+2.	There are several typos in the paper, for example:
+-	Please check the sentence “Furthermore, car cabin heaters in EVs are do not have an engine heat stream to redirect”
+-	Please check the sentence “Several distinct trends have emerged a as potential disruptors in existing research.”, not “ore optimally located”.
+3.	The presented figures have not the standard quality.
+4.	 A number of sentences in the presented paper are exactly copied from [R1]. This is forbidden in IEEE Transactions rules.
+[R1] P. Cooper, T. Crick, and T. Tryfonas, “Smart data-harnessing for financial value in short-term hire electric car schemes, “ Proceeding 2015 10th System of Systems Engineering Conference (SoSE), IEEE, 2015.
+5.	What contributions this manuscript has compare to [R1]? Most of the claimed contributions has been covered in [R1].
+6.	Several sections and subsections can be reduced and referred to some literature. For instance, subsection A of “Section III” can be reduced and referred to [R1].
+7.	Fig. 2 should be more explained.
+8.	What is the rationale behind using formula which presented in Page 5?
+9.	How the certainty score of each use cases? Can we trust to experts’ views?
+10.	Plug-in electric vehicles will impose high pressure on the electric distribution network. This is an important issue which affects the possibility and value of this use case. However, this critical issue is connived through highlighting the available potential of PHEVs in contributing in peak-shaving programs. While the ability of P2P energy trading is developed in the third generation of smart grid, that is not expected to be commercially reached till next 10 years.
+11.	The economic aspects of the problem should be studied more.
+12.	The effect of different PHEV penetration levels on the obtained results should be investigated.
+
+Reviewer: 3
+
+Comments to the Author
+The idea is interesting and the topic is very important. This paper is well written and organized, however it can be further improved by highlighting the main contributions both in Abstract and Introduction. On the other hand, as a business model, more analysis should be provided, such as the availability of MaaS, the risks analysis, etc.
+
+AE Comments:
+Associate Editor
+Comments to the Author:
+This paper receives comments from 3 reviewers. They find that this paper presents an interesting idea. However, they also point out many issues to be addressed, such as the economic aspects, the feasibility of the scheme with the consideration of distribution network constraints. The authors should address these concerns point by point in the revision.
+
+**************************************************************

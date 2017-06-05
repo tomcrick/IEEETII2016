@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt]{article}
+\documentclass[b5paper,10pt]{article}
 \usepackage[british]{babel}
 \usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
 \usepackage{graphicx}
@@ -6,10 +6,14 @@
 \usepackage{paralist}
 \usepackage{authblk}
 \usepackage{siunitx}
+\usepackage{fancyhdr}
 \usepackage[noadjust]{cite}
 \usepackage[semicolon,sort&compress]{natbib}
 \usepackage[pdftex,breaklinks,colorlinks=true]{hyperref}
 
+\pagestyle{fancy}
+\lhead{{\emph{Journal of Urban Technology}}}
+\rhead{Digitally-Enabled Electric Vehicles As-a-Service}
 
 % correct bad hyphenation here
 %\hyphenation{op-tical net-works semi-conduc-tor}
@@ -20,13 +24,15 @@
 
 % names
 \author[1]{Peter Cooper}
-\author[2]{Theo Tryfonas}
+\author[2]{Theo Tryfonas\thanks{Correspondence author: Theo Tryfonas,
+    Faculty of Engineering, University of Bristol, Queen's Building,
+    University Walk, Bristol BS8 1TR, UK. E-mail: \url{theo.tryfonas@bristol.ac.uk}}}
 \author[3]{Tom Crick}
 \author[4]{Alex Marsh}
 % affiliation
 \affil[1]{Faculty of Engineering, University of Bristol, UK}
 \affil[2]{Faculty of Engineering, University of Bristol, UK}
-\affil[3]{Department of Computing \& Information Systems, Cardiff Metropolitan University, UK}
+\affil[3]{Department of Computing, Cardiff Metropolitan University, UK}
 \affil[4]{School for Policy Studies, University of Bristol, UK}
 % emails
 \affil[1]{\protect\url{peter.cooper@bristol.ac.uk}}
@@ -43,7 +49,7 @@
 \maketitle
 
 \begin{abstract}
-Three distinct trends have emerged that have disrupted the dominance
+{\it Three distinct trends have emerged that have disrupted the dominance
 of privately-owned, combustion car transport in the UK. First, the
 emergence of the electric powertrain as an affordable means of
 transport, with the potential to address many ‘pump-to-tire’
@@ -76,12 +82,12 @@ significant public and private sector collaboration. It is thus highly
 recommended that public-private sector collaboration in private
 transport -- particularly on the issues of electric vehicles, smart
 cities and mobility as a service -- is subject to further research and
-investigation.
+investigation.}
 \end{abstract}
 
-\noindent {\textbf{Keywords:}} {\emph{Electric Vehicles, Vehicle Hire Models, Smart
+\noindent {\footnotesize{{\textbf{Keywords:}} {\emph{Electric Vehicles, Vehicle Hire Models, Smart
 Technologies, Smart Monitoring, Smart Cities, Big Data, Environmental
-Impact, Business Models, Mobility-as-a-Service}}
+Impact, Business Models, Mobility-as-a-Service}}}}
 
 
 \section{Introduction}\label{intro}
@@ -1211,11 +1217,6 @@ public and private sector collaboration. It seems reasonable to
 presume this is a barrier for `as-a-service' and digital innovation
 concepts across a range of city services.
 
-% As such, it is also a strong
-% recommendation of this paper that this barrier is examined in greater
-% detail, as explored in Section~\ref{future}.
-
-
 \section{Future Work}\label{future}
 
 For application beyond transport, it is recommended that the
@@ -1231,7 +1232,7 @@ car routing) and assistance of delivering public policy
 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=0.75\columnwidth]{images/causalloop.png}
+\includegraphics[width=0.7\columnwidth]{images/causalloop.png}
 \caption{A causal loop diagram articulating the investment/value
   dilemma of some tri-opt transport solutions.}
 \label{fig:causalloop}
@@ -1249,10 +1250,10 @@ identified as part of this, and articulated in a simplified causal
 loop diagram in Figure~\ref{fig:causalloop}, need to be further
 investigated.
 
-% use section* for acknowledgment
-\section*{Acknowledgment}
+% acknowledgments
+\section*{Acknowledgments}
 
-This work was supported by the Systems Centre and the EPSRC-funded
+This work was supported by the Systems Centre and the UK EPSRC-funded
 Industrial Doctorate Centre in Systems (Grant EP/G037353/1) at the
 University of Bristol and Arup Group Ltd. We would also like to
 acknowledge the support of Bristol City Council and Source West for
@@ -1261,9 +1262,6 @@ their involvement in the project.
 % references section
 \bibliographystyle{plainnat}
 \bibliography{jut2017}
-
-
-
 
 % that's all folks
 \end{document}

@@ -1,117 +1,46 @@
-
-%% bare_jrnl.tex
-%% V1.4b
-%% 2015/08/26
-
-\documentclass[journal]{IEEEtran}
-
-\usepackage{cite}
+\documentclass[a4paper,11pt]{article}
+\usepackage[british]{babel}
+\usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+\usepackage{graphicx}
 \usepackage[hyphens]{url}
-\usepackage[pdftex]{graphicx}
 \usepackage{paralist}
-\usepackage[pdftex,colorlinks=true]{hyperref}
+\usepackage{authblk}
+\usepackage{siunitx}
+\usepackage[noadjust]{cite}
+\usepackage[semicolon,sort&compress]{natbib}
+\usepackage[pdftex,breaklinks,colorlinks=true]{hyperref}
+
 
 % correct bad hyphenation here
 %\hyphenation{op-tical net-works semi-conduc-tor}
 
-
-\begin{document}
-%
-% paper title
-% Titles are generally capitalized except for words such as a, an, and, as,
-% at, but, by, for, in, nor, of, on, or, the, to and up, which are usually
-% not capitalized unless they are the first or last word of the title.
-% Linebreaks \\ can be used within to get better formatting as desired.
-% Do not put math or special symbols in the title.
+% title
 \title{Digitally-Enabled Electric Vehicles As-a-Service: Exploring the
   `Tri-Opt' of Novel Private Transport Business Models}
-%
-%
-% author names and IEEE memberships
-% note positions of commas and nonbreaking spaces ( ~ ) LaTeX will not break
-% a structure at a ~ so this keeps an author's name from being broken across
-% two lines.
-% use \thanks{} to gain access to the first footnote area
-% a separate \thanks must be used for each paragraph as LaTeX2e's \thanks
-% was not built to handle multiple paragraphs
-%
 
-%\author{Peter~Cooper, Theo~Tryfonas, Tom~Crick and~Alex Marsh}% <-this % stops a space
-%\thanks{}% <-this % stops a space
-% \thanks{M. Shell was with the Department
-% of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta,
-% GA, 30332 USA e-mail: (see http://www.michaelshell.org/contact.html).}% <-this % stops a space
-%\thanks{J. Doe and J. Doe are with Anonymous University.}% <-this % stops a space
-%\thanks{Manuscript received April 19, 2005; revised August 26, 2015.}}
+% names
+\author[1]{Peter Cooper}
+\author[2]{Theo Tryfonas}
+\author[3]{Tom Crick}
+\author[4]{Alex Marsh}
+% affiliation
+\affil[1]{Faculty of Engineering, University of Bristol, UK}
+\affil[2]{Faculty of Engineering, University of Bristol, UK}
+\affil[3]{Department of Computing \& Information Systems, Cardiff Metropolitan University, UK}
+\affil[4]{School for Policy Studies, University of Bristol, UK}
+% emails
+\affil[1]{\protect\url{peter.cooper@bristol.ac.uk}}
+\affil[2]{\protect\url{theo.tryfonas@bristol.ac.uk}}
+\affil[3]{\protect\url{tcrick@cardiffmet.ac.uk}}
+\affil[4]{\protect\url{alex.marsh@bristol.ac.uk}}
 
-% note the % following the last \IEEEmembership and also \thanks - 
-% these prevent an unwanted space from occurring between the last author name
-% and the end of the author line. i.e., if you had this:
-% 
-% \author{....lastname \thanks{...} \thanks{...} }
-%                     ^------------^------------^----Do not want these spaces!
-%
-% a space would be appended to the last name and could cause every name on that
-% line to be shifted left slightly. This is one of those "LaTeX things". For
-% instance, "\textbf{A} \textbf{B}" will typeset as "A B" not "AB". To get
-% "AB" then you have to do: "\textbf{A}\textbf{B}"
-% \thanks is no different in this regard, so shield the last } of each \thanks
-% that ends a line with a % and do not let a space in before the next \thanks.
-% Spaces after \IEEEmembership other than the last one are OK (and needed) as
-% you are supposed to have spaces between the names. For what it is worth,
-% this is a minor point as most people would not even notice if the said evil
-% space somehow managed to creep in.
+\renewcommand\Authands{ and }
+\def\UrlBreaks{\do\/\do-}
 
+\date{ }
 
-
-% The paper headers
-%\markboth{Journal of \LaTeX\ Class Files,~Vol.~14, No.~8, August~2015}%
-\markboth{IEEE Transactions on Industrial Informatics, February~2017}%
-{Shell \MakeLowercase{\textit{Cooper et al.}}: Digitally-Enabled
-  Electric Vehicles As-a-Service: Exploring the `Tri-Opt' of Novel
-  Private Transport Business Models}
-% The only time the second header will appear is for the odd numbered pages
-% after the title page when using the twoside option.
-% 
-% *** Note that you probably will NOT want to include the author's ***
-% *** name in the headers of peer review papers.                   ***
-% You can use \ifCLASSOPTIONpeerreview for conditional compilation here if
-% you desire.
-
-
-% If you want to put a publisher's ID mark on the page you can do it like
-% this:
-%\IEEEpubid{0000--0000/00\$00.00~\copyright~2015 IEEE}
-% Remember, if you use this you must call \IEEEpubidadjcol in the second
-% column for its text to clear the IEEEpubid mark.
-
-% use for special paper notices
-%\IEEEspecialpapernotice{(Invited Paper)}
-
-% make the title area
+\begin{document}
 \maketitle
-
-% As a general rule, do not put math, special symbols or citations
-% in the abstract or keywords.
-
-% abstract for ScholarOne:
-
-% Three distinct trends have emerged that have disrupted the dominance of
-% privately-owned, combustion car transport in the UK: first, the
-% emergence of the electric powertrain as an affordable means of
-% transport; second, the rise of new hire models of car ownership;
-% third, the rise of `smart city thinking', the concept that increased
-% connectivity, data and smart grids can be harnessed to create value,
-% especially in transport. We define the combination of the three as the
-% `Tri-Opt' of private transport -- three disruptors that should not be
-% considered in isolation but as interacting levers -- an inflection of
-% the `Energy Trilemma'.
-
-% In this paper, we apply systems thinking and utilise a mixed
-% methodology of workshops, interviews and systems modelling drawing
-% upon the UK city of Bristol's {\emph{Smart EV Transport Hub}} project
-% to identify concepts that positively combine two or more of these
-% three `Opts'.
 
 \begin{abstract}
 Three distinct trends have emerged that have disrupted the dominance
@@ -150,77 +79,43 @@ cities and mobility as a service -- is subject to further research and
 investigation.
 \end{abstract}
 
-% Note that keywords are not normally used for peerreview papers.
-\begin{IEEEkeywords}
-Electric Vehicles, Vehicle Hire Models, Smart Technologies, Smart
-Monitoring, Smart Cities, Big Data, Environmental Impact, Business
-Models, Mobility-as-a-Service 
-\end{IEEEkeywords}
-
-
-% For peer review papers, you can put extra information on the cover
-% page as needed:
-% \ifCLASSOPTIONpeerreview
-% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
-% \fi
-%
-% For peerreview papers, this IEEEtran command inserts a page break and
-% creates the second title. It will be ignored for other modes.
-\IEEEpeerreviewmaketitle
+\noindent {\textbf{Keywords:}} {\emph{Electric Vehicles, Vehicle Hire Models, Smart
+Technologies, Smart Monitoring, Smart Cities, Big Data, Environmental
+Impact, Business Models, Mobility-as-a-Service}}
 
 
 \section{Introduction}\label{intro}
-% The very first letter is a 2 line initial drop letter followed
-% by the rest of the first word in caps.
-% 
-% form to use if the first word consists of a single letter:
-% \IEEEPARstart{A}{demo} file is ....
-% 
-% form to use if you need the single drop letter followed by
-% normal text (unknown if ever used by the IEEE):
-% \IEEEPARstart{A}{}demo file is ....
-% 
-% Some journals put the first two words in caps:
-% \IEEEPARstart{T}{his demo} file is ....
-% 
-% Here we have the typical use of a "T" for an initial drop letter
-% and "HIS" in caps to complete the first word.
-% \IEEEPARstart{T}{his} demo file is intended to serve as a ``starter file''
-% for IEEE journal papers produced under \LaTeX\ using
-% IEEEtran.cls version 1.8b and later.
-% You must have at least 2 lines in the paragraph with the drop letter
-% (should never be an issue)
 
 \subsection{Problem Space}
 
-\IEEEPARstart{A}{growing} corpus of research is gathering consensus on
+A growing corpus of research is gathering consensus on
 the view that the prevailing private transport paradigm of developed
 nations has a finite lifespan; a culture that consists of primarily
 privately-owned internal combustion engine (ICE) automobiles is
 unlikely to survive the next fifty years in its current form, in the
 face of economic, social, and environmental
-pressures~\cite{lerner:2011,van-audenhove-et-al:2014,black-et-al:2016}.
+pressures~\citep{lerner:2011,van-audenhove-et-al:2014,black-et-al:2016}.
 Several distinct trends in existing research have emerged as potential
 disruptors; three in particular are identified and analysed in this
 paper. Firstly, the emergence of electrical motors as the primary
 alternate powertrain for private
-automobiles~\cite{paffumi-et-al:2015,gnann-et-al:2015}.  Secondly --
+automobiles~\citep{paffumi-et-al:2015,gnann-et-al:2015}.  Secondly --
 and more in its infancy -- the trend of transitions to new car use
 models, which is regularly referred to within the collective term of
-`Mobility as a Service'~\cite{tscatapult:2016}. A third -- the
+`Mobility as a Service'~\citep{tscatapult:2016}. A third -- the
 broadest and most in its infancy -- the emergence of what is being
 called the smart city theorem. This capitalises on the use of systems
 that harness the opportunities of increased connectivity and the
 collection and curation of data to provide
-value~\cite{townsend:2013,cosgrave-et-al:2013,ibm:2014}
+value~\citep{townsend:2013,cosgrave-et-al:2013,ibm:2014}
 
 However disruption to private transport in the UK measured on any one
 of these individual trends is, at present, slow. Electric cars only
 make up a minor share of the UK car market, with limited charging
 infrastructure outside of major urban areas and
-motorways~\cite{dft:2008}; short-term hire transport models have yet
+motorways~\citep{dft:2008}; short-term hire transport models have yet
 to be proved at a significant scale in the UK, beyond simpler modes
-such as for cycling~\cite{kamargianni-et-al:2016}; and smart cities
+such as for cycling~\citep{kamargianni-et-al:2016}; and smart cities
 are, in many cases, little more than a long term strategic aspiration
 for governments and policymakers, with some instances of demonstrators
 (including Glasgow and Bristol in the UK), many of which are too early
@@ -234,22 +129,22 @@ offers single leg trips around the city and since 2011 has already
 grown to over 500,000 members and 4,000 cars across an extensive array
 of car nodes. Tesla Motors in the USA have also heavily emphasised new
 business models enabled by data and the role of new ownership models
-in their latest corporate strategy release~\cite{musk:2016}. Existing
+in their latest corporate strategy release~\citep{musk:2016}. Existing
 literature has extensively examined each trend in its isolation but
 there is less exploration of combinations of two or more (see
 Figure~\ref{fig:triopt}), with even less focusing on the notion of
 synergy between the three trends as a principle. The idea of three
 significant issues needing to be considered in conjunction with one
 another is not a radical concept however, as seen in the inverse, but
-principally similar, `energy trilemma'~\cite{wec:2015}. This paper --
-building upon previous work~\cite{cooper-et-al-sose:2015} with
+principally similar, `energy trilemma'~\citep{wec:2015}. This paper --
+building upon previous work~\citep{cooper-et-al-sose:2015} with
 substantially extended analysis and literature -- will focus on
 investigating the manifestations of the overlaps of these three
 opportunities within the context of the city of Bristol in the UK.
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=\columnwidth]{images/triopt.png}
+\includegraphics[width=0.6\columnwidth]{images/triopt.png}
 \caption{The proposed `Tri-Opt' of positive opportunities to disrupt
   the private sector transport paradigm in developed countries.}
 \label{fig:triopt}
@@ -268,7 +163,7 @@ Electric vehicles (EVs) have emerged as an environmentally sustainable
 alternative to ICEs. EVs are driven by electric motors powered by a
 battery. As well as reducing carbon emissions, EVs typically have
 lower noise and air pollution, can be cheaper to run per mile and
-reduce transport's dependency on fossil fuels~\cite{postevs:2010}. It
+reduce transport's dependency on fossil fuels~\citep{postevs:2010}. It
 is widely accepted that an alternate (and scalable) energy source is
 necessary for the UK transport network in the future, with
 electrification considered the most likely choice; by 2020, the UK's
@@ -281,7 +176,7 @@ substituted EV power train); some have gone so far as to make
 significant strategic investment in the concept by releasing entire
 electric car ranges, such as BMW's i Series range. Personal cars and
 small commercial vehicles account for 13\% of all UK carbon
-emissions~\cite{lumsden:2012} so the direct `pump-to-tire' benefits of
+emissions~\citep{lumsden:2012} so the direct `pump-to-tire' benefits of
 electric cars are highly significant. Legislation in many countries is
 a double-edged sword: penalising ICE users and incentivising the
 purchase of EVs. EVs bring with them several challenges, however: the
@@ -291,16 +186,16 @@ carbon of EVs, again due to the battery component, is typically higher
 than an equivalent ICE, and the generation of electricity to meet
 charging patterns is theorised to bring with it considerable
 logistical difficulties on national
-grids~\cite{su-et-al:2011,akhavan-rezai-et-al:2015}. Furthermore, some
+grids~\citep{su-et-al:2011,akhavan-rezai-et-al:2015}. Furthermore, some
 of the benefits, such as CO2 savings, are dependant on the method of
 generation of the electricity used in the EV.
 
 There are several barriers to the adoption of EVs. Some of which are
 psychological for the end user; ICE owners have shown range anxiety --
 a concern of `running out of
-juice'~\cite{oflev:2011,yilmaz+krein:2012}. Evidence rarely supports
-such concerns: 95\% of all private vehicles journeys in the UK are <25
-miles~\cite{oflev:2011}, a distance current EVs are easily able to
+juice'~\citep{oflev:2011,yilmaz+krein:2012}. Evidence rarely supports
+such concerns: 95\% of all private vehicles journeys in the UK are $<25$
+miles~\citep{oflev:2011}, a distance current EVs are easily able to
 service. Other user perceptions include concerns over battery
 lifetimes, the risk of obsolescence from investing in a product from a
 rapidly advancing technology, and the higher price of EV purchase.
@@ -308,7 +203,7 @@ Many also criticise an absence of second-hand EVs for purchase. Fleet
 vehicles accounted for 63\% of all new vehicle sales in the UK in
 2011; as such they are a dominant influence on the cars that are
 subsequently available for sale in the secondary purchase
-markets~\cite{fleets:2012}. There is a growing trend for EVs in fleet
+markets~\citep{fleets:2012}. There is a growing trend for EVs in fleet
 vehicles due to reduced running costs, so it is likely a substantive
 used EV market will start to emerge in the near future.
 
@@ -321,11 +216,11 @@ be reached. A review of academics, policy makers and industrial
 practitioners in the field suggests a recurring fundamental theme of
 the use of increased data (both in supply and quality) and
 connectivity to create
-value~\cite{komninos:2002,arup-et-al:2011,harrison+abbottdonnelly:2011,batty-et-al:2012,buscher:2014}. The
+value~\citep{komninos:2002,arup-et-al:2011,harrison+abbottdonnelly:2011,batty-et-al:2012,buscher:2014}. The
 rise of interest in data-based value creation within cities can be
 related to a number of trends:
 
-\begin{enumerate}
+\begin{enumerate}[i)]
 \item {\emph{The rapid acceleration in the production of data.}}
 Several key societal developments, including the rise of wide-spread
 internet connectivity (particularly high-speed mobile connectivity)
@@ -334,12 +229,12 @@ production; rapidly growing datasets have thus spurred experimentation
 as to their potential new uses. 'Big data' is regularly used to refer
 to such colossal quantities, and is sometimes defined as a data set
 big enough to be considered for use in smart value-producing
-systems. feasible~\cite{hollands:2008,ibmsmartcities:2009,ciscoconcities:2010}.
+systems. feasible~\citep{hollands:2008,ibmsmartcities:2009,ciscoconcities:2010}.
 \item {\emph{The rapid increase in the ability to collect more
 specific, higher-value data.}} Improvements in sensor and transmission
 technology have resulted in data collection devices becoming more
 financially affordable and spatially
-practical~\cite{townsend:2013}. The development of mesh networks, the
+practical~\citep{townsend:2013}. The development of mesh networks, the
 mechanism of 2-way communicating sensor nodes distributed over vast
 areas, can provide high resolution data facilitating accurate
 statements or the ability to reliably track and understand sensed
@@ -357,11 +252,11 @@ actioning fast enough to be deemed `live'.
 Discussion is increasingly refer to data as a raw material (sometimes
 going so far as to describe it as an emerging fifth `utility'),
 creating the notion that data can and should be used as a primary
-input to a business model~\cite{arup-et-al:2011}. This may involve
+input to a business model~\citep{arup-et-al:2011}. This may involve
 taking data across traditional
-`silos'~\cite{shapiro:2006,tsoukalas:2008}. Increasingly, this also
+`silos'~\citep{shapiro:2006,tsoukalas:2008}. Increasingly, this also
 represents the pressing focus on whole-life environmental impacts of
-ICTs~\cite{cooper-et-al-gsict:2015}. `Creating value' can be defined
+ICTs~\citep{cooper-et-al-gsict:2015}. `Creating value' can be defined
 in many ways, for example:
 
 \begin{itemize}
@@ -376,7 +271,7 @@ at off peak times.
 \item {\emph{At lower cost:}} for example, water pipes containing flow
 sensors to identify the accurate location of leaks as they emerge,
 rather than expensive and time-consuming excavations and visual
-inspections~\cite{cosgrave-et-al:2014}.
+inspections~\citep{cosgrave-et-al:2014}.
 \item {\emph{Without human interaction:}} For example, when a first
 aid dispatch can be made at the detection of a heart attack in a
 public space, rather than requiring on-lookers to assess the situation
@@ -386,10 +281,10 @@ the shortcomings of overly objective assessment in processes.
 \end{itemize}
 
 While there is acknowledgement that it is not without ethical and
-societal concerns~\cite{bimber:1990,oatley-et-al_dasc:2015}, there is
+societal concerns~\citep{bimber:1990,oatley-et-al_dasc:2015}, there is
 an extensive literature base documenting the potential impact of
 digital innovation, through these improvements, in the transport
-sector~\cite{enoch:2015}.
+sector~\citep{enoch:2015}.
 
 One trend absent from this paper's analysis could be considered the
 issue of autonomous vehicles, and that if it were to be included it
@@ -402,7 +297,7 @@ scope for this paper.
 \subsection{New Ownership Models}
 
 `Mobility as a Service' has grown to be a concept that is specifically
-appreciated in modern transport dialogues~\cite{tscatapult:2016}. It
+appreciated in modern transport dialogues~\citep{tscatapult:2016}. It
 is best defined as a transition from a paradigm of relying on a
 product that is purchased to provide mobility functionality, to a
 service where the outcome of moving from one location to another is
@@ -430,7 +325,7 @@ suggested a decrease in the cultural value placed on car ownership;
 conflict with an increased desire to live in vibrant urban areas
 within walking distance of workplace and other amenities and the
 spatial restrictions of car ownership in such
-scenarios~\cite{jenks+burgess:2011}.
+scenarios~\citep{jenks+burgess:2011}.
 \item {\emph{Changing economic situations:}} increasing costs of car
 ownership, particularly in insurance (particularly for young
 individuals) and fuel cost.
@@ -588,13 +483,13 @@ the aforementioned Autolib.
 
 This paper thus sets out to achieve the following objectives:
 
-\begin{enumerate}
+\begin{enumerate}[i)]
 \item To explore a range of use cases for how the opportunities in the
-  aforementioned 'tri-opt' overlap in the UK's private transport, in
+  aforementioned `tri-opt' overlap in the UK's private transport, in
   combinations of two or three, to produce value.  
 \item To understand, to a qualitative degree of accuracy,
   the varying value perceived by our stakeholders to be presented in
-  the identified 'combination' use cases. 
+  the identified `combination' use cases. 
 % \item To understand the broad characteristics of the identified use
 %   cases, with a focus on barriers and enablers to their valuation and
 %   implementation.
@@ -758,7 +653,7 @@ alert traffic control teams of potential disruptions.
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=\columnwidth]{images/bristolhub.png}
+\includegraphics[width=0.75\columnwidth]{images/bristolhub.png}
 \caption{An overview of the functionality of Bristol's Smart Electric
   Transport Hub, structured by input transport modes (left) and output
   transport services}
@@ -871,14 +766,14 @@ density, for a designed service of `smart EV MaaS' as part of the
 {\emph{Bristol Smart EV Hub}} project, can be seen in
 Figure~\ref{fig:smartpricegraphs}.
 
-\begin{figure}[!htb]
+\begin{figure}[htb]
 \centering
-\includegraphics[width=\columnwidth]{images/smartpricingformula.png}
+\includegraphics[width=0.6\columnwidth]{images/smartpricingformula.png}
 %\caption{Smart pricing formula}
 \label{fig:smartpricingformula}
 \end{figure}
 
-\begin{figure*}[!htb]
+\begin{figure*}[htb]
 \centering
 \includegraphics[width=\textwidth]{images/smartpricegraphs.png}
 \caption{Data regarding varying dynamic pricing rates derived from Figure~\ref{fig:smartpricingformula} (left) and their effect on revenues (centre) and booking densities (right). Collected during the {\emph{Bristol Smart EV Hub}} project.}
@@ -979,7 +874,7 @@ or nation’s electricity system. In some definitions, balancing
 involves transferring power into the grid, but many techniques of
 simply avoiding drawing power (a.k.a. `shaving') or moving the demand
 to another period (a.k.a. `shifting') are considered balancing by the
-UK Government~\cite{decc:2014}. The challenge of balancing the network
+UK Government~\citep{decc:2014}. The challenge of balancing the network
 is becoming much larger with more distributed generation and larger
 power demands. Many stakeholders in the UK's energy industry are
 increasingly providing financial incentives for these services and
@@ -990,7 +885,7 @@ used in the management of these interventions.
 This is difficulty is highly relevant to EVs as they represent a
 growing load on the grid; some studies have suggested even moderate
 uptake of EVs might increase national power demand by up to 23\% in
-some areas by 2021~\cite{paffumi-et-al:2015}. However, of greater
+some areas by 2021~\citep{paffumi-et-al:2015}. However, of greater
 concern based on early observations that EVs will increase the
 variation (essentially the peakiness) in grid demand, a quality that
 is harder to service than total demand. However, at the same time
@@ -1214,9 +1109,9 @@ changes, and as such require relatively little collaboration across
 stakeholder groups.
 \end{itemize}
 
-\begin{figure}[htb]
+\begin{figure}[ht]
 \centering
-\includegraphics[width=\columnwidth]{images/valuegraph.png}
+\includegraphics[width=0.75\columnwidth]{images/valuegraph.png}
 \caption{Results from workshop exercises on assigning qualitative
 value scores to use cases (note: log scale)}
 \label{fig:valuegraph}
@@ -1225,7 +1120,7 @@ value scores to use cases (note: log scale)}
 Graphical approximations of these characteristics across the three
 segments can be seen in Figure~\ref{fig:segmentcharacteristics}.
 
-\begin{figure*}[htb]
+\begin{figure*}[!h]
 \centering
 \includegraphics[width=0.8\textwidth]{images/segmentcharacteristics.png}
 \caption{Generalised relationships across identified segments}
@@ -1334,10 +1229,18 @@ new service delivery models that bring public benefit (e.g. dynamic
 car routing) and assistance of delivering public policy
 (e.g. demand-based pricing to reduce congestion).
 
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.75\columnwidth]{images/causalloop.png}
+\caption{A causal loop diagram articulating the investment/value
+  dilemma of some tri-opt transport solutions.}
+\label{fig:causalloop}
+\end{figure}
+
 Little or no research could be found that defines a framework of these
 mechanisms and there is a significant evidence base that private
 sector participation in city digital initiatives is a regular
-criticism by the public sector~\cite{martin:2016}, thus it can be
+criticism by the public sector~\citep{martin:2016}, thus it can be
 hypothesised there is value in understanding this issue
 better. Related to this, digitally-enabled public and private
 collaboration needs to be understood better, as it currently stands as
@@ -1345,14 +1248,6 @@ the major barrier. The distribution of value/risk/investment
 identified as part of this, and articulated in a simplified causal
 loop diagram in Figure~\ref{fig:causalloop}, need to be further
 investigated.
-
-\begin{figure}[htb]
-\centering
-\includegraphics[width=\columnwidth]{images/causalloop.png}
-\caption{A causal loop diagram articulating the investment/value
-  dilemma of some tri-opt transport solutions.}
-\label{fig:causalloop}
-\end{figure}
 
 % use section* for acknowledgment
 \section*{Acknowledgment}
@@ -1363,85 +1258,10 @@ University of Bristol and Arup Group Ltd. We would also like to
 acknowledge the support of Bristol City Council and Source West for
 their involvement in the project.
 
-
-
-% Can use something like this to put references on a page
-% by themselves when using endfloat and the captionsoff option.
-\ifCLASSOPTIONcaptionsoff
-  \newpage
-\fi
-
-
-
-% trigger a \newpage just before the given reference
-% number - used to balance the columns on the last page
-% adjust value as needed - may need to be readjusted if
-% the document is modified later
-\IEEEtriggeratref{21}
-% The "triggered" command can be changed if desired:
-%\IEEEtriggercmd{\enlargethispage{-5in}}
-
 % references section
+\bibliographystyle{plainnat}
+\bibliography{jut2017}
 
-% can use a bibliography generated by BibTeX as a .bbl file
-% BibTeX documentation can be easily obtained at:
-% http://mirror.ctan.org/biblio/bibtex/contrib/doc/
-% The IEEEtran BibTeX style support page is at:
-% http://www.michaelshell.org/tex/ieeetran/bibtex/
-\bibliographystyle{IEEEtran}
-% argument is your BibTeX string definitions and bibliography database(s)
-\bibliography{IEEEabrv,ieeetii2016}
-%
-% <OR> manually copy in the resultant .bbl file
-% set second argument of \begin to the number of references
-% (used to reserve space for the reference number labels box)
-% \begin{thebibliography}{1}
-
-% \bibitem{IEEEhowto:kopka}
-% H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
-%   0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
-
-% \end{thebibliography}
-
-% biography section
-% 
-% If you have an EPS/PDF photo (graphicx package needed) extra braces are
-% needed around the contents of the optional argument to biography to prevent
-% the LaTeX parser from getting confused when it sees the complicated
-% \includegraphics command within an optional argument. (You could create
-% your own custom macro containing the \includegraphics command to make things
-% simpler here.)
-%\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
-% or if you just want to reserve a space for a photo:
-
-% \begin{IEEEbiography}{Michael Shell}
-% Biography text here.
-% \end{IEEEbiography}
-
-% % if you will not have a photo at all:
-% \begin{IEEEbiographynophoto}{John Doe}
-% Biography text here.
-% \end{IEEEbiographynophoto}
-
-% insert where needed to balance the two columns on the last page with
-% biographies
-%\newpage
-
-% \begin{IEEEbiographynophoto}{Jane Doe}
-% Biography text here.
-% \end{IEEEbiographynophoto}
-
-% You can push biographies down or up by placing
-% a \vfill before or after them. The appropriate
-% use of \vfill depends on what kind of text is
-% on the last page and whether or not the columns
-% are being equalised.
-
-%\vfill
-
-% Can be used to pull up biographies so that the bottom of the last one
-% is flush with the other column.
-%\enlargethispage{-5in}
 
 
 

@@ -2,6 +2,7 @@
 \usepackage[british]{babel}
 \usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
 \usepackage{graphicx}
+\usepackage{subcaption}
 \usepackage[hyphens]{url}
 \usepackage{paralist}
 \usepackage{authblk}
@@ -863,19 +864,46 @@ Figure~\ref{fig:smartpricegraphs}.
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.75\columnwidth]{images/smartpricingformula.png}
-%\caption{Smart pricing formula}
+\caption{Smart pricing formula}
 \label{fig:smartpricingformula}
 \end{figure}
 
-\begin{figure*}[htb]
+% \begin{figure*}[htb]
+% \centering
+% \includegraphics[width=\textwidth]{images/smartpricegraphs.png}
+% \caption{Data regarding varying dynamic pricing rates (left) derived
+% from Figure~\ref{fig:smartpricingformula} and their effect on revenues
+% (centre) and booking densities (right). Collected during the
+% {\emph{Bristol Smart EV Hub}} project.}
+% \label{fig:smartpricegraphs}
+% \end{figure*}
+
+\begin{figure}
 \centering
-\includegraphics[width=\textwidth]{images/smartpricegraphs.png}
-\caption{Data regarding varying dynamic pricing rates (left) derived
-from Figure~\ref{fig:smartpricingformula} and their effect on revenues
-(centre) and booking densities (right). Collected during the
+\begin{subfigure}[b]{0.6\textwidth}
+  \includegraphics[width=\textwidth]{images/smartpricegraph1.png}
+        \caption{}
+        \label{fig:smartpricingrates}
+\end{subfigure}
+
+\begin{subfigure}[b]{0.6\textwidth}
+  \includegraphics[width=\textwidth]{images/smartpricegraph2.png}
+        \caption{}
+        \label{fig:smartrevenues}
+\end{subfigure}
+
+\begin{subfigure}[b]{0.6\textwidth}
+  \includegraphics[width=\textwidth]{images/smartpricegraph3.png}
+        \caption{}
+        \label{fig:smartbookingdensities}
+\end{subfigure}
+\caption{Data regarding varying dynamic pricing rates (a) derived
+from the smart pricing formula in
+Figure~\ref{fig:smartpricingformula}, and their effect on revenues
+(b) and booking densities (c). Collected during the
 {\emph{Bristol Smart EV Hub}} project.}
 \label{fig:smartpricegraphs}
-\end{figure*}
+\end{figure}
 
 % old caption:
 % From left to right: Price ranges with different formula values;

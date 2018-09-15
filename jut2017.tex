@@ -659,8 +659,8 @@ based on the 8-step process~\citep{chi:1997}. In particular, Chi's
 recommendation to increase reliability by using multiple raters was
 implemented.
 
-\section{Results}
-
+% results
+\section{Value Cases for EVs-as-a-Service in Bristol}
 
 % \subsection{Overview}
 
@@ -683,9 +683,9 @@ implemented.
 % description.
 % \end{itemize}
 
-\subsection{Individual Uses Cases}
+%\subsection{Individual Uses Cases}
 
-\subsubsection{Car Component State (Smart/MaaS/EV)}
+\subsection{Car Component State (Smart/MaaS/EV)}
 
 In the traditional car hire industry, it is common practice to run a
 maintenance program that involves inspection at a greater frequency
@@ -693,7 +693,7 @@ than that recommended for a privately-owned automobile, designed to
 reduce the likelihood the car might suffer from a failure while hired
 by a customer.
 
-Using mechanical health sensors -- what could be considered a `smart'
+Using mechanical health sensors -- that could be considered a `smart'
 element -- attached to key components in the car an operator offering
 cars-as-a-service could gather insight on a car's mechanical state
 close to the quality of that offered by a human inspection, in real
@@ -702,7 +702,7 @@ service. If the sensor coverage were sufficient then this could lead
 to cost savings through reduced servicing and also decrease
 turn-around times, important in a service that will have more frequent
 car hiring than a traditional arrangement. This servicing issue is a
-wider concern in an EV context, namely because the workings of EV
+wider concern in an EV context, because the workings of EV
 powertrains have less of a mechanical history than their ICE
 counterparts simply because they are a more recent technology.
 
@@ -712,77 +712,78 @@ counterparts simply because they are a more recent technology.
 % faults? Or the potential savings gain from a different type of
 % monitoring?
 
-\subsubsection{Live Air Quality Management (Smart/MaaS)}
+\subsection{Live Air Quality Management (Smart/MaaS)}
 
 Bristol City Council currently monitors air quality through a
 portfolio of permanent and semi-permanent sensor installations at
 points distributed around the city. In a typical UK urban environment,
 particularly one with no major heavy industry, air quality is
 primarily determined by road transport emissions, particularly those
-of diesel vehicles. It can be hypothesised that if it was possible to
-understand the distribution of vehicles in the city at any one point
-in time, it would be possible to estimate the air quality across the
-entire city, to an acceptable degree of accuracy.
+of diesel vehicles~\citep{bbcnews:2017,glaaqd:2018}. It can be
+hypothesised that if it was possible to understand the distribution of
+vehicles in the city at any one point in time, combined with other
+factors such as weather, it would be possible to estimate the air
+quality across the entire city, to an acceptable degree of accuracy.
 
 At present, in certain areas of Bristol, car flow is monitored by
 automatic number plate recognition (ANPR) cameras. Coverage is,
-however, poor and scaling this infrastructure can be prohibitively
+however, limited and scaling this infrastructure can be prohibitively
 expensive. Cars-as-a-service vehicles are likely to have
 near-identical behaviour to other cars on the road at that time. With
-sufficient coverage of hire cars distributed among the main car parc,
+sufficient coverage of hire cars distributed among the main car park,
 the total car distribution in Bristol could be extrapolated. Today
 other datasets exist for understanding car movements around a city
-(produced by mapping apps such as Google Maps), but this is not always
-available to city managers, nor is it necessarily free. This could be
+(for example, Google Maps), but this is not always available to city
+managers, nor is it necessarily free. This information could be
 complemented by data from air quality sensors directly affixed to
 cars.
 
 %We will examine critical resolutions in detail in Section~\ref{barriersenablers}.
 
 
-\subsubsection{Live Accident Reporting (Smart/MaaS)}
+\subsection{Live Accident Reporting (Smart/MaaS)}
 
 Cars could be fitted with impact sensors, alerting a cars-as-a-service
 monitoring system that a car has suffered a crash, enabling them to
 immediately alert the authorities. A number of trends have
 significantly improved road safety in the UK over the last 20
 years~\citep{dftsafetystats:2018}; combined with the relative rarity
-of such a scheme, to have rural isolated crashes means it is unlikely
-that with such a system a tangible improvement in injury or fatality
-rates for users of the service. Instead, it is more likely that the
-main benefit of such a system would be an improved perception of
-safety by the user. It may also be possible that through connectivity
-to city transport systems, a system could alert traffic control teams
-of potential disruptions.
+of users of this type of monitoring system, the impact on rural
+isolated crashes has not resulted in tangible improvement in injury or
+fatality rates. Instead, it is more likely that the main benefit of
+such a system would be an improved perception of safety by the
+user. It may also be possible that through connectivity to city
+transport systems, a system could alert traffic control teams of
+potential disruptions.
 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.75\columnwidth]{images/bristolhub.png}
-\caption{An overview of the functionality of Bristol's proposed Smart Electric
+\caption{An overview of the proposed Smart Electric
   Transport Hub, structured by input transport modes (left) and output
   transport services}
 \label{fig:bristolhub}
 \end{figure}
 
 
-\subsubsection{User Journey Data (Smart/MaaS)}
+\subsection{User Journey Data (Smart/MaaS)}
 
 Social media websites have shown that advertisement hit rates can be
-greatly improved by accurate targeting of the advert to the correct
+improved by accurate targeting of the advert to the correct
 recipient. Depending on the medium of transport being used,
 historically this technique would be attempted by advertising at a
 particular time or in a particular geographical area. Today, however,
 consumers are increasingly expressing preferences and specifics
-relating to their personal situation in data through social media
-networks, and it is possible to target individuals on a range of
-highly specific criteria, such as a specific relationship status,
-group affiliation or patrons of specific rival businesses.  Facebook
-and Spotify are frequently highlighted examples of how these
-mechanisms can not only deliver high conversion rates -- enabling the
-advertising to be sold at higher prices -- but also enable the sale of
-smaller, but still effective, advertising packages to smaller
-businesses. This mechanism could produce value in a cars-as-a-service
-offering in two identified ways.
+relating to their personal situation through various social media
+networks. It is thus possible to target individuals on a range of
+highly specific criteria, such as a relationship status, group
+affiliation or patrons of specific rival businesses.  Facebook and
+Spotify are frequently highlighted examples of how these mechanisms
+can not only deliver high conversion rates -- enabling the advertising
+to be sold at higher prices -- but also enable the sale of smaller,
+but still effective, advertising packages to smaller businesses. This
+mechanism could produce value in a cars-as-a-service offering in two
+identified ways.
 
 Information on the journeys of car hire users, contextualised with
 time of use and demographic details, could be sold -- wider privacy
@@ -793,18 +794,19 @@ undertake to obtain such data, and so a base price is conceivable.
 Alternatively, such data could be used in-house in the form of
 targeted advertising in-vehicle. Organisations could partner with the
 service, offering promotional deals to users it believes it may be
-able to tempt to their business during or after the trip. This could
-be done in real-time using spatial data e.g. when an individual
-approaches a particular business. The value creation could be twofold:
-the advertising organisations could pay for the in-car advertising
-rights if they are simply showing promotional material; if appealing
-deals were exclusively available in-car then the take up of the
-cars-as-a-service offer could increase. This second mechanism is
-likely to enjoy higher data consent rates from users because the value
-to them is more direct.
+able to induce to patronise their business during or after the
+trip. This could be done in real-time using spatial data e.g. when the
+vehicle occupied by the individual approaches a particular
+business. The value creation could be twofold: the advertising
+organisations could pay for the in-car advertising rights if they are
+simply showing promotional material; if appealing deals were
+exclusively available in-car then the take up of the cars-as-a-service
+offer could increase. This second mechanism is likely to enjoy higher
+data consent rates from users because the value to them is more
+direct.
 
 
-\subsubsection{Demand-based Pricing (Smart/MaaS/EV)}
+\subsection{Demand-based Pricing (Smart/MaaS/EV)}
 
 An alternate method to control congestion is to bring economic forces
 to bear on individual travel choices. In practice, the pricing of MaaS
@@ -842,7 +844,7 @@ cars-as-as-service management system to know the exact power use of a
 journey and thus the expected battery use available at the end of a
 journey.
 \item {\emph{Congestion:}} High levels of traffic, resulting in
-`stop-start driving' can significantly decrease the efficiency of an
+`stop-start driving', can significantly decrease the efficiency of an
 EV, although the effect is not as pronounced as with an ICE because an EV
 powertrain can turn off and on, thereby conserving energy. Congestion also
 increases journey time. Car speed data and GPS location data could
@@ -870,12 +872,11 @@ all nodes.
 
 An example of a simple dynamic pricing formula can be seen in
 Figure~\ref{fig:smartpricingformula} whereby the size of the `smart
-power' constant determines the influence of the dynamic component.  As
-part of the {\emph{Bristol Smart EV Hub}} project simulations based on
-such an algorithm were used to explore the potential impact of
-demand-based pricing on revenue and variance of booking density for a
-designed service of `smart EV MaaS'. The results are presented in
-Figure~\ref{fig:smartpricegraphs}.
+power' constant determines the influence of the dynamic component.
+Simulations based on such an algorithm were used to explore the
+potential impact of demand-based pricing on revenue and variance of
+booking density for a designed service of `smart EV MaaS'. The results
+are presented in Figure~\ref{fig:smartpricegraphs}.
 
 
 \begin{figure}[htb]
@@ -917,8 +918,7 @@ Figure~\ref{fig:smartpricegraphs}.
 \caption{Data regarding varying dynamic pricing rates (a) derived
 from the smart pricing formula in
 Figure~\ref{fig:smartpricingformula}, and their effect on revenues
-(b) and booking densities (c). Collected during the
-{\emph{Bristol Smart EV Hub}} project.}
+(b) and booking densities (c).}
 \label{fig:smartpricegraphs}
 \end{figure}
 
@@ -930,41 +930,41 @@ Figure~\ref{fig:smartpricingformula}, and their effect on revenues
 % price sensitivity, customer flexibility and estimated footfall
 % collected during the Bristol Smart EV Hub project.
 
-At least on certain theoretical assumptions about customer behaviour,
+On certain theoretical assumptions about customer behaviour,
 it is possible to create a scenario through dynamic pricing where both
 total revenue is increased and bookings are more evenly
 distributed. This mechanism could be made stronger, or seen to be more
 of a `carrot' than a `stick' strategy, by using reduced parking costs
 in non- or limited-nodal MaaS systems.
 
-\subsubsection{Driving Styles and Usage Habits (Smart/EV/MaaS)} 
+\subsection{Driving Styles and Usage Habits (Smart/EV/MaaS)} 
 
 As a high growth market, the EV market is currently undergoing heavy
 R\&D investment. As a distinctly different driving experience,
 automotive designers are particularly interested in how users interact
 with the vehicle~\citep{ferreira-et-al:2013}. Such data is not
-currently commonplace and as such; to create this car manufacturers
-spend capital on customer surveys, on-road testing and other
-investments.
+commonplace and, therefore, to create an evidence base car
+manufacturers spend capital on customer surveys, on-road testing and
+other investments.
 
-A similar situation can be observed in the in the car insurance
-industry; while the total cost of ownership of hybrid and electric
-vehicles compared to conventional vehicles has reduced from the year
-of introduction~\cite{palmer-et-al:2018}, at present relatively few
-car insurers offer cover for EVs due to a poor understanding of their
-risk. Those that do offer prices above the ICE equivalent average
-16-26\% more. It is unclear if EV owners drive in an identical manner
-to combustion car owners, or if they are at a higher risk of collision
-due to lower noise and potential higher accelerations than combustion
-cars. Furthermore, many fundamental components of the EV have yet to
-come close to their expected end of life, so it is risky for insurers
-who do not know if the vehicles will reach their rated life.
+A similar situation can be observed in the car insurance industry:
+while the total cost of ownership of hybrid and electric vehicles
+compared to conventional vehicles has reduced from the year of
+introduction~\cite{palmer-et-al:2018}, at present relatively few car
+insurers offer cover for EVs due to a poor understanding of their
+risk. Those who do offer insurance price it at an average of 16-26\%
+above the ICE equivalent. It is unclear if EV owners drive in an
+identical manner to combustion car owners, or if they are at a higher
+risk of collision due to lower noise and potential driving profiles
+than ICE cars. Furthermore, many fundamental components of the EV have
+yet to come close to their expected end of life, so it is risky for
+insurers who do not know if the vehicles will reach their rated life.
 
 The UK's National Grid could derive value from understanding how EV
 charging in a cars-as-a-service model has an impact on the grid,
 steering their strategic investment accordingly.  Although information
 is available around how privately-owned EVs require
-charging~\citep{kennel-et-al:2012,darabi+ferdowsi:2013}, EVs in
+charging~\citep{kennel-et-al:2012,darabi+ferdowsi:2013}, EVs making
 frequent trips throughout the day could have distinctly different
 charging requirements. The value of this insight also extends to
 regional distribution network operators: they hold the responsibility
@@ -974,11 +974,11 @@ reasonable to assume these datasets also have a value to the operator
 of an EV MaaS system, through external sale, if an appropriate data
 strategy were in place.
 
-\subsubsection{Dynamic Traffic Routing (Smart/MaaS)} 
+\subsection{Dynamic Traffic Routing (Smart/MaaS)} 
 
 Understanding the average speed of a road's cars allows the city's
-transport management to predict areas of congestion. The granularity
-of the data needed for this is much lower i.e. the speed of a given
+transport management to predict areas of congestion. The data
+resolution needed for this is much lower i.e. the speed of a given
 stretch of road is largely similar for all vehicles driving along
 it. A city transport management team with access to such information
 in real-time can employ data-based traffic management techniques. One
@@ -990,7 +990,7 @@ planning on driving in advance. With this information, mitigation
 actions that would previously be considered to have too long a lead
 time even in the 'live' mode can be implemented. For example, higher
 use of contraflow lanes that can be dynamically adjusted to allow for
-the particular nature of the rush hour traffic, increased public
+the particular nature of rush hour traffic, increased public
 transport frequencies to help move demand off the roads, or variable
 speed limits to maximise flow rates and relieve bottlenecks.
 
@@ -999,8 +999,8 @@ been tested at scale: dynamic lane direction has proven successful on
 the M6 (intercity) motorway around Birmingham and the M25 London
 orbital motorway in the UK, with extensive supporting evidence about
 its dynamic speed limit interventions. The effectiveness of this
-infrastructure could be improved by using data that are faster and
-more accurate than the generated by existing, predominantly analogue,
+infrastructure could be improved by using data that arrive faster and
+more accurately than generated by existing, predominantly analogue,
 sensing techniques.  A criticism of this concept might be that such
 datasets are currently collected by global technology firms such as
 Google. Such data however is not readily available to cities and, when
@@ -1008,8 +1008,7 @@ it is, it typically comes with a substantial cost. A MaaS service
 would be an alternative route to accessing this data and could provide
 it to the city's transport team.
 
-
-\subsubsection{Grid Balancing (EV/Smart/MaaS)} 
+\subsection{Grid Balancing (EV/Smart/MaaS)} 
 
 Grid balancing is a generalised term for the concept of taking action
 to mitigate against substantial divergence between supply and demand
@@ -1030,7 +1029,7 @@ This difficulty is highly relevant to EVs because they represent a
 growing load on the grid; some studies have suggested even moderate
 uptake of EVs might increase national power demand by up to 23\% in
 some areas by 2021~\citep{paffumi-et-al:2015}. However, of greater
-concern is that, as observed early, EVs will increase the variation
+concern is that EVs will increase the variation
 (essentially the peakiness) in demand, a quality that is harder for
 the grid to service than total demand. However, at the same time the
 potential of EVs to be used as charge storing devices enables a
@@ -1040,7 +1039,7 @@ positive asset to provide charge to meet demand at peak
 times. Typically batteries have a very quick response rate to grid
 requirements, something other balancing solutions can lack.
 
-Crucially for our study, this would be exacerbated in a MaaS offering,
+This would be exacerbated in a MaaS offering,
 whereby the value of the charge to the grid at that particular time is
 factored into the cost of someone instead using that charge to drive
 the car. The cars could then be used as grid balancing charge storage
@@ -1060,10 +1059,10 @@ with the caveat that required charging for the cars' actual purpose
 can be sufficiently shifted to be of negligible impact. This is
 compounded by the context that many of the business models around
 balancing systems have yet to achieve commercial viability, and may
-not develop so in the UK for at least 10 years. This, along with the
+not develop in the UK for at least 10 years. This, along with the
 general penetration of EVs -- MaaS or otherwise -- is an important
 factor to consider for this use case, but it is not relevant to our
-primary focus of examining trend overlaps.
+primary focus of examining the overlaps associated with the tri-opt.
 
 % \section{Barriers and Enablers}\label{barriersenablers}
 

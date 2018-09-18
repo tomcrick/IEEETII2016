@@ -1,6 +1,6 @@
 \documentclass[b5paper,10pt]{article}
 \usepackage[british]{babel}
-\usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+\usepackage[top=1.9cm,bottom=1.9cm,left=1.9cm,right=1.9cm]{geometry}
 \usepackage{graphicx}
 \usepackage{subcaption}
 \usepackage[hyphens]{url}
@@ -25,9 +25,9 @@
 
 % names
 \author[1]{Peter Cooper}
-\author[2]{Theo Tryfonas}%\thanks{Correspondence author: Theo
-                         %Tryfonas, Faculty of Engineering, University
-                         %of Bristol, Queen's Building, University Walk, Bristol BS8 1TR, UK. E-mail: \url{theo.tryfonas@bristol.ac.uk}}}
+\author[2]{Theo Tryfonas\thanks{Corresponding author: Theo
+                         Tryfonas, Faculty of Engineering, University
+                         of Bristol, Queen's Building, University Walk, Bristol BS8 1TR, UK. E-mail: \url{theo.tryfonas@bristol.ac.uk}}}
 \author[3]{Tom Crick}
 \author[4]{Alex Marsh}
 % affiliation
@@ -105,7 +105,8 @@ mobility-as-a-service -- is prioritised for further investigation.}
 \end{abstract}
 
 \noindent {\footnotesize{{\textbf{Keywords:}} {\emph{Electric
-        Vehicles, Vehicle Hire Models, Smart Monitoring, Business Models, Mobility-as-a-Service}}}}
+        Vehicles, Vehicle Hire Models, Smart Monitoring, Business
+        Models, Mobility-as-a-Service}}}}
 
 % Submitted keywords: Electric vehicles; vehicle hire models; smart
 % monitoring; smart cities; environmental impact <-- to be updated
@@ -171,7 +172,7 @@ literature and analysis. It investigates the manifestations of the
 opportunities created by the overlaps of these three trends in the
 context of the city of Bristol in the UK.
 
-\begin{figure}[htb]
+\begin{figure}[!ht]
 \centering
 \includegraphics[width=0.6\columnwidth]{images/triopt.png}
 \caption{The proposed `Tri-Opt' of positive opportunities to disrupt
@@ -227,14 +228,14 @@ psychological for the end user. ICE owners have shown range anxiety --
 a concern over `running out of
 juice'~\citep{oflev:2011,yilmaz+krein:2012}. Evidence rarely supports
 such concerns: 95\% of all private vehicles journeys in the UK are
-$<25$ miles~\citep{oflev:2011}, a distance current EVs are easily able
-to service. Other user perceptions include concerns over battery
-lifetimes, the risk of obsolescence from investing in a product from a
-rapidly advancing technology, and the higher price of EV purchase.
-Many also criticise an absence of second-hand EVs for purchase. Fleet
-vehicles accounted for 63\% of all new vehicle sales in the UK in
-2011; as such they are a dominant influence on the cars that are
-subsequently available for sale in the secondary purchase
+$<25$ miles~\citep{oflev:2011,brook:2015}, a distance current EVs are
+easily able to service. Other user perceptions include concerns over
+battery lifetimes, the risk of obsolescence from investing in a
+product from a rapidly advancing technology, and the higher price of
+EV purchase.  Many also criticise an absence of second-hand EVs for
+purchase. Fleet vehicles accounted for 63\% of all new vehicle sales
+in the UK in 2011; as such they are a dominant influence on the cars
+that are subsequently available for sale in the secondary purchase
 markets~\citep{fleets:2012}. There is a growing trend for EVs in fleet
 vehicles due to reduced running costs, so it is likely a more
 substantial used EV market will start to emerge in the near future.
@@ -275,10 +276,10 @@ two-way connectivity integrated into everyday items -- could enable
 transitions from machine-human-machine interaction to simply
 machine-machine.
 \item {\emph{Improvements in data storage and processing.}} Storing
-and processing data is becoming significantly cheaper. This enables
-complex, intensive analytics on vast datasets -- such as on the scale
-of a city -- to be processed and presented for actioning fast enough
-to be deemed `live'.
+and processing data is becoming significantly cheaper, increasingly
+based in the cloud. This enables complex, intensive analytics on vast
+datasets -- such as on the scale of a city -- to be processed and
+presented for actioning fast enough to be deemed `live'.
 \end{enumerate}
 
 Discussions increasingly refer to data as a raw material (sometimes
@@ -348,11 +349,12 @@ bike from a node near the origin of their journey, complete their
 journey, and return the bike to a node near their destination. As such
 they are purchasing the outcome of mobility from one destination to
 another, or `as-a-service'. Once seen as radical, examples such as
-London's cycle hire scheme have demonstrated not only the popularity
-of the operating model, but also the indirect benefits, illustrated by
-the significant increase in cycling in the city bringing health
-benefits, but also a degree of substitution for car journeys. A range
-of drivers have been suggested for the emergence of this paradigm:
+London's cycle hire scheme, or the spread of ride hailing services
+such as Uber and Lyft, have demonstrated not only the popularity of
+the operating model, but also the indirect benefits (for example,
+illustrated by the significant increase in cycling in the city,
+bringing wider health benefits). A range of drivers have been
+suggested for the emergence of this paradigm:
 
 \begin{itemize}
 \item {\emph{Changing societal values:}} evidence has
@@ -525,16 +527,18 @@ This paper thus sets out to achieve the following objectives:
 \item To explore a range of use cases in the UK's private transport
 system that involve the three elements of the `tri-opt'. These use
 cases must use at least two of the three elements in combination and
-produce value.
+produce value;
 \item To understand, with a qualitative degree of accuracy, the varying
 value perceived by stakeholders in the identified `combination' use
-cases.
+cases;
 % \item To understand the broad characteristics of the identified use
 % cases, with a focus on barriers and enablers to their valuation and
 % implementation.
 \item To segment the use cases, considering their characteristics,
 value potential and value certainty, with a view to identifying
-recommended actions for policymakers.
+recommended actions for policymakers;
+\item Finally, to explore and better understand the interaction of the
+  three elements of the `tri-opt'.
 \end{enumerate}
 
 \subsection{Philosophy}
@@ -576,6 +580,15 @@ citizens using electric vehicles;
 selection of specific use cases, explained in more detail when
 introduced.
 \end{itemize}
+
+\begin{figure}[!hb]
+\centering
+\includegraphics[width=0.75\columnwidth]{images/bristolhub.png}
+\caption{An overview of the proposed Smart Electric
+  Transport Hub, structured by input transport modes (left) and output
+  transport services}
+\label{fig:bristolhub}
+\end{figure}
 
 Throughout the first two components of the method, use cases that were
 discovered, and the role of the `opts' within them, were
@@ -756,16 +769,6 @@ user. It may also be possible that through connectivity to city
 transport systems, a system could alert traffic control teams of
 potential disruptions.
 
-\begin{figure}[htb]
-\centering
-\includegraphics[width=0.75\columnwidth]{images/bristolhub.png}
-\caption{An overview of the proposed Smart Electric
-  Transport Hub, structured by input transport modes (left) and output
-  transport services}
-\label{fig:bristolhub}
-\end{figure}
-
-
 \subsection{User Journey Data (Smart/MaaS)}
 
 Social media websites have shown that advertisement hit rates can be
@@ -879,7 +882,7 @@ booking density for a designed service of `smart EV MaaS'. The results
 are presented in Figure~\ref{fig:smartpricegraphs}.
 
 
-\begin{figure}[htb]
+\begin{figure}[!ht]
 \centering
 \includegraphics[width=0.75\columnwidth]{images/smartpricingformula.png}
 \caption{Smart pricing formula}
@@ -1039,20 +1042,16 @@ positive asset to provide charge to meet demand at peak
 times. Typically batteries have a very quick response rate to grid
 requirements, something other balancing solutions can lack.
 
-This would be exacerbated in a MaaS offering,
-whereby the value of the charge to the grid at that particular time is
-factored into the cost of someone instead using that charge to drive
-the car. The cars could then be used as grid balancing charge storage
-in periods of lower demand. Logistically, a MaaS arrangement would
-have EVs plugged in by default (requiring no manual intervention as
-likely with privately-owned EVs). Furthermore, such systems would also
-typically have large numbers of EVs connected to the grid on
-connections with substantial voltage capacity, facilitating sudden
-charge and discharge actions.
-
-% AM: How does this sit with the argument earlier that there is a need
-% to use pricing to smooth demand for EVs using dynamic pricing
-% because they take a long time to charge?
+In a MaaS offering, the value of the charge to the grid at a
+particular time could be factored in to the cost of someone hiring the
+car, and so using the charge instead to drive the car. This would
+enable more opportunities for charge to be provided for grid balancing
+at times of need. Logistically, a MaaS arrangement would have EVs
+plugged in by default (requiring no manual intervention as likely with
+privately-owned EVs). Furthermore, such systems would also typically
+have large numbers of EVs connected to the grid on connections with
+substantial voltage capacity, facilitating sudden charge and discharge
+actions.
 
 This potential for considering MaaS EVs as an asset to the grid comes
 with the caveat that required charging for the cars' actual purpose
@@ -1259,7 +1258,7 @@ characterised as 'operational' changes, and as such require relatively
 little collaboration across stakeholder groups.
 \end{itemize}
 
-\begin{figure}[ht]
+\begin{figure}[!h]
 \centering
 \includegraphics[width=0.75\columnwidth]{images/valuegraph.png}
 \caption{Results from workshop exercises on assigning qualitative
@@ -1270,7 +1269,7 @@ value scores to use cases (note: log scale)}
 Graphical approximations of these characteristics across the three
 segments can be seen in Figure~\ref{fig:segmentcharacteristics}.
 
-\begin{figure*}[!h]
+\begin{figure*}[!ht]
 \centering
 \includegraphics[width=0.8\textwidth]{images/segmentcharacteristics.png}
 \caption{Generalised relationships across identified segments}
